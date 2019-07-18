@@ -1,0 +1,7 @@
+It takes 1348.53 ms to generate and save the data
+
+It takes 122316 ms to gradient decent
+
+Number of iterations = 402571 out of 10000000
+Error: 1.00001e-05
+Relative Error: 5.43226e-08
