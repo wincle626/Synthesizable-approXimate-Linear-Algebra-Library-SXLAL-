@@ -18,11 +18,11 @@ void PROXIMAL_GRADIENT_DECENT_XFXPT(DATA_IN_T Amatrix_c[DIAG][DIAG],
 	float error = 0;
 	float error_std = ERR_STD;
 
-	std::string clockname = "timeprofile.txt";
-	std::string xkname = "xk.dat";
-	std::string errorrecordname = "error_record.dat";
-	std::string errorhistname = "error_hist.dat";
-	std::string figurename = "ProximalGradientDecent.png";
+	std::string clockname = "timeprofile_xfxpt.txt";
+	std::string xkname = "xk_xfxpt.dat";
+	std::string errorrecordname = "error_record_xfxpt.dat";
+	std::string errorhistname = "error_hist_xfxpt.dat";
+	std::string figurename = "ProximalGradientDecent_xfxpt.png";
 
 #ifdef TIME_PROFILE
 	clock_t start = clock();

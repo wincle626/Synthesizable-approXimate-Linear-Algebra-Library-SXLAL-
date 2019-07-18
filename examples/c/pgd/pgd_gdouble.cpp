@@ -19,11 +19,11 @@ void PROXIMAL_GRADIENT_DECENT_GDOUBLE(double Amatrix_c[DIAG][DIAG],
 	double error = 0;
 	double error_std = ERR_STD;
 
-	std::string clockname = "timeprofile.txt";
-	std::string xkname = "xk.dat";
-	std::string errorrecordname = "error_record.dat";
-	std::string errorhistname = "error_hist.dat";
-	std::string figurename = "ProximalGradientDecent.png";
+	std::string clockname = "timeprofile_gdouble.txt";
+	std::string xkname = "xk_gdouble.dat";
+	std::string errorrecordname = "error_record_gdouble.dat";
+	std::string errorhistname = "error_hist_gdouble.dat";
+	std::string figurename = "ProximalGradientDecent_gdouble.png";
 
 #ifdef TIME_PROFILE
 	clock_t start = clock();

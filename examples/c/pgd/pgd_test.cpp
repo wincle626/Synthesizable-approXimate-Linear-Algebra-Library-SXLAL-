@@ -26,8 +26,6 @@
 #include "pgd_gfloat.hpp"
 #include "pgd_xfxpt.hpp"
 
-namespace plt = matplotlibcpp;
-
 void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 	
 	//Eigen::initParallel();
@@ -40,10 +38,6 @@ void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 	std::string Amatrixname = "Amatrix.csv";
 	std::string bvectorname = "bvector.csv";
 	std::string Lname = "L.csv";
-	std::string xkname = "xk.dat";
-	std::string errorrecordname = "error_record.dat";
-	std::string errorhistname = "error_hist.dat";
-	std::string figurename = "ProximalGradientDecent.png";
 
 	////////////////////// generate data //////////////////////
 #ifdef ALWAYS_DELETE
@@ -150,41 +144,6 @@ void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 	std::cout << "1/L: " << 1/L << std::endl << std::endl;
 #endif// endif DEBUG_DATA
 
-#if defined(GENERAL_DOUBLE_PRECISION)
-   	Float_Point_Algebra Float_Point_Algebra_obj;
-	double Amatrix_c[DIAG][DIAG];
-	memcpy(Amatrix_c,AmatrixT.data(),sizeof(double)*DIAG*DIAG);
-	double bvector_c[DIAG];
-	memcpy(bvector_c,bvector.data(),sizeof(double)*DIAG);
-	double L_c = L;
-#endif// endif GENERAL_DOUBLE_PRECISION
-#if defined(GENERAL_FLOAT_PRECISION)
-   	Float_Point_Algebra Float_Point_Algebra_obj;
-	float Amatrix_c[DIAG][DIAG];
-	Eigen::MatrixXf Amatrix_f(DIAG, DIAG);
-	Amatrix_f = AmatrixT.cast<float>();
-	memcpy(Amatrix_c,Amatrix_f.data(),sizeof(float)*DIAG*DIAG);
-	float bvector_c[DIAG];
-	Eigen::VectorXf bvector_f(DIAG);
-	bvector_f = bvector.cast<float>();
-	memcpy(bvector_c,bvector_f.data(),sizeof(float)*DIAG);
-	float L_c = (float) L;
-#endif// endif GENERAL_FLOAT_PRECISION
-#if defined(GENERAL_INTEGER_PRECISION)
-#endif// endif GENERAL_INTEGER_PRECISION
-#if defined(XILINX_FIXED_PRECISION)
-   	Xilinx_Fixed_Point_Algebra Xilinx_Fixed_Point_Algebra_obj;
-	double Amatrix_d[DIAG][DIAG];
-	DATA_IN_T Amatrix_c[DIAG][DIAG];
-	memcpy(Amatrix_d,AmatrixT.data(),sizeof(double)*DIAG*DIAG);
-	Xilinx_Fixed_Point_Algebra_obj.GENERAL_MAT_EQ_BASIC<double, DATA_IN_T, DIAG, DIAG>(Amatrix_d, Amatrix_c);
-	double bvector_d[DIAG];
-	DATA_IN_T bvector_c[DIAG];
-	memcpy(bvector_d,bvector.data(),sizeof(double)*DIAG);
-	Xilinx_Fixed_Point_Algebra_obj.VEC_EQ<double, DATA_IN_T, DIAG>(bvector_d,bvector_c);
-	DATA_IN_T L_c = L;
-	DATA_IN_T factor = 1/L;
-#endif// endif XILINX_FIXED_PRECISION
 #ifdef DEBUG_DATA
 	std::cout << "Amatrix_c: " << std::endl;
 	for(int i=0;i<DIAG;i++){
@@ -223,7 +182,7 @@ void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 	///////////////// Proximal gradient descent ///////////////
 {
 #ifdef EIGEN_DOUBLE_PRECISION
-		PROXIMAL_GRADIENT_DECENT_EIGEND(Amatrix, bvector, L);
+	PROXIMAL_GRADIENT_DECENT_EIGEND(Amatrix, bvector, L);
 #endif
 }
 {
@@ -233,18 +192,48 @@ void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 }
 {
 #ifdef GENERAL_DOUBLE_PRECISION
-	PROXIMAL_GRADIENT_DECENT_GDOUBLE(Amatrix_c, bvector_c, L_c);
+	double Amatrix_c1[DIAG][DIAG];
+	memcpy(Amatrix_c1,AmatrixT.data(),sizeof(double)*DIAG*DIAG);
+	double bvector_c1[DIAG];
+	memcpy(bvector_c1,bvector.data(),sizeof(double)*DIAG);
+	double L_c1 = L;
+	PROXIMAL_GRADIENT_DECENT_GDOUBLE(Amatrix_c1, bvector_c1, L_c1);
 #endif
 }
 {
 #ifdef GENERAL_FLOAT_PRECISION
-	PROXIMAL_GRADIENT_DECENT_GFLOAT(Amatrix_c, bvector_c, L_c);
+	float Amatrix_c2[DIAG][DIAG];
+	Eigen::MatrixXf Amatrix_f(DIAG, DIAG);
+	Amatrix_f = AmatrixT.cast<float>();
+	memcpy(Amatrix_c2,Amatrix_f.data(),sizeof(float)*DIAG*DIAG);
+	float bvector_c2[DIAG];
+	Eigen::VectorXf bvector_f(DIAG);
+	bvector_f = bvector.cast<float>();
+	memcpy(bvector_c2,bvector_f.data(),sizeof(float)*DIAG);
+	float L_c2 = (float) L;
+	PROXIMAL_GRADIENT_DECENT_GFLOAT(Amatrix_c2, bvector_c2, L_c2);
 #endif// endif GENERAL_FLOAT_PRECISION
 }
 {
 #ifdef XILINX_FIXED_PRECISION
-	PROXIMAL_GRADIENT_DECENT_XFXPT(Amatrix_c, bvector_c, factor);
+   	Xilinx_Fixed_Point_Algebra Xilinx_Fixed_Point_Algebra_obj;
+	double Amatrix_d[DIAG][DIAG];
+	DATA_IN_T Amatrix_c3[DIAG][DIAG];
+	memcpy(Amatrix_d,AmatrixT.data(),sizeof(double)*DIAG*DIAG);
+	Xilinx_Fixed_Point_Algebra_obj.GENERAL_MAT_EQ_BASIC<double, DATA_IN_T, DIAG, DIAG>(Amatrix_d, Amatrix_c3);
+	double bvector_d[DIAG];
+	DATA_IN_T bvector_c3[DIAG];
+	memcpy(bvector_d,bvector.data(),sizeof(double)*DIAG);
+	Xilinx_Fixed_Point_Algebra_obj.VEC_EQ<double, DATA_IN_T, DIAG>(bvector_d,bvector_c3);
+	DATA_IN_T L_c3 = L;
+	DATA_IN_T factor = 1/L;
+	PROXIMAL_GRADIENT_DECENT_XFXPT(Amatrix_c3, bvector_c3, factor);
 #endif // endif XILINX_FIXED_PRECISION
 	///////////////////////////////////////////////////////////
 }
+}
+
+int main(int argc, char** argv){
+	PROXIMAL_GRADIENT_DECENT_EIGEN();
+	return 0;
 }

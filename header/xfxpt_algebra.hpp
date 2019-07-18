@@ -9,7 +9,7 @@
 #define SRC_XFXPT_ALGEBRA_HPP_
 
 #include "fpt_algebra.hpp"
-#include "xilinx_fxpt.hpp"
+#include "xfxpt.hpp"
 
 class Xilinx_Fixed_Point_Algebra : public Float_Point_Algebra{
 

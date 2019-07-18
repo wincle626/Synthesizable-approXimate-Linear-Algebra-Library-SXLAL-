@@ -23,11 +23,11 @@
 #define BOX_CONST 10 // Box constraint on the variable
 #define ERR_STD 0 // Error standard deviation when box projection
 
-//#define EIGEN_DOUBLE_PRECISION // eigen double precision switch
-//#define EIGEN_FLOAT_PRECISION // eigen float precision switch
+#define EIGEN_DOUBLE_PRECISION // eigen double precision switch
+#define EIGEN_FLOAT_PRECISION // eigen float precision switch
 //#define EIGEN_INTEGER_PRECISION // eigen integer precision switch
-//#define GENERAL_DOUBLE_PRECISION // general double precision switch
-//#define GENERAL_FLOAT_PRECISION // general float precision switch
+#define GENERAL_DOUBLE_PRECISION // general double precision switch
+#define GENERAL_FLOAT_PRECISION // general float precision switch
 //#define GENERAL_INTEGER_PRECISION // general integer precision switch
 #define XILINX_FIXED_PRECISION // fixed point precision swithc
 

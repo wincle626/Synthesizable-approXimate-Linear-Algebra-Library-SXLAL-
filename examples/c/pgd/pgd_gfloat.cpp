@@ -20,11 +20,11 @@ void PROXIMAL_GRADIENT_DECENT_GFLOAT(float Amatrix_c[DIAG][DIAG],
 	float error = 0;
 	float error_std = ERR_STD;
 
-	std::string clockname = "timeprofile.txt";
-	std::string xkname = "xk.dat";
-	std::string errorrecordname = "error_record.dat";
-	std::string errorhistname = "error_hist.dat";
-	std::string figurename = "ProximalGradientDecent.png";
+	std::string clockname = "timeprofile_gfloat.txt";
+	std::string xkname = "xk_gfloat.dat";
+	std::string errorrecordname = "error_record_gfloat.dat";
+	std::string errorhistname = "error_hist_gfloat.dat";
+	std::string figurename = "ProximalGradientDecent_gfloat.png";
 
 #ifdef TIME_PROFILE
 	clock_t start = clock();

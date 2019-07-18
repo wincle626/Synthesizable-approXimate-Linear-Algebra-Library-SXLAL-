@@ -39,33 +39,19 @@ include_directories( ${HEAD_DIR} )
 set( PROJECT_SRC
      source/common.cpp
      source/eigen_algebra.cpp
-     source/float_point_algebra.cpp
-     source/fixed_point.cpp
-     source/matrix_multiply.cpp
-     source/proximal_gradient_decent.cpp
-     source/proximal_gradient_decent_eigend.cpp
-     source/proximal_gradient_decent_eigenf.cpp
-     source/proximal_gradient_decent_gdouble.cpp
-     source/proximal_gradient_decent_gfloat.cpp
-     source/proximal_gradient_decent_xilinxfxpt.cpp
-     source/xilinx_fixed_point_sqrt.cpp
-     source/xilinx_fixed_point_algebra.cpp
-     source/main.cpp
+     source/fpt_algebra.cpp
+     source/xfxpt_algebra.cpp
+     source/fxpt_bitwise.cpp
 )
 set( PROJECT_INC
      header/common.hpp
      header/data.hpp
      header/eigen_algebra.hpp
-     header/float_point_algebra.hpp
-     header/matrix_multiply.hpp
-     header/proximal_gradient_decent.hpp
+     header/fpt_algebra.hpp
+     header/xfxpt_algebra.hpp
+     header/xfxpt.hpp
      header/matplotlibcpp.hpp
-     header/fixed_point.hpp
-     header/xilinx_fixed_point.hpp
-     header/xilinx_fixed_point_algebra.hpp
-     header/xilinx_fixed_point_sqrt.hpp
-     header/xilinx/ap_int.h
-     header/xilinx/ap_fixed.h
+     header/fxpt_bitwise.hpp
 )
 
 
@@ -103,22 +89,74 @@ add_install_rpath_support( BIN_DIRS "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_BIN
                            INSTALL_NAME_DIR "${CMAKE_INSTALL_PREFIX}"
                            DEPENDS ENABLE_RPATH
                            USE_LINK_PATH )
+# compiler option
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+
+set(CMAKE_CXX_FLAGS "-Wall -Wextra")
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 # Add the uninstall target
 include(AddUninstallTarget)
 # install locally
 option(INSTALL_LOCAL "Make the installation at local folder instead of system directory" ON)
 
-
-## project executable
-add_executable( simple_example ${PROJECT_SRC} ${PROJECT_INC} ${PYTHON_INCLUDE_DIRS})
-target_include_directories( simple_example SYSTEM
+## project library
+add_library( xplal ${PROJECT_SRC} ${PROJECT_INC} ${PYTHON_INCLUDE_DIRS})
+target_include_directories( xplal SYSTEM
 	PUBLIC ${EIGEN_INCLUDE_DIRS}
 	PUBLIC ${PYTHON_INCLUDE_DIRS}
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
 )
-target_link_libraries( simple_example
+target_link_libraries( xplal
 	PUBLIC m
 	PUBLIC pthread
 	PUBLIC python2.7
 )
+
+## project executable
+# fixed point sqrt
+add_executable( xfxpt_sqrt examples/c/xsqrt/xfxpt_sqrt.cpp examples/c/xsqrt/xfxpt_sqrt.hpp )
+target_include_directories( xfxpt_sqrt SYSTEM
+	PUBLIC ${EIGEN_INCLUDE_DIRS}
+	PUBLIC ${PYTHON_INCLUDE_DIRS}
+	PUBLIC ${HEAD_DIR}
+	PUBLIC ${XILINX_HEADERS_DIR}
+)
+target_link_libraries( xfxpt_sqrt
+	PUBLIC m
+)
+# matrix multiplication
+add_executable( mm examples/c/mm/mm.cpp examples/c/mm/mm.hpp )
+target_include_directories( mm SYSTEM
+	PUBLIC ${EIGEN_INCLUDE_DIRS}
+	PUBLIC ${PYTHON_INCLUDE_DIRS}
+	PUBLIC ${HEAD_DIR}
+	PUBLIC ${XILINX_HEADERS_DIR}
+)
+target_link_libraries( mm
+	PUBLIC m
+)
+# proximal gradient descend
+add_executable( pgd examples/c/pgd/pgd_eigend.cpp examples/c/pgd/pgd_eigend.hpp
+		    examples/c/pgd/pgd_eigenf.cpp examples/c/pgd/pgd_eigenf.hpp
+		    examples/c/pgd/pgd_gdouble.cpp examples/c/pgd/pgd_gdouble.hpp
+		    examples/c/pgd/pgd_gfloat.cpp examples/c/pgd/pgd_gfloat.hpp
+		    examples/c/pgd/pgd_xfxpt.cpp examples/c/pgd/pgd_xfxpt.hpp
+		    examples/c/pgd/pgd_test.cpp examples/c/pgd/pgd_test.hpp
+		    source/common.cpp header/common.hpp header/data.hpp
+)
+target_include_directories( pgd SYSTEM
+	PUBLIC ${EIGEN_INCLUDE_DIRS}
+	PUBLIC ${PYTHON_INCLUDE_DIRS}
+	PUBLIC ${HEAD_DIR}
+	PUBLIC ${XILINX_HEADERS_DIR}
+)
+target_link_libraries( pgd
+	PUBLIC m
+	PUBLIC pthread
+	PUBLIC python2.7
+)
+

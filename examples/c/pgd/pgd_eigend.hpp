@@ -11,9 +11,9 @@
 
 #include "pgd_test.hpp"
 
-void PROXIMAL_GRADIENT_DECENT_EIGEND(Eigen::MatrixXf Amatrix,
-									 Eigen::VectorXf bvector,
-									 float L);
+void PROXIMAL_GRADIENT_DECENT_EIGEND(Eigen::MatrixXd Amatrix,
+									 Eigen::VectorXd bvector,
+									 double L);
 
 
 #endif /* SRC_PGD_EIGEND_HPP_ */

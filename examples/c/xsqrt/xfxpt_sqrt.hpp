@@ -9,7 +9,7 @@
 #define SRC_XFXPT_SQRT_HPP_
 
 #include "xfxpt_algebra.hpp"
-#include "xilinx_fxpt.hpp"
+#include "xfxpt.hpp"
 
 #define IN_BW   24
 #define IN_IW    8

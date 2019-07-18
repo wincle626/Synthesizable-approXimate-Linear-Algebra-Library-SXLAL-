@@ -17,11 +17,11 @@ void PROXIMAL_GRADIENT_DECENT_EIGEND(Eigen::MatrixXd Amatrix,
 	double error = 0;
 	double error_std = ERR_STD;
 
-	std::string clockname = "timeprofile.txt";
-	std::string xkname = "xk.dat";
-	std::string errorrecordname = "error_record.dat";
-	std::string errorhistname = "error_hist.dat";
-	std::string figurename = "ProximalGradientDecent.png";
+	std::string clockname = "timeprofile_eigend.txt";
+	std::string xkname = "xk_eigend.dat";
+	std::string errorrecordname = "error_record_eigend.dat";
+	std::string errorhistname = "error_hist_eigend.dat";
+	std::string figurename = "ProximalGradientDecent_eigend.png";
 
 #ifdef TIME_PROFILE
 	clock_t start = clock();

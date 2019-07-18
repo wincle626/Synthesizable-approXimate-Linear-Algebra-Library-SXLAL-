@@ -22,3 +22,8 @@ void XILINX_FXP_SQRT()
 			  << "output: " << result << std::endl
 			  << std::endl << std::endl;
 }
+
+int main(int argc, char** argv){
+	XILINX_FXP_SQRT();
+	return 0;
+}
