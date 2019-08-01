@@ -54,11 +54,10 @@ weights(ours > 0) = 1;
 % title('Sampled Depth Image')
 
 %% Run the admm code
-% csvwrite('S.csv', weights(X1:Y1,X2:Y2));
-% csvwrite('b.csv', disp_res_n_norm(X1:Y1,X2:Y2));
-% csvwrite('Init.csv', disp_res_n_norm(X1:Y1,X2:Y2));
-
+tic
 xout=ADMM_FidelityL2_TV(weights(X1:Y1,X2:Y2),disp_res_n_norm(X1:Y1,X2:Y2),disp_res_n_norm(X1:Y1,X2:Y2));
+toc
+csvwrite('xout.csv', xout);
 
 
 disp('ADMM Optimisation Finished')
