@@ -15,7 +15,7 @@ void PROXIMAL_GRADIENT_DECENT_GFLOAT(float Amatrix_c[DIAG][DIAG],
 									 float bvector_c[DIAG],
 									 float L_c){
 
-#ifdef GENERAL_FLOAT_PRECISION
+#ifdef FLOAT_PRECISION
 	Float_Point_Algebra Float_Point_Algebra_obj;
 	float error = 0;
 	float error_std = ERR_STD;
@@ -51,7 +51,7 @@ void PROXIMAL_GRADIENT_DECENT_GFLOAT(float Amatrix_c[DIAG][DIAG],
 
 		// Compute gradient
 		float tmp_mul_vec1[DIAG];
-		Float_Point_Algebra_obj.GENERAL_MAT_VEC_MUL_BASIC<float, DIAG, DIAG>(
+		Float_Point_Algebra_obj.MAT_VEC_MUL<float, DIAG, DIAG>(
 				Amatrix_c, x_k_vec,	tmp_mul_vec1 );
 		Float_Point_Algebra_obj.VEC_ADD<float, DIAG>( tmp_mul_vec1, bvector_c,
 								grad_g );
@@ -189,7 +189,7 @@ void PROXIMAL_GRADIENT_DECENT_GFLOAT(float Amatrix_c[DIAG][DIAG],
 #endif// endif SHOW_FIGURE
 #endif// endif PLOT_FIGURE
 #endif// endif RECORD_RESULT
-#endif// endif GENERAL_FLOAT_PRECISION
+#endif// endif FLOAT_PRECISION
 }
 
 

@@ -79,9 +79,9 @@ public:
 
 	// Generate random diagonal matrix
 	template<class EigenT1, class EigenT2, int M>
-	void RND_DIAGMAT( EigenT1 &Mat){
+	void RND_DIAGMAT( EigenT1 &Mat, float diag_ratio){
 		srand (time(NULL));
-		int sparse_num = floor( DIAG_RATIO * M );
+		int sparse_num = floor( diag_ratio * M );
 		EigenT2 diag_vec( M );
 		for( int i=0; i<M; i++){
 			if( i<sparse_num){
@@ -95,9 +95,9 @@ public:
 		Mat = diag_vec.matrix().asDiagonal();
 	}
 	template<class EigenT1, class EigenT2>
-	void RND_DIAGMAT( EigenT1 &Mat, int M){
+	void RND_DIAGMAT( EigenT1 &Mat, int M, float diag_ratio){
 		srand (time(NULL));
-		int sparse_num = floor( DIAG_RATIO * M );
+		int sparse_num = floor( diag_ratio * M );
 		EigenT2 diag_vec( M );
 		for( int i=0; i<M; i++){
 			if( i<sparse_num){
@@ -143,7 +143,7 @@ public:
 	template<class EigenT, int M>
 	void RND_VEC( EigenT &Vec){
 		srand (time(NULL));
-		for( int i=0; i<DIAG; i++ ){
+		for( int i=0; i<M; i++ ){
 			int rnd = rand() % FLOAT_SIZE;
 			double rndnum = INTEGER_SCALE * (double)( rnd ) / FLOAT_SIZE;
 			Vec(i) =  rndnum;
@@ -152,7 +152,7 @@ public:
 	template<class EigenT>
 	void RND_VEC( EigenT &Vec, int M){
 		srand (time(NULL));
-		for( int i=0; i<DIAG; i++ ){
+		for( int i=0; i<M; i++ ){
 			int rnd = rand() % FLOAT_SIZE;
 			double rndnum = INTEGER_SCALE * (double)( rnd ) / FLOAT_SIZE;
 			Vec(i) =  rndnum;
@@ -170,10 +170,11 @@ public:
 	template<class EigenT>
 	void QRD( EigenT &Mat,
 			  EigenT &Q,
-			  EigenT &R){
+			  EigenT &R,
+			  int row, int col){
 		Eigen::HouseholderQR<EigenT> qr(Mat);
 		Q = qr.householderQ(); // get Q matrix
-		if( ROW == COL ){
+		if( row == col ){
 			R = qr.matrixQR().template  triangularView<Eigen::Upper>();
 		}else{
 			Eigen::FullPivLU<EigenT>lu_decomp(Mat);
@@ -550,6 +551,26 @@ public:
 		MatC = MatA - MatB;
 	}
 
+	// Matrix dot division
+	template<class EigenT, int M, int N>
+	void MAT_DOTDIV(EigenT MatA,
+				    EigenT MatB,
+					EigenT &MatC){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC(i,j) = MatA(i,j)/MatB(i,j);
+	}
+
+	// Matrix dot division scalar
+	template<class EigenT, class T, int M, int N>
+	void MAT_SCALAR_DOTDIV(EigenT MatA,
+						   T B,
+						   EigenT &MatC){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC(i,j) = MatA(i,j)/B;
+	}
+
 	// Matrix Vector multiplication
 	template<class EigenT1, class EigenT2>
 	void MAT_VEC_MUL( EigenT1 MatA,
@@ -593,39 +614,122 @@ public:
 	// Extract submatrix
 	// input matrix must larger than output matrix
 	// output matrix (N-M)*(L-K) begins at row M, col K
-	template<class EigenT, int M, int N, int K, int L>
-	void MAT_SUBMAT(EigenT MatA, EigenT &MatB){
-		MatB.resize(N-M,L-K);
-		MatB = MatA.block<N-M,L-K>(M,K);
+	template<typename EigenT, int M, int N>
+	void MAT_SUBMAT(EigenT MatA, EigenT &MatB,
+					int row, int col){
+		MatB.resize(M,N);
+		//MatB = MatA.block<M,N>(row,col);
+		for(int i=row, k=0;i<M+row;i++,k++){
+			for(int j=col, l=0;j<N+col;j++,l++){
+				MatB(k,l) = MatA(i,j);
+			}
+		}
 	}
-	template<class EigenT, int M, int N, int K, int L,
-			int step_r, int step_c>
-	void MAT_SUBMAT(EigenT MatA, EigenT &MatB){
-		for(int i=M-1;i<N;i+=step_r){
-			for(int j=K-1;j<L;j+=step_c){
-				MatB(i,j) = MatA(i,j);
+	template<class EigenT, int M, int N>
+	void MAT_SUBMAT(EigenT MatA, EigenT &MatB,
+					int row, int col,
+					int step_r, int step_c){
+		for(int i=row, k=0;i<MatA.rows()&&k<M;i+=step_r, k++){
+			for(int j=col, l=0;j<MatA.cols()&&l<N;j+=step_c, l++){
+				MatB(k,l) = MatA(i,j);
 			}
 		}
 	}
 
-	// Matrix merge
+	// Matrix merge (PS: the complier does not
+	// recognize block method in template, just
+	// use it directly in code instead of template
 	// MatA: (M,N), MatB (M,K), MatC: (M, N+K)
-	template<class EigenT, int M, int N, int K>
-	void MAT_MERGE_H(EigenT MatA,
-					 EigenT MatB,
-					 EigenT &MatC){
-		MatC.resize(M,N+K);
-		MatC.block<M,N>(0,0) = MatA;
-		MatC.block<M,K>(0,N) = MatB;
+//	template<class EigenT, int M, int N, int K>
+//	void MAT_MERGE_H(EigenT MatA,
+//					 EigenT MatB,
+//					 EigenT &MatC){
+//		MatC.resize(M,N+K);
+//		MatC.block<M,N>(0,0) = MatA;
+//		MatC.block<M,K>(0,N) = MatB;
+//	}
+//	// MatA: (M,K), MatB: (N,K), MatC: (M+N,K)
+//	template<class EigenT, int M, int N, int K>
+//	void MAT_MERGE_V(EigenT MatA,
+//					 EigenT MatB,
+//					 EigenT &MatC){
+//		MatC.resize(M+N,K);
+//		MatC.block<M,K>(0,0) = MatA;
+//		MatC.block<N,K>(M,0) = MatB;
+//	}
+
+	// Matrix Differential
+	template<class EigenT,
+			 int M, int N,
+			 int dim, int order>
+	void MAT_DIFF(EigenT MatA,
+				  EigenT &MatB){
+		EigenT MatTmp = MatA;
+		if(dim==1){
+			for(int i=0;i<order;i++){
+				MatB.resize(MatTmp.rows()-1, MatTmp.cols());
+				for(int j=0;j<N;j++){
+					for(int k=0;k<M-i-1;k++){
+						MatB(k,j) = MatTmp(k+1,j) - MatTmp(k,j);
+					}
+				}
+				MatTmp = MatB;
+			}
+		}else if(dim==2){
+			for(int i=0;i<order;i++){
+				MatB.resize(MatTmp.rows(), MatTmp.cols()-1);
+				for(int j=0;j<M;j++){
+					for(int k=0;k<N-i-1;k++){
+						MatB(j,k) = MatTmp(j,k+1) - MatTmp(j,k);
+					}
+				}
+				MatTmp = MatB;
+			}
+		}else{
+			std::cout << "only support 2 dimension !!" << std::endl;
+			std::exit(0);
+		}
 	}
-	// MatA: (M,K), MatB: (N,K), MatC: (M+N,K)
-	template<class EigenT, int M, int N, int K>
-	void MAT_MERGE_V(EigenT MatA,
-					 EigenT MatB,
-					 EigenT &MatC){
-		MatC.resize(M+N,K);
-		MatC.block<M,K>(0,0) = MatA;
-		MatC.block<N,K>(M,0) = MatB;
+	template<class EigenT,
+			 int M, int N,
+			 int dim, int order>
+	void MAT_DIFF(EigenT MatA,
+				  EigenT &MatB,
+				  int direction){
+		EigenT MatTmp = MatA;
+		if(dim==1){
+			for(int i=0;i<order;i++){
+				MatB.resize(MatTmp.rows(), MatTmp.cols());
+				for(int j=0;j<N;j++){
+					for(int k=0;k<M-i-1;k++){
+						MatB(k,j) = MatTmp(k+1,j) - MatTmp(k,j);
+						MatB(k,j) = MatB(k,j) * direction;
+					}
+				}
+				MatTmp = MatB;
+			}
+		}else if(dim==2){
+			for(int i=0;i<order;i++){
+				MatB.resize(MatTmp.rows(), MatTmp.cols());
+				for(int j=0;j<M;j++){
+					for(int k=0;k<N-i-1;k++){
+						MatB(j,k) = MatTmp(j,k+1) - MatTmp(j,k);
+						MatB(k,j) = MatB(k,j) * direction;
+					}
+				}
+				MatTmp = MatB;
+			}
+		}else{
+			std::cout << "only support 2 dimension !!" << std::endl;
+			std::exit(0);
+		}
+	}
+
+	// Matrix absolute value
+	template<class EigenT>
+	void MAT_ABS(EigenT MatA,
+				 EigenT &MatB){
+		MatB = MatA.array().abs().matrix();
 	}
 
 	// Vector addition
@@ -712,14 +816,16 @@ public:
 
 	// Extract subvector
 	template<class EigenT, int M, int N>
-	void VEC_SUBVEC(EigenT VecA, EigenT &VecB){
-		for(int i=M-1;i<N;i++)
-			VecA(i) = VecB(i);
+	void VEC_SUBVEC(EigenT VecA, EigenT &VecB,
+					int start){
+		for(int i=start,k=0;k<N;i++,k++)
+			VecB(k) = VecA(i);
 	}
-	template<class EigenT, int M, int N, int step>
-	void VEC_SUBVEC(EigenT VecA, EigenT &VecB){
-		for(int i=M-1;i<N;i+=step)
-			VecA(i) = VecB(i);
+	template<class EigenT, int M, int N>
+	void VEC_SUBVEC(EigenT VecA, EigenT &VecB,
+					int start, int step){
+		for(int i=start,k=0;k<N;i+=step,k++)
+			VecB(k) = VecA(i);
 	}
 
 	// Vector merge
@@ -736,8 +842,51 @@ public:
 			   	   	   EigenT1 VecB,
 					   EigenT2 &MatC){
 		MatC.resize(2,VecA.size());
-		MatC << VecA, VecB;
+		//MatC << VecA, VecB;
+		for(int i=0;i<M;i++){
+			MatC(0,i) = VecA(i);
+			MatC(1,i) = VecB(i);
+		}
 	}
+
+	// Vector differential
+	template<class EigenT, int M, int order>
+	void VEC_DIFF(EigenT VecA,
+				  EigenT &VecB){
+		EigenT VecTmp = VecA;
+		for(int i=0;i<order;i++){
+			VecB.resize(VecTmp.size()-1);
+			for(int j=0;j<M-i-1;j++)
+				VecB(i) = VecTmp(i+1) - VecTmp(i);
+			VecTmp = VecB;
+		}
+	}
+
+	// Vector absolute value
+	template<class EigenT>
+	void VEC_ABS(EigenT MatA,
+				 EigenT &MatB){
+		MatB = MatA.array().abs().matrix();
+	}
+
+	// Vector dot division
+	template<class EigenT, int M>
+	void VEC_DOTDIV(EigenT MatA,
+				    EigenT MatB,
+					EigenT &MatC){
+		for(int i=0;i<M;i++)
+			MatC[i] = MatA[i]/MatB[i];
+	}
+
+	// Vector dot division scalar
+	template<class EigenT, class T, int M>
+	void VEC_SCALAR_DOTDIV(EigenT MatA,
+						   T B,
+						   EigenT &MatC){
+		for(int i=0;i<M;i++)
+			MatC[i] = MatA[i]/B;
+	}
+
 
 
 private:

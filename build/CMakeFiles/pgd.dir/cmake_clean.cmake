@@ -4,7 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o"
   "CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o"
   "CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o"
-  "CMakeFiles/pgd.dir/examples/c/pgd/pgd_test.cpp.o"
+  "CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o"
   "CMakeFiles/pgd.dir/source/common.cpp.o"
   "pgd.pdb"
   "pgd"

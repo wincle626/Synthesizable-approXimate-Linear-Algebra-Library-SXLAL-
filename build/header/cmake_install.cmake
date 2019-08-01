@@ -1,4 +1,4 @@
-# Install script for directory: /home/yunwu/gitworkspace/Xprecision_Linear_Algebra_Library/header
+# Install script for directory: /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/header
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

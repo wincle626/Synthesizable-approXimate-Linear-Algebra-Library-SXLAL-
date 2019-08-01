@@ -42,6 +42,8 @@ set( PROJECT_SRC
      source/fpt_algebra.cpp
      source/xfxpt_algebra.cpp
      source/fxpt_bitwise.cpp
+	 source/fft.cpp
+	 source/qrd.cpp
 )
 set( PROJECT_INC
      header/common.hpp
@@ -52,6 +54,8 @@ set( PROJECT_INC
      header/xfxpt.hpp
      header/matplotlibcpp.hpp
      header/fxpt_bitwise.hpp
+	 header/fft.hpp
+	 header/qrd.hpp
 )
 
 
@@ -61,6 +65,11 @@ find_package( Eigen REQUIRED )
 if( EIGEN_FOUND )
 	message( "Found Eigen header directory: ${EIGEN_INCLUDE_DIRS}" )
 	message( "Found Eigen library directory: ${EIGEN_LIBRARIES}" )
+endif()
+find_package( FFTW REQUIRED )
+if( FFTW_FOUND )
+	message( "Found Eigen header directory: ${FFTW_INCLUDE_DIRS}" )
+	message( "Found Eigen library directory: ${FFTW_LIBRARIES}" )
 endif()
 find_package(PythonInterp)
 if ( PYTHONINTERP_FOUND )
@@ -106,12 +115,14 @@ option(INSTALL_LOCAL "Make the installation at local folder instead of system di
 add_library( xplal ${PROJECT_SRC} ${PROJECT_INC} ${PYTHON_INCLUDE_DIRS})
 target_include_directories( xplal SYSTEM
 	PUBLIC ${EIGEN_INCLUDE_DIRS}
+	PUBLIC ${FFTW_INCLUDE_DIRS}
 	PUBLIC ${PYTHON_INCLUDE_DIRS}
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
 )
 target_link_libraries( xplal
 	PUBLIC m
+	PUBLIC fftw3
 	PUBLIC pthread
 	PUBLIC python2.7
 )
@@ -139,13 +150,13 @@ target_include_directories( mm SYSTEM
 target_link_libraries( mm
 	PUBLIC m
 )
-# proximal gradient descend
+# proximal gradient descend (PGD)
 add_executable( pgd examples/c/pgd/pgd_eigend.cpp examples/c/pgd/pgd_eigend.hpp
 		    examples/c/pgd/pgd_eigenf.cpp examples/c/pgd/pgd_eigenf.hpp
 		    examples/c/pgd/pgd_gdouble.cpp examples/c/pgd/pgd_gdouble.hpp
 		    examples/c/pgd/pgd_gfloat.cpp examples/c/pgd/pgd_gfloat.hpp
 		    examples/c/pgd/pgd_xfxpt.cpp examples/c/pgd/pgd_xfxpt.hpp
-		    examples/c/pgd/pgd_test.cpp examples/c/pgd/pgd_test.hpp
+		    examples/c/pgd/pgd.cpp examples/c/pgd/pgd.hpp
 		    source/common.cpp header/common.hpp header/data.hpp
 )
 target_include_directories( pgd SYSTEM
@@ -156,6 +167,22 @@ target_include_directories( pgd SYSTEM
 )
 target_link_libraries( pgd
 	PUBLIC m
+	PUBLIC pthread
+	PUBLIC python2.7
+)
+# alternating direction method of multipliers (ADMM) 
+add_executable( admm examples/c/admm/admm.cpp examples/c/admm/admm.hpp
+		    source/common.cpp header/common.hpp header/data.hpp
+)
+target_include_directories( admm SYSTEM
+	PUBLIC ${EIGEN_INCLUDE_DIRS}
+	PUBLIC ${PYTHON_INCLUDE_DIRS}
+	PUBLIC ${HEAD_DIR}
+	PUBLIC ${XILINX_HEADERS_DIR}
+)
+target_link_libraries( admm
+	PUBLIC m
+	PUBLIC fftw3
 	PUBLIC pthread
 	PUBLIC python2.7
 )

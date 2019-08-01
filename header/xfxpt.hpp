@@ -5,8 +5,8 @@
  *      Author: yunwu
  */
 
-#ifndef SRC_XILINX_FXPT_HPP_
-#define SRC_XILINX_FXPT_HPP_
+#ifndef SRC_XFXPT_HPP_
+#define SRC_XFXPT_HPP_
 
 #include "ap_int.h"
 #include "ap_fixed.h"
@@ -50,4 +50,4 @@
 typedef ap_fixed<INPUT_BIT_WIDTH,INPUT_INTE_WIDTH> DATA_IN_T;
 typedef ap_fixed<OUTPUT_BIT_WIDTH,OUTPUT_INTE_WIDTH> DATA_OUT_T;
 
-#endif /* SRC_XILINX_FXPT_HPP_ */
+#endif /* SRC_XFXPT_HPP_ */

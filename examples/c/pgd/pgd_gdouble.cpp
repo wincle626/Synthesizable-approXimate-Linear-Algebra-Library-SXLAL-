@@ -13,7 +13,7 @@ void PROXIMAL_GRADIENT_DECENT_GDOUBLE(double Amatrix_c[DIAG][DIAG],
 									  double bvector_c[DIAG],
 									  double L_c){
 
-#ifdef GENERAL_DOUBLE_PRECISION
+#ifdef DOUBLE_PRECISION
 
 	Float_Point_Algebra Float_Point_Algebra_obj;
 	double error = 0;
@@ -50,7 +50,7 @@ void PROXIMAL_GRADIENT_DECENT_GDOUBLE(double Amatrix_c[DIAG][DIAG],
 
 		// Compute gradient
 		double tmp_mul_vec1[DIAG];
-		Float_Point_Algebra_obj.GENERAL_MAT_VEC_MUL_BASIC<double, DIAG, DIAG>(
+		Float_Point_Algebra_obj.MAT_VEC_MUL<double, DIAG, DIAG>(
 				Amatrix_c, x_k_vec,	tmp_mul_vec1 );
 		Float_Point_Algebra_obj.VEC_ADD<double, DIAG>( tmp_mul_vec1, bvector_c,
 								grad_g );

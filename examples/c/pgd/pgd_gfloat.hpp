@@ -9,7 +9,7 @@
 #define SRC_PGD_GFLOAT_HPP_
 
 
-#include "pgd_test.hpp"
+#include "pgd.hpp"
 
 void PROXIMAL_GRADIENT_DECENT_GFLOAT(float Amatrix_c[DIAG][DIAG],
 									 float bvector_c[DIAG],

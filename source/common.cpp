@@ -11,8 +11,10 @@ bool checkfileexist(std::string filename){
 	std::fstream fileStream;
 	fileStream.open(filename.c_str());
 	if (fileStream.is_open()) {
+		fileStream.close();
 	    return true;
 	}
+	fileStream.close();
 	return false;
 }
 

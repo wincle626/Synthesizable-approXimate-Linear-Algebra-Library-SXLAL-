@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yunwu/gitworkspace/Xprecision_Linear_Algebra_Library
+CMAKE_SOURCE_DIR = /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yunwu/gitworkspace/Xprecision_Linear_Algebra_Library/build
+CMAKE_BINARY_DIR = /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yunwu/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles /home/yunwu/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yunwu/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -163,6 +163,19 @@ mm/fast:
 .PHONY : mm/fast
 
 #=============================================================================
+# Target rules for targets named admm
+
+# Build rule for target.
+admm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 admm
+.PHONY : admm
+
+# fast build rule for target.
+admm/fast:
+	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/build
+.PHONY : admm/fast
+
+#=============================================================================
 # Target rules for targets named pgd
 
 # Build rule for target.
@@ -174,6 +187,33 @@ pgd: cmake_check_build_system
 pgd/fast:
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/build
 .PHONY : pgd/fast
+
+examples/c/admm/admm.o: examples/c/admm/admm.cpp.o
+
+.PHONY : examples/c/admm/admm.o
+
+# target to build an object file
+examples/c/admm/admm.cpp.o:
+	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/examples/c/admm/admm.cpp.o
+.PHONY : examples/c/admm/admm.cpp.o
+
+examples/c/admm/admm.i: examples/c/admm/admm.cpp.i
+
+.PHONY : examples/c/admm/admm.i
+
+# target to preprocess a source file
+examples/c/admm/admm.cpp.i:
+	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/examples/c/admm/admm.cpp.i
+.PHONY : examples/c/admm/admm.cpp.i
+
+examples/c/admm/admm.s: examples/c/admm/admm.cpp.s
+
+.PHONY : examples/c/admm/admm.s
+
+# target to generate assembly for a file
+examples/c/admm/admm.cpp.s:
+	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/examples/c/admm/admm.cpp.s
+.PHONY : examples/c/admm/admm.cpp.s
 
 examples/c/mm/mm.o: examples/c/mm/mm.cpp.o
 
@@ -201,6 +241,33 @@ examples/c/mm/mm.s: examples/c/mm/mm.cpp.s
 examples/c/mm/mm.cpp.s:
 	$(MAKE) -f CMakeFiles/mm.dir/build.make CMakeFiles/mm.dir/examples/c/mm/mm.cpp.s
 .PHONY : examples/c/mm/mm.cpp.s
+
+examples/c/pgd/pgd.o: examples/c/pgd/pgd.cpp.o
+
+.PHONY : examples/c/pgd/pgd.o
+
+# target to build an object file
+examples/c/pgd/pgd.cpp.o:
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o
+.PHONY : examples/c/pgd/pgd.cpp.o
+
+examples/c/pgd/pgd.i: examples/c/pgd/pgd.cpp.i
+
+.PHONY : examples/c/pgd/pgd.i
+
+# target to preprocess a source file
+examples/c/pgd/pgd.cpp.i:
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.i
+.PHONY : examples/c/pgd/pgd.cpp.i
+
+examples/c/pgd/pgd.s: examples/c/pgd/pgd.cpp.s
+
+.PHONY : examples/c/pgd/pgd.s
+
+# target to generate assembly for a file
+examples/c/pgd/pgd.cpp.s:
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.s
+.PHONY : examples/c/pgd/pgd.cpp.s
 
 examples/c/pgd/pgd_eigend.o: examples/c/pgd/pgd_eigend.cpp.o
 
@@ -310,33 +377,6 @@ examples/c/pgd/pgd_gfloat.cpp.s:
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.s
 .PHONY : examples/c/pgd/pgd_gfloat.cpp.s
 
-examples/c/pgd/pgd_test.o: examples/c/pgd/pgd_test.cpp.o
-
-.PHONY : examples/c/pgd/pgd_test.o
-
-# target to build an object file
-examples/c/pgd/pgd_test.cpp.o:
-	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_test.cpp.o
-.PHONY : examples/c/pgd/pgd_test.cpp.o
-
-examples/c/pgd/pgd_test.i: examples/c/pgd/pgd_test.cpp.i
-
-.PHONY : examples/c/pgd/pgd_test.i
-
-# target to preprocess a source file
-examples/c/pgd/pgd_test.cpp.i:
-	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_test.cpp.i
-.PHONY : examples/c/pgd/pgd_test.cpp.i
-
-examples/c/pgd/pgd_test.s: examples/c/pgd/pgd_test.cpp.s
-
-.PHONY : examples/c/pgd/pgd_test.s
-
-# target to generate assembly for a file
-examples/c/pgd/pgd_test.cpp.s:
-	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_test.cpp.s
-.PHONY : examples/c/pgd/pgd_test.cpp.s
-
 examples/c/pgd/pgd_xfxpt.o: examples/c/pgd/pgd_xfxpt.cpp.o
 
 .PHONY : examples/c/pgd/pgd_xfxpt.o
@@ -398,6 +438,7 @@ source/common.o: source/common.cpp.o
 # target to build an object file
 source/common.cpp.o:
 	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/common.cpp.o
+	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/source/common.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/source/common.cpp.o
 .PHONY : source/common.cpp.o
 
@@ -408,6 +449,7 @@ source/common.i: source/common.cpp.i
 # target to preprocess a source file
 source/common.cpp.i:
 	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/common.cpp.i
+	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/source/common.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/source/common.cpp.i
 .PHONY : source/common.cpp.i
 
@@ -418,6 +460,7 @@ source/common.s: source/common.cpp.s
 # target to generate assembly for a file
 source/common.cpp.s:
 	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/common.cpp.s
+	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/source/common.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/source/common.cpp.s
 .PHONY : source/common.cpp.s
 
@@ -447,6 +490,33 @@ source/eigen_algebra.s: source/eigen_algebra.cpp.s
 source/eigen_algebra.cpp.s:
 	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/eigen_algebra.cpp.s
 .PHONY : source/eigen_algebra.cpp.s
+
+source/fft.o: source/fft.cpp.o
+
+.PHONY : source/fft.o
+
+# target to build an object file
+source/fft.cpp.o:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/fft.cpp.o
+.PHONY : source/fft.cpp.o
+
+source/fft.i: source/fft.cpp.i
+
+.PHONY : source/fft.i
+
+# target to preprocess a source file
+source/fft.cpp.i:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/fft.cpp.i
+.PHONY : source/fft.cpp.i
+
+source/fft.s: source/fft.cpp.s
+
+.PHONY : source/fft.s
+
+# target to generate assembly for a file
+source/fft.cpp.s:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/fft.cpp.s
+.PHONY : source/fft.cpp.s
 
 source/fpt_algebra.o: source/fpt_algebra.cpp.o
 
@@ -502,6 +572,33 @@ source/fxpt_bitwise.cpp.s:
 	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/fxpt_bitwise.cpp.s
 .PHONY : source/fxpt_bitwise.cpp.s
 
+source/qrd.o: source/qrd.cpp.o
+
+.PHONY : source/qrd.o
+
+# target to build an object file
+source/qrd.cpp.o:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/qrd.cpp.o
+.PHONY : source/qrd.cpp.o
+
+source/qrd.i: source/qrd.cpp.i
+
+.PHONY : source/qrd.i
+
+# target to preprocess a source file
+source/qrd.cpp.i:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/qrd.cpp.i
+.PHONY : source/qrd.cpp.i
+
+source/qrd.s: source/qrd.cpp.s
+
+.PHONY : source/qrd.s
+
+# target to generate assembly for a file
+source/qrd.cpp.s:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/qrd.cpp.s
+.PHONY : source/qrd.cpp.s
+
 source/xfxpt_algebra.o: source/xfxpt_algebra.cpp.o
 
 .PHONY : source/xfxpt_algebra.o
@@ -540,11 +637,18 @@ help:
 	@echo "... uninstall"
 	@echo "... xfxpt_sqrt"
 	@echo "... mm"
-	@echo "... pgd"
+	@echo "... admm"
 	@echo "... edit_cache"
+	@echo "... pgd"
+	@echo "... examples/c/admm/admm.o"
+	@echo "... examples/c/admm/admm.i"
+	@echo "... examples/c/admm/admm.s"
 	@echo "... examples/c/mm/mm.o"
 	@echo "... examples/c/mm/mm.i"
 	@echo "... examples/c/mm/mm.s"
+	@echo "... examples/c/pgd/pgd.o"
+	@echo "... examples/c/pgd/pgd.i"
+	@echo "... examples/c/pgd/pgd.s"
 	@echo "... examples/c/pgd/pgd_eigend.o"
 	@echo "... examples/c/pgd/pgd_eigend.i"
 	@echo "... examples/c/pgd/pgd_eigend.s"
@@ -557,9 +661,6 @@ help:
 	@echo "... examples/c/pgd/pgd_gfloat.o"
 	@echo "... examples/c/pgd/pgd_gfloat.i"
 	@echo "... examples/c/pgd/pgd_gfloat.s"
-	@echo "... examples/c/pgd/pgd_test.o"
-	@echo "... examples/c/pgd/pgd_test.i"
-	@echo "... examples/c/pgd/pgd_test.s"
 	@echo "... examples/c/pgd/pgd_xfxpt.o"
 	@echo "... examples/c/pgd/pgd_xfxpt.i"
 	@echo "... examples/c/pgd/pgd_xfxpt.s"
@@ -572,12 +673,18 @@ help:
 	@echo "... source/eigen_algebra.o"
 	@echo "... source/eigen_algebra.i"
 	@echo "... source/eigen_algebra.s"
+	@echo "... source/fft.o"
+	@echo "... source/fft.i"
+	@echo "... source/fft.s"
 	@echo "... source/fpt_algebra.o"
 	@echo "... source/fpt_algebra.i"
 	@echo "... source/fpt_algebra.s"
 	@echo "... source/fxpt_bitwise.o"
 	@echo "... source/fxpt_bitwise.i"
 	@echo "... source/fxpt_bitwise.s"
+	@echo "... source/qrd.o"
+	@echo "... source/qrd.i"
+	@echo "... source/qrd.s"
 	@echo "... source/xfxpt_algebra.o"
 	@echo "... source/xfxpt_algebra.i"
 	@echo "... source/xfxpt_algebra.s"

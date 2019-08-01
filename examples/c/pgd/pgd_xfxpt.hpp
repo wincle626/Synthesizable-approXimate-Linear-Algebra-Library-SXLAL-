@@ -9,7 +9,7 @@
 #define SRC_PGD_XFXPT_HPP_
 
 
-#include "pgd_test.hpp"
+#include "pgd.hpp"
 
 void PROXIMAL_GRADIENT_DECENT_XFXPT(DATA_IN_T Amatrix_c[DIAG][DIAG],
 									DATA_IN_T bvector_c[DIAG],

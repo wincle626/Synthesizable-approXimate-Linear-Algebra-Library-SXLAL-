@@ -15,6 +15,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cmake/AddUninstallTarget.cmake"
   "../cmake/BuildsystemFunctions.cmake"
   "../cmake/FindEigen.cmake"
+  "../cmake/FindFFTW.cmake"
   "../header/CMakeLists.txt"
   "../source/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in"
@@ -111,5 +112,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/xfxpt_sqrt.dir/DependInfo.cmake"
   "CMakeFiles/mm.dir/DependInfo.cmake"
+  "CMakeFiles/admm.dir/DependInfo.cmake"
   "CMakeFiles/pgd.dir/DependInfo.cmake"
   )

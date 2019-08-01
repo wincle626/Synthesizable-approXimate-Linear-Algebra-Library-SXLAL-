@@ -53,7 +53,7 @@ void PROXIMAL_GRADIENT_DECENT_XFXPT(DATA_IN_T Amatrix_c[DIAG][DIAG],
 
 		// Compute gradient
 		DATA_IN_T tmp_mul_vec1[DIAG];
-		Xilinx_Fixed_Point_Algebra_obj.GENERAL_MAT_VEC_MUL_BASIC<DATA_IN_T, DIAG, DIAG>(
+		Xilinx_Fixed_Point_Algebra_obj.MAT_VEC_MUL<DATA_IN_T, DIAG, DIAG>(
 				Amatrix_c, x_k_vec,	tmp_mul_vec1 );
 #ifdef DEBUG_ITER
 		for(int i=0;i<DIAG;i++)

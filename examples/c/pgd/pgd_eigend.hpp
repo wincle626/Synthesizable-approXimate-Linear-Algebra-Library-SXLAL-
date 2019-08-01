@@ -9,7 +9,7 @@
 #define SRC_PGD_EIGEND_HPP_
 
 
-#include "pgd_test.hpp"
+#include "pgd.hpp"
 
 void PROXIMAL_GRADIENT_DECENT_EIGEND(Eigen::MatrixXd Amatrix,
 									 Eigen::VectorXd bvector,

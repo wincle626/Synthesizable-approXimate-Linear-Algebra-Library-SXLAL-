@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -O3   CMakeFiles/admm.dir/examples/c/admm/admm.cpp.o CMakeFiles/admm.dir/source/common.cpp.o  -o admm -lm -lfftw3 -lpthread -lpython2.7 

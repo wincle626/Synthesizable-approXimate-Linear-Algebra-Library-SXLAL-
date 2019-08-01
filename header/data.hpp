@@ -9,8 +9,8 @@
 #define SRC_DATA_HPP_
 
 // Data structure
-#define ROW 16 // matrix row number
-#define COL 16 // matrix column number
+#define ROW 8 // matrix row number
+#define COL 8 // matrix column number
 #define DIAG (COL<ROW ? COL : ROW) // diagonal matrix size
 #define DIAG_VALUE 50 // diagonal matrix value scale
 #define DIAG_RATIO 0.5 // diagonal matrix sparse ratio
@@ -24,6 +24,66 @@
 
 // Data type
 #define FLOAT_SIZE 1000 // floating point fraction scale
-#define INTEGER_SCALE 1 // floating point integer scale
+#define INTEGER_SCALE 10 // floating point integer scale
+
+const double PI = 3.141592653589793238460; // PI constant
+
+// Complex data structure
+template<typename T>
+struct Complex{
+	T real;
+	T imag;
+};
+template<typename T>
+using cmplx = Complex<T>;
+
+// Complex data class
+template<class T>
+class CMPLX{
+public:
+	T real;
+	T imag;
+	CMPLX(T r = 0) {real = r; imag = 0;}
+	CMPLX(T r = 0, T i =0)  {real = r;   imag = i;}
+
+	CMPLX<T> operator = (CMPLX<T> const &obj) {
+		CMPLX<T> res;
+        res.real = obj.real;
+        res.imag = obj.imag;
+        return res;
+   }
+
+	CMPLX<T> operator + (CMPLX<T> const &obj) {
+		CMPLX<T> res;
+        res.real = real + obj.real;
+        res.imag = imag + obj.imag;
+        return res;
+   }
+
+	CMPLX<T> operator - (CMPLX<T> const &obj) {
+		CMPLX<T> res;
+        res.real = real - obj.real;
+        res.imag = imag - obj.imag;
+        return res;
+   }
+
+	CMPLX<T> operator * (CMPLX<T> const &obj) {
+		CMPLX<T> res;
+        res.real = real * obj.real - imag * obj.imag;
+        res.imag = real * obj.imag + imag * obj.real;
+        return res;
+   }
+
+	CMPLX<T> operator / (CMPLX<T> const &obj) {
+		CMPLX<T> res;
+		T x = real*obj.real + imag*obj.imag;
+		T y = imag*obj.real - real*obj.imag;
+		T z = obj.real*obj.real + obj.imag*obj.imag;
+		res.real = x/z;
+		res.imag = y/z;
+        return res;
+   }
+
+};
 
 #endif /* SRC_DATA_HPP_ */

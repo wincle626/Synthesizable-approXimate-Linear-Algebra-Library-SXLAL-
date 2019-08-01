@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/xplal.dir/source/fpt_algebra.cpp.o"
   "CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o"
   "CMakeFiles/xplal.dir/source/fxpt_bitwise.cpp.o"
+  "CMakeFiles/xplal.dir/source/fft.cpp.o"
+  "CMakeFiles/xplal.dir/source/qrd.cpp.o"
   "libxplal.pdb"
   "libxplal.a"
 )

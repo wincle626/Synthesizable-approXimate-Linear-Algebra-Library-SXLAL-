@@ -8,7 +8,7 @@
 #ifndef SRC_PGD_GDOUBLE_HPP_
 #define SRC_PGD_GDOUBLE_HPP_
 
-#include "pgd_test.hpp"
+#include "pgd.hpp"
 
 void PROXIMAL_GRADIENT_DECENT_GDOUBLE(double Amatrix_c[DIAG][DIAG],
 									  double bvector_c[DIAG],

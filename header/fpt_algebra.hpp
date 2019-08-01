@@ -261,7 +261,7 @@ public:
 
 	// The basic matrix addition with complexity of O(NN)
 	template<class T, int M, int N>
-	void GENERAL_MAT_ADD_BASIC(T A[M][N],
+	void MAT_ADD(T A[M][N],
 									      T B[M][N],
 									      T C[M][N]){
 		for ( int i=0; i<M; i++ ){
@@ -271,7 +271,7 @@ public:
 		}
 	}
 	template<class T1, class T2, class T3, int M, int N>
-	void GENERAL_MAT_ADD_BASIC(T1 A[M][N],
+	void MAT_ADD(T1 A[M][N],
 									      T2 B[M][N],
 									      T3 C[M][N]){
 		for ( int i=0; i<M; i++ ){
@@ -283,7 +283,7 @@ public:
 
 	// The basic matrix subtraction with complexity of O(NN)
 	template<class T, int M, int N>
-	void GENERAL_MAT_SUB_BASIC(T A[M][N],
+	void MAT_SUB(T A[M][N],
 									      T B[M][N],
 									      T C[M][N]){
 		for ( int i=0; i<M; i++ ){
@@ -293,7 +293,7 @@ public:
 		}
 	}
 	template<class T1, class T2, class T3, int M, int N>
-	void GENERAL_MAT_SUB_BASIC(T1 A[M][N],
+	void MAT_SUB(T1 A[M][N],
 									      T2 B[M][N],
 									      T3 C[M][N]){
 		for ( int i=0; i<M; i++ ){
@@ -305,7 +305,7 @@ public:
 
 	// Matrix Vector multiplication
 	template<class T, int M, int N>
-	void GENERAL_MAT_VEC_MUL_BASIC(T A[M][N],
+	void MAT_VEC_MUL(T A[M][N],
 										  T B[N],
 										  T C[M]){
 		for ( int i=0; i<M; i++ ){
@@ -316,7 +316,7 @@ public:
 		}
 	}
 	template<class T1, class T2, class T3, int M, int N>
-	void GENERAL_MAT_VEC_MUL_BASIC(T1 A[M][N],
+	void MAT_VEC_MUL(T1 A[M][N],
 										  T2 B[N],
 										  T3 C[M]){
 		for ( int i=0; i<M; i++ ){
@@ -327,7 +327,7 @@ public:
 		}
 	}
 	template<class T, int M, int N>
-	void GENERAL_VEC_MAT_MUL_BASIC(T A[M],
+	void VEC_MAT_MUL(T A[M],
 										  T B[M][N],
 										  T C[N]){
 		for ( int i=0; i<N; i++ ){
@@ -338,7 +338,7 @@ public:
 		}
 	}
 	template<class T1, class T2, class T3, int M, int N>
-	void GENERAL_VEC_MAT_MUL_BASIC(T1 A[M],
+	void VEC_MAT_MUL(T1 A[M],
 										  T2 B[M][N],
 										  T3 C[N]){
 		for ( int i=0; i<N; i++ ){
@@ -351,16 +351,16 @@ public:
 
 	// The basic matrix value transfer
 	template<class T, int M, int N>
-	void GENERAL_MAT_EQ_BASIC(T A[M][N],
+	void MAT_EQ(T A[M][N],
 									      T B[M][N]){
 		for ( int i=0; i<M; i++ ){
 			for ( int j=0; j<N; j++ ){
-				A[i][j] = B[i][j];
+				B[i][j] = A[i][j];
 			}
 		}
 	}
 	template<class T1, class T2, int M, int N>
-	void GENERAL_MAT_EQ_BASIC(T1 A[M][N],
+	void MAT_EQ(T1 A[M][N],
 									      T2 B[M][N]){
 		for ( int i=0; i<M; i++ ){
 			for ( int j=0; j<N; j++ ){
@@ -371,7 +371,7 @@ public:
 
 	// The basic arbitrary matrix multiplication with complexity of O(MNP)
 	template<class T, int M, int N, int P>
-	void GENERAL_MAT_MUL_BASIC(T A[M][N],
+	void MAT_MUL(T A[M][N],
 												    T B[N][P],
 													T C[M][P]){
 		for ( int i=0; i<M; i++ ){
@@ -384,7 +384,7 @@ public:
 		}
 	}
 	template<class T1, class T2, class T3, int M, int N, int P>
-	void GENERAL_MAT_MUL_BASIC(T1 A[M][N],
+	void MAT_MUL(T1 A[M][N],
 												    T2 B[N][P],
 													T3 C[M][P]){
 		for ( int i=0; i<M; i++ ){
@@ -400,7 +400,7 @@ public:
 	// The basic square matrix multiplication with complexity of O(M^3)
 	// (must be 2^X square matrix)
 	template<class T, int M>
-	void SQUARE_MAT_MUL_BASIC(T A[M][M],
+	void SQUARE_MAT_MUL(T A[M][M],
 												    T B[M][M],
 													T C[M][M]){
 		for ( int i=0; i<M; i++ ){
@@ -413,7 +413,7 @@ public:
 		}
 	}
 	template<class T1, class T2, class T3, int M>
-	void SQUARE_MAT_MUL_BASIC(T1 A[M][M],
+	void SQUARE_MAT_MUL(T1 A[M][M],
 												    T2 B[M][M],
 													T3 C[M][M]){
 		for ( int i=0; i<M; i++ ){
@@ -436,10 +436,25 @@ public:
 		}
 		return result;
 	}
+	int FIND_NEAREST_2SQUARE(int m, int n){
+		int max1 = m > n ? m : n;
+		int result = 2;
+		while ( result<max1 ){
+			result = result * 2;
+		}
+		return result;
+	}
+	int FIND_NEAREST_2SQUARE(int m){
+		int result = 2;
+		while ( result<m ){
+			result = result * 2;
+		}
+		return result;
+	}
 
 	// Extend general matrix to square, the square size must be largest
 	template<class T, int M, int N, int S>
-	void EXTEND_GENERAL_TO_SQUARE(T A[M][N],
+	void EXTEND_TO_SQUARE(T A[M][N],
 													   T B[S][S]){
 		for ( int i=0; i< S; i++){
 			for ( int j=0; j<S; j++){
@@ -451,7 +466,7 @@ public:
 		}
 	}
 	template<class T1, class T2, int M, int N, int S>
-	void EXTEND_GENERAL_TO_SQUARE(T1 A[M][N],
+	void EXTEND_TO_SQUARE(T1 A[M][N],
 													   T2 B[S][S]){
 		for ( int i=0; i< S; i++){
 			for ( int j=0; j<S; j++){
@@ -477,7 +492,7 @@ public:
 	    T AA[M][M], BB[M][M];
 
 	    if(m == 2) {  //2-order
-	    	SQUARE_MAT_MUL_BASIC<T, 2>( A, B, C );
+	    	SQUARE_MAT_MUL<T, 2>( A, B, C );
 	    } else {
 			// Divide and conquer
 			for(int i=0; i<m/2; i++) {
@@ -495,51 +510,51 @@ public:
 			}
 
 			//Calculate M1 = (A0 + A3) × (B0 + B3)
-			GENERAL_MAT_ADD_BASIC<T, m/2>( A11, A22, AA );
-			GENERAL_MAT_ADD_BASIC<T, m/2>( B11, B22, BB );
+			MAT_ADD<T, m/2>( A11, A22, AA );
+			MAT_ADD<T, m/2>( B11, B22, BB );
 			SQUARE_MAT_MUL_STRASSEN<T, m/2>( m/2, AA, BB, M1 );
 
 			//Calculate M2 = (A2 + A3) × B0
-			GENERAL_MAT_ADD_BASIC<T, m/2>( A21, A22, AA );
+			MAT_ADD<T, m/2>( A21, A22, AA );
 			SQUARE_MAT_MUL_STRASSEN<T, m/2>( m/2, AA, B11, M2 );
 
 			//Calculate M3 = A0 × (B1 - B3)
-			GENERAL_MAT_SUB_BASIC<T, m/2>( B12, B22, BB );
+			MAT_SUB<T, m/2>( B12, B22, BB );
 			SQUARE_MAT_MUL_STRASSEN<T, m/2>( m/2, A11, BB, M3 );
 
 			//Calculate M4 = A3 × (B2 - B0)
-			GENERAL_MAT_SUB_BASIC<T, m/2>( B21, B11, BB );
+			MAT_SUB<T, m/2>( B21, B11, BB );
 			SQUARE_MAT_MUL_STRASSEN<T, m/2>( m/2, A22, BB, M4 );
 
 			//Calculate M5 = (A0 + A1) × B3
-			GENERAL_MAT_ADD_BASIC<T, m/2>( A11, A12, AA );
+			MAT_ADD<T, m/2>( A11, A12, AA );
 			SQUARE_MAT_MUL_STRASSEN<T, m/2>( m/2, AA, B22, M5);
 
 			//Calculate M6 = (A2 - A0) × (B0 + B1)
-			GENERAL_MAT_SUB_BASIC<T, m/2>( A21, A11, AA );
-			GENERAL_MAT_ADD_BASIC<T, m/2>( B11, B12, BB );
+			MAT_SUB<T, m/2>( A21, A11, AA );
+			MAT_ADD<T, m/2>( B11, B12, BB );
 			SQUARE_MAT_MUL_STRASSEN<T, m/2>( m/2, AA, BB, M6 );
 
 			//Calculate M7 = (A1 - A3) × (B2 + B3)
-			GENERAL_MAT_SUB_BASIC<T, m/2>( A12, A22, AA );
-			GENERAL_MAT_ADD_BASIC<T, m/2>( B21, B22, BB );
+			MAT_SUB<T, m/2>( A12, A22, AA );
+			MAT_ADD<T, m/2>( B21, B22, BB );
 			SQUARE_MAT_MUL_STRASSEN<T, m/2>( m/2, AA, BB, M7 );
 
 			//Calculate C0 = M1 + M4 - M5 + M7
-			GENERAL_MAT_ADD_BASIC<T, m/2>( M1, M4, AA );
-			GENERAL_MAT_ADD_BASIC<T, m/2>( M5, M7, BB );
-			GENERAL_MAT_SUB_BASIC<T, m/2>( AA, BB, C11 );
+			MAT_ADD<T, m/2>( M1, M4, AA );
+			MAT_ADD<T, m/2>( M5, M7, BB );
+			MAT_SUB<T, m/2>( AA, BB, C11 );
 
 			//Calculate C1 = M3 + M5
-			GENERAL_MAT_ADD_BASIC<T, m/2>( M3, M5, C12 );
+			MAT_ADD<T, m/2>( M3, M5, C12 );
 
 			//Calculate C2 = M2 + M4
-			GENERAL_MAT_ADD_BASIC<T, m/2>( M2, M4, C21 );
+			MAT_ADD<T, m/2>( M2, M4, C21 );
 
 			//Calculate C3 = M1 - M2 + M3 + M6
-			GENERAL_MAT_SUB_BASIC<T, m/2>( M1, M2, AA);
-			GENERAL_MAT_ADD_BASIC<T, m/2>( M3, M6, BB);
-			GENERAL_MAT_ADD_BASIC<T, m/2>( AA, BB, C22);
+			MAT_SUB<T, m/2>( M1, M2, AA);
+			MAT_ADD<T, m/2>( M3, M6, BB);
+			MAT_ADD<T, m/2>( AA, BB, C22);
 
 			//Set the result to C[M][M]
 			for(int i=0; i<m/2; i++) {
@@ -553,23 +568,136 @@ public:
 		}
 	}
 
-	// Extract submatrix
-	// input matrix must larger than output matrix
-	// output matrix (N-M)*(L-K) begins at row M, col K
-	template<class T, int M, int N, int K, int L>
-	void MAT_SUBMAT(T MatA, T &MatB){
-		for(int i=M-1;i<N;i++){
-			for(int j=K-1;j<L;j++){
-				MatB[i,j] = MatA[i,j];
+	// QR Decomposition
+	template<class T, int M, int N>
+	void QRD_GS(T Mat[M][N],
+			T MatQ[M][N],
+			T MatR[N][N]){
+		// Initialisation
+		int i = 0,j = 0,k = 0;
+		for(i=0;i<N;i++){
+			for(j=0;j<M;j++){
+				MatQ[j][i] = Mat[j][i];
+			}
+			for(j=0;j<N;j++){
+				MatR[i][j] = 0;
+			}
+		}
+
+		// Phase 1: get the norm
+		float norm[N];
+		for(i=0;i<N;i++){
+			norm[i] = 0;
+			for(j=0;j<M;j++){
+				float mul = Mat[j][i] * Mat[j][i];
+				norm[i] = norm[i] + mul;
+			}
+		}
+
+		// Phase 2: get the Q&R
+		for(i=0;i<N;i++){
+			// derive R
+			MatR[i][i] = (T) std::sqrt(norm[i]);
+			for(k=0;k<M;k++){
+				MatQ[k][i]=MatQ[k][i]/MatR[i][i];
+			}
+			for(j=i+1;j<M;j++){
+				for(k=0;k<M;k++){
+					// update R
+					MatR[i][j] = MatR[i][j] + MatQ[k][i] * MatQ[k][j];
+				}
+				for(k=0;k<M;k++){
+					// update Q
+					MatQ[k][j] = MatQ[k][j] - MatQ[k][i] * MatR[i][j];
+				}
+				// update norm
+				norm[j] = norm[j] - MatR[i][j] * MatR[i][j];
 			}
 		}
 	}
-	template<class T, int M, int N, int K, int L,
-			int step_r, int step_c>
-	void MAT_SUBMAT(T MatA, T &MatB){
-		for(int i=M-1;i<N;i+=step_r){
-			for(int j=K-1;j<L;j+=step_c){
-				MatB[i,j] = MatA[i,j];
+	template<class T, int M, int N>
+	void QRD_MGS(T Mat[M][N],
+				 T MatQ[M][N],
+				 T MatR[N][N]){
+		// Initialisation
+		int i = 0,j = 0,k = 0;
+		for(i=0;i<N;i++){
+			for(j=0;j<M;j++){
+				MatQ[j][i] = Mat[j][i];
+			}
+			for(j=0;j<N;j++){
+				MatR[i][j] = 0;
+			}
+		}
+
+		// Phase 1: get the norm
+		float norm[N];
+		for(i=0;i<N;i++){
+			norm[i] = 0;
+			for(j=0;j<M;j++){
+				float mul = Mat[j][i] * Mat[j][i];
+				norm[i] = norm[i] + mul;
+			}
+		}
+
+		// Phase 2: get the Q&R
+		for(i=0;i<N;i++){
+			// derive R
+			MatR[i][i] = (T) std::sqrt(norm[i]);
+			for(k=0;k<M;k++){
+				MatQ[k][i]=MatQ[k][i]/MatR[i][i];
+			}
+			for(j=i+1;j<M;j++){
+				float tmp;
+				for(k=0;k<M;k++){
+					// update R
+					MatR[i][j] = MatR[i][j] + MatQ[k][i] * MatQ[k][j];
+				}
+				for(k=0;k<M;k++){
+					// update Q
+					MatQ[k][j] = MatQ[k][j] - MatQ[k][i] * MatR[i][j];
+				}
+			// update norm: no update for QR_MGS
+				// norm[j] = norm[j] - MatR[i][j] * MatR[i][j];
+			}
+		}
+
+	}
+	template<class T, int M, int N>
+	void QRD_HH(T Mat[M][N],
+			    T MatQ[M][N],
+			    T MatR[N][N]){
+
+	}
+	template<class T, int M, int N>
+	void QRD_GR(T Mat[M][N],
+			    T MatQ[M][N],
+			    T MatR[N][N]){
+
+	}
+
+
+	// Extract submatrix
+	// input matrix must larger than output matrix
+	// output matrix (N-M)*(L-K) begins at row M, col K
+	template<class T, int R, int C,
+			 int M, int N>
+	void MAT_SUBMAT(T MatA[R][C], T MatB[M][N],
+					int row, int col){
+		for(int i=row, k=0;i<M+row;i++,k++){
+			for(int j=col, l=0;j<N+col;j++,l++){
+				MatB[k][l] = MatA[i][j];
+			}
+		}
+	}
+	template<class T, int R, int C,
+			 int M, int N>
+	void MAT_SUBMAT(T MatA[R][C], T MatB[M][N],
+					int row, int col,
+					int step_r, int step_c){
+		for(int i=row, k=0;i<R&&k<M;i+=step_r,k++){
+			for(int j=col, l=0;j<C&&l<N;j+=step_c,l++){
+				MatB[k][l] = MatA[i][j];
 			}
 		}
 	}
@@ -577,61 +705,382 @@ public:
 	// Matrix merge
 	// MatA: (M,N), MatB (M,K), MatC: (M, N+K)
 	template<class T, int M, int N, int K>
-	void MAT_MERGE_H(T MatA,
-					 T MatB,
-					 T &MatC){
+	void MAT_MERGE_H(T MatA[M][N],
+					 T MatB[M][K],
+					 T MatC[M][N+K]){
 		for(int i=0;i<M;i++)
 			for(int j=0;j<N;j++)
-				MatC[i,j] = MatA[i,j];
+				MatC[i][j] = MatA[i][j];
 		for(int i=0;i<M;i++)
-			for(int j=N,k=0;j<N+K,k<K;j++,k++)
-				MatC[i,j] = MatB[i,k];
+			for(int j=N,k=0;j<N+K&&k<K;j++,k++)
+				MatC[i][j] = MatB[i][k];
 	}
 	// MatA: (M,K), MatB: (N,K), MatC: (M+N,K)
 	template<class T, int M, int N, int K>
-	void MAT_MERGE_V(T MatA,
-					 T MatB,
-					 T &MatC){
+	void MAT_MERGE_V(T MatA[M][K],
+					 T MatB[N][K],
+					 T MatC[M+N][K]){
 		for(int i=0;i<M;i++)
 			for(int j=0;j<K;j++)
-				MatC[i,j] = MatA[i,j];
-		for(int i=M,k=0;i<M+K,k<N;i++,k++)
+				MatC[i][j] = MatA[i][j];
+		for(int i=M,k=0;i<M+K&&k<N;i++,k++)
 			for(int j=0;j<K;j++)
-				MatC[i,j] = MatB[k,j];
+				MatC[i][j] = MatB[k][j];
+	}
+
+	// Matrix Differential
+	template<class T,
+			 int M, int N,
+			 int dim, int order>
+	void MAT_DIFF(T MatA[M][N],
+				  T MatB[M][N],
+				  int dir){
+		T MatTmp1[M][N];
+		T MatTmp2[M][N];
+		MAT_EQ<T, M, N>(MatA, MatTmp1);
+		if(dim==1){
+			for(int i=0;i<order;i++){
+				for(int j=0;j<N;j++){
+					for(int k=0;k<M-i-1;k++){
+						MatTmp2[k][j] = MatTmp1[k+1][j] - MatTmp1[k][j];
+						MatTmp2[k][j] *= dir;
+					}
+				}
+				MAT_EQ<T, M, N>(MatTmp2, MatTmp1);
+			}
+			MAT_EQ<T, M, N>(MatTmp1, MatB);
+		}else if(dim==2){
+			for(int i=0;i<order;i++){
+				for(int j=0;j<M;j++){
+					for(int k=0;k<N-i-1;k++){
+						MatTmp2[j][k] = MatTmp1[j][k+1] - MatTmp1[j][k];
+						MatTmp2[j][k] *= dir;
+					}
+				}
+				MAT_EQ<T, M, N>(MatTmp2, MatTmp1);
+			}
+			MAT_EQ<T, M, N>(MatTmp1, MatB);
+		}else{
+			std::cout << "only support 2 dimension !!" << std::endl;
+			std::exit(0);
+		}
+	}
+
+	// From real matrix to complex matrix
+	template<class T, int M, int N>
+	void MAT_REAL2COMPLEX(T MatA[M][N],
+				 	 	  Complex<T> MatB[M][N]){
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				MatB[i][j].real = MatA[i][j];
+				MatB[i][j].imag = 0;
+			}
+		}
+	}
+
+	// Extract real matrix from complex matrix
+	template<class T, int M, int N>
+	void MAT_COMPLEX_GETREAL(Complex<T> MatA[M][N],
+							 T MatB[M][N]){
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				MatB[i][j] = MatA[i][j].real;
+			}
+		}
+	}
+
+	// Extract real submatrix from complex matrix
+	template<class T, int M, int N, int P, int Q>
+	void MAT_COMPLEX_GETREALSUBMAT(Complex<T> MatA[M][N],
+							 T MatB[P][Q], int row, int col){
+		for(int i=row;i<P+row;i++){
+			for(int j=col;j<Q+col;j++){
+				MatB[i][j] = MatA[i][j].real;
+			}
+		}
+	}
+
+	// Extract imag matrix from complex matrix
+	template<class T, int M, int N>
+	void MAT_COMPLEX_GETIMAG(Complex<T> MatA[M][N],
+							 T MatB[M][N]){
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				MatB[i][j] = MatA[i][j].imag;
+			}
+		}
+	}
+
+	// Extract imag submatrix from complex matrix
+	template<class T, int M, int N, int P, int Q>
+	void MAT_COMPLEX_GETIMAGSUBMAT(Complex<T> MatA[M][N],
+							 T MatB[P][Q], int row, int col){
+		for(int i=row;i<P+row;i++){
+			for(int j=col;j<Q+col;j++){
+				MatB[i][j] = MatA[i][j].imag;
+			}
+		}
+	}
+
+	// Matrix compare scalar
+	template<class T1, class T2, int M, int N>
+	void MAT_MAXCMP(T1 MatA[M][N],
+					T2 B,
+				    T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j]>=B ? MatA[i][j] : B;
+	}
+	template<class T1, class T2, int M, int N>
+	void MAT_MAXCMP(T2 B,
+					T1 MatA[M][N],
+				    T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j]>=B ? MatA[i][j] : B;
+	}
+	template<class T1, class T2, int M, int N>
+	void MAT_MINCMP(T1 MatA[M][N],
+				    T2 B,
+				    T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j]>=B ? B : MatA[i][j];
+	}
+	template<class T1, class T2, int M, int N>
+	void MAT_MINCMP(T2 B,
+					T1 MatA[M][N],
+				    T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j]>=B ? B : MatA[i][j];
+	}
+
+	// Matrix sign
+	template<class T, int M, int N>
+	void MAT_SIGN(T MatA[M][N],
+				 T MatB[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatB[i][j] = MatA[i][j]>=0 ? 1 : -1;
+	}
+
+	// Matrix absolute value
+	template<class T, int M, int N>
+	void MAT_ABS(T MatA[M][N],
+				 T MatB[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatB[i][j] = MatA[i][j]>=0 ? MatA[i][j] : -MatA[i][j];
+	}
+
+	// Matrix dot multiplication
+	template<class T, int M, int N>
+	void MAT_DOTSQUARE(T MatA[M][N],
+				 T MatB[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatB[i][j] = MatA[i][j] * MatA[i][j];
+	}
+
+	// Matrix dot multiplication
+	template<class T, int M, int N>
+	void MAT_DOTMUL(T MatA[M][N],
+				    T MatB[M][N],
+					T MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] * MatB[i][j];
+	}
+
+	// Matrix dot division
+	template<class T, int M, int N>
+	void MAT_DOTDIV(T MatA[M][N],
+				    T MatB[M][N],
+					T MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] / MatB[i][j];
+	}
+
+	// Matrix dot division
+	template<class T, int M, int N>
+	void MAT_COMPLEX_DOTDIV_REAL(Complex<T> MatA[M][N],
+							 	 T MatB[M][N],
+								 Complex<T> MatC[M][N]){
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				MatC[i][j].real = MatA[i][j].real / MatB[i][j];
+				MatC[i][j].imag = MatA[i][j].imag / MatB[i][j];
+			}
+		}
+	}
+	template<class T, int M, int N, int P, int Q>
+	void MAT_COMPLEX_DOTDIV_REAL(Complex<T> MatA[M][N],
+							 	 T MatB[P][Q],
+								 Complex<T> MatC[M][N]){
+		for(int i=0;i<P;i++){
+			for(int j=0;j<Q;j++){
+				MatC[i][j].real = MatA[i][j].real / MatB[i][j];
+				MatC[i][j].imag = MatA[i][j].imag / MatB[i][j];
+			}
+		}
+	}
+
+	// Matrix dot inverse
+	template<class T, int M, int N>
+	void MAT_DOTINV(T MatA[M][N],
+				    T MatB[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatB[i][j] = 1 / MatA[i][j];
+	}
+
+	// Matrix dot multiply scalar
+	template<class T1, class T2, int M, int N>
+	void MAT_SCALAR_DOTADD(T1 MatA[M][N],
+						   T2 B,
+						   T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] + B;
+	}
+	template<class T1, class T2, int M, int N>
+	void MAT_SCALAR_DOTADD(T2 B,
+						   T1 MatA[M][N],
+						   T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] + B;
+	}
+
+	// Matrix dot multiply scalar
+	template<class T1, class T2, int M, int N>
+	void MAT_SCALAR_DOTSUB(T1 MatA[M][N],
+						   T2 B,
+						   T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] - B;
+	}
+	template<class T1, class T2, int M, int N>
+	void MAT_SCALAR_DOTSUB(T2 B,
+						   T1 MatA[M][N],
+						   T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = B - MatA[i][j];
+	}
+
+	// Matrix dot multiply scalar
+	template<class T1, class T2, int M, int N>
+	void MAT_SCALAR_DOTMUL(T1 MatA[M][N],
+						   T2 B,
+						   T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] * B;
+	}
+	template<class T1, class T2, int M, int N>
+	void MAT_SCALAR_DOTMUL(T2 B,
+						   T1 MatA[M][N],
+						   T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] * B;
+	}
+
+	// Matrix dot division scalar
+	template<class T1, class T2, int M, int N>
+	void MAT_SCALAR_DOTDIV(T1 MatA[M][N],
+						   T2 B,
+						   T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] / B;
+	}
+	template<class T1, class T2, int M, int N>
+	void MAT_SCALAR_DOTDIV(T2 B,
+						   T1 MatA[M][N],
+						   T1 MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = B / MatA[i][j];
 	}
 
 	// Extract subvector
 	template<class T, int M, int N>
-	void VEC_SUBVEC(T VecA, T &VecB){
-		for(int i=M-1;i<N;i++)
-			VecA[i] = VecB[i];
+	void VEC_SUBVEC(T VecA[M], T VecB[N], int start){
+		for(int i=start,k=0;i<M&&k<N;i++,k++)
+			VecB[k] = VecA[i];
 	}
-	template<class T, int M, int N, int step>
-	void VEC_SUBVEC(T VecA, T &VecB){
-		for(int i=M-1;i<N;i+=step)
-			VecA[i] = VecB[i];
+	template<class T, int M, int N>
+	void VEC_SUBVEC(T VecA[M], T VecB[N],
+					int start, int step){
+		for(int i=start,k=0;i<M&&k<N;i+=step,k++)
+			VecB[k] = VecA[i];
 	}
 
 	// Vector merge
 	template<class T, int M, int N>
-	void VEC_MERGE2VEC(T VecA,
-				   T VecB,
-				   T &VecC){
+	void VEC_MERGE2VEC(T VecA[M],
+				   T VecB[N],
+				   T VecC[M+N]){
 		for(int i=0;i<M;i++)
 			VecC[i] = VecA[i];
-		for(int i=M;i<N+M;i++)
+		for(int i=M,k=0;i<N+M&&k<N;i++,k++)
 			VecC[i] = VecB[i];
 
 	}
-	template<class EigenT1, class EigenT2, int M>
-	void VEC_MERGE2MAT(EigenT1 VecA,
-			   	   	   EigenT1 VecB,
-					   EigenT2 &MatC){
-		for(int i=0;i<M;i++)
-			MatC[0,i] = VecA[i];
-		for(int i=0;i<M;i++)
-			MatC[1,i] = VecB[i];
+	template<class T, int M>
+	void VEC_MERGE2MAT(T VecA[M],
+			   	   	   T VecB[M],
+					   T MatC[2][M]){
+		for(int i=0;i<M;i++){
+			MatC[0][i] = VecA[i];
+			MatC[1][i] = VecB[i];
+		}
 	}
+
+	// Vector differential
+	template<class T, int M>
+	void VEC_DIFF(T VecA,
+				  T VecB,
+				  int order){
+		T VecTmp = VecA;
+		for(int i=0;i<order;i++){
+			for(int j=0;j<M-i-1;j++)
+				VecB[i] = VecTmp[i+1] - VecTmp[i];
+			VecTmp = VecB;
+		}
+	}
+
+	// Vector absolute value
+	template<class T, int M>
+	void VEC_ABS(T VecA[M],
+				 T VecB[M]){
+		for(int i=0;i<M;i++)
+			VecB[i] = VecA[i]>=0 ? VecA[i] : -VecA[i];
+	}
+
+	// Vector dot division
+	template<class T, int M>
+	void VEC_DOTDIV(T MatA[M],
+				    T MatB[M],
+					T MatC[M]){
+		for(int i=0;i<M;i++)
+			MatC[i] = MatA[i]/MatB[i];
+	}
+
+	// Vector dot division scalar
+	template<class EigenT, class T, int M>
+	void VEC_SCALAR_DOTDIV(EigenT MatA,
+						   T B,
+						   EigenT &MatC){
+		for(int i=0;i<M;i++)
+			MatC[i] = MatA[i]/B;
+	}
+
 
 private:
 
