@@ -138,7 +138,7 @@ Similar situation happens for the dimension 128.
 
 ## Alternative Directive Method of Multiplier (ADMM)
 
-### Eclipse Time
+### Eclipse Time of 4000 iterations
 
 #### 1.Eclipse Time of Matlab: 8.937781 seconds
 
