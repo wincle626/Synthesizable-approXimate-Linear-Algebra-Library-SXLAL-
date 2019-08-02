@@ -142,7 +142,13 @@ Similar situation happens for the dimension 128.
 
 #### 1.Eclipse Time of Matlab: 8.937781 seconds
 
-#### 2. Eclipse Time of C/C++: 108.875 seconds
+#### 2. Eclipse Time of C/C++: 101.632 seconds (float), 102.163 seconds (double)
+
+### Relative Error v.s. CVX
+
+#### 1. Matlab: 0.040783
+
+#### 2. C/C++: 0.040775 (float), 0.040783 (double)
 
 #### This matches the benchmark of speed comparison between C/C++ and BLAS implementation in fortran at [Eigen3 official website]https://eigen.tuxfamily.org/index.php?title=Benchmark. 
 
