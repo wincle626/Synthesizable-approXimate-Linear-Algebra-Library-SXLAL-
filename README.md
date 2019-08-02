@@ -144,9 +144,9 @@ Similar situation happens for the dimension 128.
 
 #### 2. Eclipse Time of C/C++: 108.875 seconds
 
-### This matches the benchmark of speed comparison between C/C++ and BLAS implementation in fortran at [Eigen3 official website]https://eigen.tuxfamily.org/index.php?title=Benchmark. 
+#### This matches the benchmark of speed comparison between C/C++ and BLAS implementation in fortran at [Eigen3 official website]https://eigen.tuxfamily.org/index.php?title=Benchmark. 
 
-### Matlab is using BLAS since Day 1, which is why the linear algebra, like matrix operations, is much faster than C/C++ implementation. 
+#### Matlab is using BLAS since Day 1, which is why the linear algebra, like matrix operations, is much faster than C/C++ implementation. 
 
 ## Some Inspects
 
