@@ -2,7 +2,7 @@
 This is just a simple example of proximal gradient algorithm implementation in C++. It use Eigen algebra library, Xilinx fixed point data type and some other general method for linear algreba. 
 
 ## Dependent Libraries
-sudo apt install python python-numpy python-matplotlib libboost-all-dev libeigen3-dev -y
+sudo apt install python python-numpy python-matplotlib libboost-all-dev libeigen3-dev fftw-dev -y
 
 Notice that: currently the fixed-point arithmetics are all based on the Xilinx Vivado HLS fixed-point template. You MUST have a Xilinx license first. Then copy the "include" folder to the "header" folder and renamed as "xilinx". Otherwise, you cannot pass the compilation with fixed point support.  
 
@@ -13,9 +13,9 @@ Notice that: currently the fixed-point arithmetics are all based on the Xilinx V
 
 ### 3. Build the source: make -j4
 
-### 4. Excuete the program: ./simple_example
+### 4. Excuete the example program: e.g. ./pgd
 
-## Illustration of floating-point precision agains data size
+## Proximal Gradient Descend Example (PGD)
 Different precision of gradient process is evaluated on x86 platform with Intel i7 6820HK with 8Gb DDR4 memory. 
 ### 1. Data size 64
 <p align="center">
@@ -136,6 +136,18 @@ Similar situation happens for the dimension 128.
   <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Opt_Solu_Compare_128x128.png" width="350">
 </p>
 
+## Alternative Directive Method of Multiplier (ADMM)
+
+### Eclipse Time
+
+#### 1.Eclipse Time of Matlab: 8.937781 seconds
+
+#### 2. Eclipse Time of C/C++: 108.875 seconds
+
+### This matches the benchmark of speed comparison between C/C++ and BLAS implementation in fortran at [Eigen3 official website]https://eigen.tuxfamily.org/index.php?title=Benchmark. 
+
+### Matlab is using BLAS since Day 1, which is why the linear algebra, like matrix operations, is much faster than C/C++ implementation. 
+
 ## Some Inspects
 
 ### 1. The double and float precision provide fairly good accurate solution compared to the CVX solution.
@@ -147,3 +159,5 @@ Similar situation happens for the dimension 128.
 ### 4. Floating point still has its advantage in representing the number in a relative large dynmaic value range. But there is no arbitray floating point format exist on modern processor. 
 
 ### 5. There is universal numbers, UNUM, data format alternative to the IEEE 754 standard. It worthes a exploration but again most of the modern processor does not support UNUM arithmetic instructions. It is doubt that the same situation happens to it as the fixed point data type. We will see. 
+
+### 6. Through the ADMM example, it is very clear that in order to gain speedup of linear algebra, the simple approximation, such as various precision is not enough. Approximation does reduce the power consumption but it might also degrade the performance of either algorithm or executing time. So a concurrrent/parallel/distributed architecture is a must in such cases that reduce the executing time and improve the algorithm performance by adopting more executions, even with approximated approach. 
