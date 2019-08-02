@@ -23,6 +23,7 @@
 #include <cstdint>
 #include <dirent.h>
 #include <errno.h>
+#include <chrono>
 #include <sys/stat.h>
 #include <omp.h>
 #include <Eigen/Core>
@@ -38,7 +39,7 @@ bool checkfileexist(std::string filename);
 int writematrix_double(const Eigen::MatrixXd& inputMatrix,
 			 const std::string& fileName,
 			 const std::streamsize dPrec);
-int writematrix_float(const Eigen::MatrixXd& inputMatrix,
+int writematrix_float(const Eigen::MatrixXf& inputMatrix,
 			 const std::string& fileName,
 			 const std::streamsize dPrec);
 int writevector_double(const Eigen::VectorXd& inputVector,
