@@ -16,7 +16,7 @@ Notice that: currently the fixed-point arithmetics are all based on the Xilinx V
 ### 4. Excuete the example program: e.g. ./pgd
 
 ## Proximal Gradient Descend Example (PGD)
-Different precision of gradient process is evaluated on x86 platform with Intel i7 6820HK with 8Gb DDR4 memory. 
+Different precision of gradient process is evaluated on x86 platform with Intel i7 6820HK with 8Gb DDR4 memory. (W: the total bit width, I: the integer bit width, M: the mantissa bit witdh)
 ### 1. Data size 64
 <p align="center">
   float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/float/ProximalGradientDecent.png" width="350">
