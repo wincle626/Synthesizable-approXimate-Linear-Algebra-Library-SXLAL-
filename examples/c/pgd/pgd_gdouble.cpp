@@ -13,7 +13,7 @@ void PROXIMAL_GRADIENT_DECENT_GDOUBLE(double Amatrix_c[DIAG][DIAG],
 									  double bvector_c[DIAG],
 									  double L_c){
 
-#ifdef DOUBLE_PRECISION
+#ifdef GENERAL_DOUBLE_PRECISION
 
 	Float_Point_Algebra Float_Point_Algebra_obj;
 	double error = 0;

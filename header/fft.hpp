@@ -147,8 +147,8 @@ public:
 	        // principle root of nth complex
 	        // root of unity.
 	        cmplx<T> wm;
-	        wm.real = std::cos(PI / m2);
-	        wm.imag = std::sin(PI / m2);
+	        wm.real = (T) std::cos(PI / m2);
+	        wm.imag = (T) std::sin(PI / m2);
 	        for (int j = 0; j < m2; ++j) {
 	            for (int k = j; k < n; k += m) {
 
@@ -210,10 +210,10 @@ public:
 			}
 		}
 
-		Complex<double> vec1[N];
-		Complex<double> vec_fft1[N];
-		Complex<double> vec2[M];
-		Complex<double> vec_fft2[M];
+		Complex<T> vec1[N];
+		Complex<T> vec_fft1[N];
+		Complex<T> vec2[M];
+		Complex<T> vec_fft2[M];
 		// do the row based fft
 		for(int i=0;i<M;i++){
 			for(int j=0;j<N;j++){
@@ -256,7 +256,7 @@ public:
 	    // scale the numbers
 		for(int i=0;i<M;i++){
 			for(int j=0;j<N;j++){
-				y[i][j].real /= (M*N); y[i][j].imag /= (M*N);
+				y[i][j].real /= (T)(M*N); y[i][j].imag /= (T)(M*N);
 			}
 		}
 
@@ -266,8 +266,8 @@ public:
 	void fft_bluestein_iterative_c_1d(Complex<T> x[LEN],
 									  Complex<T> y[LEN]){
 
-		double cos_table[LEN];
-		double sin_table[LEN];
+		T cos_table[LEN];
+		T sin_table[LEN];
 
 		// find the closest power of 2 value
 		/*size_t m = 1;
@@ -289,10 +289,10 @@ public:
 		for (size_t i = 0; i < LEN; i++) {
 			unsigned long long temp = (unsigned long long)i * i;
 			temp %= (unsigned long long)LEN * 2;
-			double angle = M_PI * temp / LEN;
+			float angle =  M_PI * temp / LEN;
 			// Less accurate version if long long is unavailable: double angle = M_PI * i * i / n;
-			cos_table[i] = cos(angle);
-			sin_table[i] = sin(angle);
+			cos_table[i] = (T)std::cos(angle);
+			sin_table[i] = (T)std::sin(angle);
 		}
 
 		// Temporary vectors and preprocessing
@@ -313,7 +313,7 @@ public:
 		fft_radix2_iterative_c_1d<T, LEN2P>(b, bo, LOG2N);
 
 		for (size_t i = 0; i < LEN2P; i++) {
-			double temp = ao[i].real * bo[i].real - ao[i].imag * bo[i].imag;
+			T temp = ao[i].real * bo[i].real - ao[i].imag * bo[i].imag;
 			ao[i].imag = ao[i].imag * bo[i].real + ao[i].real * bo[i].imag;
 			ao[i].real = temp;
 		}
@@ -328,8 +328,8 @@ public:
 	}
 
 	template<class T, int LEN, int LEN2P, int LOG2N>
-	void ifft_bluestein_iterative_c_1d(Complex<double> x[LEN],
-							Complex<double> y[LEN]){
+	void ifft_bluestein_iterative_c_1d(Complex<T> x[LEN],
+							Complex<T> y[LEN]){
 
 	    // conjugate the complex numbers
 		for(int i=0;i<LEN;i++)
@@ -344,15 +344,15 @@ public:
 
 	    // scale the numbers
 		for(int i=0;i<LEN;i++){
-			y[i].real /= LEN; y[i].imag /= LEN;
+			y[i].real /= (T)LEN; y[i].imag /= (T)LEN;
 		}
 	}
 
 	// Iterative FFT function to compute the DFT
 	// of given coefficient vector
 	template<class T, int M, int N, int M2P, int N2P, int L2NR, int L2NC>
-	void fft_bluestein_iterative_c_2d(Complex<double> x[M][N],
-					 	 Complex<double> y[M][N]){
+	void fft_bluestein_iterative_c_2d(Complex<T> x[M][N],
+					 	 Complex<T> y[M][N]){
 		// clone input
 		for(int i=0;i<M;i++){
 			for(int j=0;j<N;j++){
@@ -361,10 +361,10 @@ public:
 			}
 		}
 
-		Complex<double> vec1[N];
-		Complex<double> vec_fft1[N];
-		Complex<double> vec2[M];
-		Complex<double> vec_fft2[M];
+		Complex<T> vec1[N];
+		Complex<T> vec_fft1[N];
+		Complex<T> vec2[M];
+		Complex<T> vec_fft2[M];
 		// do the row based fft
 		for(int i=0;i<M;i++){
 			for(int j=0;j<N;j++){
@@ -388,8 +388,8 @@ public:
 	}
 
 	template<class T, int M, int N, int M2P, int N2P, int L2NR, int L2NC>
-	void ifft_bluestein_iterative_c_2d(Complex<double> x[M][N],
-						  Complex<double> y[M][N]){
+	void ifft_bluestein_iterative_c_2d(Complex<T> x[M][N],
+						  Complex<T> y[M][N]){
 	    // conjugate the complex numbers
 		for(int i=0;i<M;i++)
 			for(int j=0;j<N;j++)
@@ -707,6 +707,31 @@ public:
 		fftw_destroy_plan(plan);
 		fftw_cleanup();
 	}
+	template<class T, int M, int N>
+	void fftw3_cfft_2d(T IN, T OUT){
+		fftw_complex *in;
+		fftw_complex *out;
+		in = (fftw_complex*) fftw_malloc(sizeof(fftw_complex) * M * N);
+		out = (fftw_complex*) fftw_malloc(sizeof(fftw_complex) * M * N);
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				in[i*M+j][0] = IN(i,j).real();
+				in[i*M+j][1] = IN(i,j).imag();
+			}
+		}
+		fftw_plan_with_nthreads(omp_get_max_threads());
+		fftw_plan plan = fftw_plan_dft_2d(M, N, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
+		fftw_execute(plan);
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				OUT(i,j).real(out[i*M+j][0]);
+				OUT(i,j).imag(out[i*M+j][1]);
+			}
+		}
+		fftw_destroy_plan(plan);
+		fftw_cleanup_threads();
+		fftw_cleanup();
+	}
 
 	template<class T, int M, int N>
 	void fftw3_cifft_2d(Complex<T> IN[M][N], Complex<T> OUT[M][N]){
@@ -729,6 +754,31 @@ public:
 			}
 		}
 		fftw_destroy_plan(plan);
+		fftw_cleanup();
+	}
+	template<class T, int M, int N>
+	void fftw3_cifft_2d(T IN, T OUT){
+		fftw_complex *in;
+		fftw_complex *out;
+		in = (fftw_complex*) fftw_malloc(sizeof(fftw_complex) * M * N);
+		out = (fftw_complex*) fftw_malloc(sizeof(fftw_complex) * M * N);
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				in[i*M+j][0] = IN(i,j).real();
+				in[i*M+j][1] = IN(i,j).imag();
+			}
+		}
+		fftw_plan_with_nthreads(omp_get_max_threads());
+		fftw_plan plan = fftw_plan_dft_2d(M, N, in, out, FFTW_BACKWARD, FFTW_ESTIMATE);
+		fftw_execute(plan);
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				OUT(i,j).real(out[i*M+j][0]/(M*N));
+				OUT(i,j).imag(out[i*M+j][1]/(M*N));
+			}
+		}
+		fftw_destroy_plan(plan);
+		fftw_cleanup_threads();
 		fftw_cleanup();
 	}
 

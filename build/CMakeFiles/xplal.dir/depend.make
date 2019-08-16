@@ -868,6 +868,8 @@ CMakeFiles/xplal.dir/source/fpt_algebra.cpp.o: /usr/include/eigen3/Eigen/src/plu
 CMakeFiles/xplal.dir/source/fpt_algebra.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 CMakeFiles/xplal.dir/source/fpt_algebra.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
+CMakeFiles/xplal.dir/source/fpt_bitwise.cpp.o: ../source/fpt_bitwise.cpp
+
 CMakeFiles/xplal.dir/source/fxpt_bitwise.cpp.o: ../header/common.hpp
 CMakeFiles/xplal.dir/source/fxpt_bitwise.cpp.o: ../header/data.hpp
 CMakeFiles/xplal.dir/source/fxpt_bitwise.cpp.o: ../header/fxpt_bitwise.hpp
@@ -1301,29 +1303,29 @@ CMakeFiles/xplal.dir/source/qrd.cpp.o: /usr/include/eigen3/Eigen/src/plugins/Com
 CMakeFiles/xplal.dir/source/qrd.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
 CMakeFiles/xplal.dir/source/qrd.cpp.o: /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
 
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_common.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_decl.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_fixed.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_fixed_base.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_fixed_ref.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_fixed_special.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_int.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_int_base.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_int_ref.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/ap_int_special.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/etc/ap_private.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/etc/autopilot_dt.def
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/etc/autopilot_ssdm_bits.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/floating_point_v7_0_bitacc_cmodel.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/gmp.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/hls_fpo.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/hls_half.h
+CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/Xilinx/mpfr.h
 CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/common.hpp
 CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/data.hpp
 CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/fpt_algebra.hpp
 CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xfxpt.hpp
 CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xfxpt_algebra.hpp
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_common.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_decl.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_fixed.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_fixed_base.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_fixed_ref.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_fixed_special.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_int.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_int_base.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_int_ref.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/ap_int_special.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/etc/ap_private.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/etc/autopilot_dt.def
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/etc/autopilot_ssdm_bits.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/floating_point_v7_0_bitacc_cmodel.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/gmp.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/hls_fpo.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/hls_half.h
-CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../header/xilinx/mpfr.h
 CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: ../source/xfxpt_algebra.cpp
 CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: /usr/include/eigen3/Eigen/Cholesky
 CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o: /usr/include/eigen3/Eigen/Core

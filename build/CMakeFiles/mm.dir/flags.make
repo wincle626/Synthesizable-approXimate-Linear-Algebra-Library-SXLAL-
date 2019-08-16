@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra -O3   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/header -isystem /usr/include/eigen3 -isystem /usr/include/python2.7 -isystem /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/header/xilinx 
+CXX_INCLUDES = -isystem /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/header -isystem /usr/include/eigen3 -isystem /usr/include/python2.7 -isystem /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/header/Xilinx -isystem /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/header/FloatX 
 

@@ -62,6 +62,33 @@ public:
 		S = tmp2;
 	}
 
+	// Vector norm
+	template<class T, int W2, int IW2, int W1, int IW1, int M>
+	void VEC_NORM_FXSQRT( T V1[M], T &S ){
+		ap_fixed<W2,IW2> S1 = 0;
+		for( int i=0; i<M; i++ ){
+			S1 += V1[i] * V1[i];
+		}
+		ap_ufixed<W1,IW1> tmp1 = S1;
+		ap_ufixed<W2,IW2> tmp2;
+		this->FXP_SQRT<W2, IW2, W1, IW1>(tmp1, tmp2);
+		S = tmp2;
+	}
+
+	// Matrix absolute value
+	template<class T, int M, int N>
+	void MAT_ABS(T MatA[M][N],
+				 T MatB[M][N]){
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				if(MatA[i][j]>=0)
+					MatB[i][j] = MatA[i][j];
+				else
+					MatB[i][j] = -MatA[i][j];
+			}
+		}
+	}
+
 private:
 
 protected:

@@ -9,8 +9,8 @@
 #define SRC_DATA_HPP_
 
 // Data structure
-#define ROW 8 // matrix row number
-#define COL 8 // matrix column number
+#define ROW 256 // matrix row number
+#define COL 256 // matrix column number
 #define DIAG (COL<ROW ? COL : ROW) // diagonal matrix size
 #define DIAG_VALUE 50 // diagonal matrix value scale
 #define DIAG_RATIO 0.5 // diagonal matrix sparse ratio

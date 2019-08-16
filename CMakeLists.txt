@@ -28,7 +28,8 @@ message( "${PROJECT_DESCRIPTION} of version ${PROJECT_VERSION} using ${PROJECT_L
 ## project folder
 if( NOT HEAD_DIR )
 	set( HEAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/header )
-	set( XILINX_HEADERS_DIR ${HEAD_DIR}/xilinx)
+	set( XILINX_HEADERS_DIR ${HEAD_DIR}/Xilinx)
+	set( FLOATX_HEADERS_DIR ${HEAD_DIR}/FloatX)
 endif()
 if( NOT SRC_DIR )
 	set( SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/source )
@@ -41,6 +42,7 @@ set( PROJECT_SRC
      source/eigen_algebra.cpp
      source/fpt_algebra.cpp
      source/xfxpt_algebra.cpp
+     source/fpt_bitwise.cpp
      source/fxpt_bitwise.cpp
 	 source/fft.cpp
 	 source/qrd.cpp
@@ -53,7 +55,9 @@ set( PROJECT_INC
      header/xfxpt_algebra.hpp
      header/xfxpt.hpp
      header/matplotlibcpp.hpp
+     header/fpt_bitwise.hpp
      header/fxpt_bitwise.hpp
+	 header/softapprox.hpp
 	 header/fft.hpp
 	 header/qrd.hpp
 )
@@ -119,6 +123,7 @@ target_include_directories( xplal SYSTEM
 	PUBLIC ${PYTHON_INCLUDE_DIRS}
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
+	PUBLIC ${FLOATX_HEADERS_DIR}
 )
 target_link_libraries( xplal
 	PUBLIC m
@@ -135,6 +140,7 @@ target_include_directories( xfxpt_sqrt SYSTEM
 	PUBLIC ${PYTHON_INCLUDE_DIRS}
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
+	PUBLIC ${FLOATX_HEADERS_DIR}
 )
 target_link_libraries( xfxpt_sqrt
 	PUBLIC m
@@ -146,6 +152,7 @@ target_include_directories( mm SYSTEM
 	PUBLIC ${PYTHON_INCLUDE_DIRS}
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
+	PUBLIC ${FLOATX_HEADERS_DIR}
 )
 target_link_libraries( mm
 	PUBLIC m
@@ -155,6 +162,7 @@ add_executable( pgd examples/c/pgd/pgd_eigend.cpp examples/c/pgd/pgd_eigend.hpp
 		    examples/c/pgd/pgd_eigenf.cpp examples/c/pgd/pgd_eigenf.hpp
 		    examples/c/pgd/pgd_gdouble.cpp examples/c/pgd/pgd_gdouble.hpp
 		    examples/c/pgd/pgd_gfloat.cpp examples/c/pgd/pgd_gfloat.hpp
+		    examples/c/pgd/pgd_xfpt.cpp examples/c/pgd/pgd_xfpt.hpp
 		    examples/c/pgd/pgd_xfxpt.cpp examples/c/pgd/pgd_xfxpt.hpp
 		    examples/c/pgd/pgd.cpp examples/c/pgd/pgd.hpp
 		    source/common.cpp header/common.hpp header/data.hpp
@@ -164,6 +172,7 @@ target_include_directories( pgd SYSTEM
 	PUBLIC ${PYTHON_INCLUDE_DIRS}
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
+	PUBLIC ${FLOATX_HEADERS_DIR}
 )
 target_link_libraries( pgd
 	PUBLIC m
@@ -179,6 +188,7 @@ target_include_directories( admm SYSTEM
 	PUBLIC ${PYTHON_INCLUDE_DIRS}
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
+	PUBLIC ${FLOATX_HEADERS_DIR}
 )
 target_link_libraries( admm
 	PUBLIC m

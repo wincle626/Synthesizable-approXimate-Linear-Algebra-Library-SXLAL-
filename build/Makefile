@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library
+CMAKE_SOURCE_DIR = /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/build
+CMAKE_BINARY_DIR = /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/WSL/gitworkspace/Xprecision_Linear_Algebra_Library/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -377,6 +377,33 @@ examples/c/pgd/pgd_gfloat.cpp.s:
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.s
 .PHONY : examples/c/pgd/pgd_gfloat.cpp.s
 
+examples/c/pgd/pgd_xfpt.o: examples/c/pgd/pgd_xfpt.cpp.o
+
+.PHONY : examples/c/pgd/pgd_xfpt.o
+
+# target to build an object file
+examples/c/pgd/pgd_xfpt.cpp.o:
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o
+.PHONY : examples/c/pgd/pgd_xfpt.cpp.o
+
+examples/c/pgd/pgd_xfpt.i: examples/c/pgd/pgd_xfpt.cpp.i
+
+.PHONY : examples/c/pgd/pgd_xfpt.i
+
+# target to preprocess a source file
+examples/c/pgd/pgd_xfpt.cpp.i:
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.i
+.PHONY : examples/c/pgd/pgd_xfpt.cpp.i
+
+examples/c/pgd/pgd_xfpt.s: examples/c/pgd/pgd_xfpt.cpp.s
+
+.PHONY : examples/c/pgd/pgd_xfpt.s
+
+# target to generate assembly for a file
+examples/c/pgd/pgd_xfpt.cpp.s:
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.s
+.PHONY : examples/c/pgd/pgd_xfpt.cpp.s
+
 examples/c/pgd/pgd_xfxpt.o: examples/c/pgd/pgd_xfxpt.cpp.o
 
 .PHONY : examples/c/pgd/pgd_xfxpt.o
@@ -545,6 +572,33 @@ source/fpt_algebra.cpp.s:
 	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/fpt_algebra.cpp.s
 .PHONY : source/fpt_algebra.cpp.s
 
+source/fpt_bitwise.o: source/fpt_bitwise.cpp.o
+
+.PHONY : source/fpt_bitwise.o
+
+# target to build an object file
+source/fpt_bitwise.cpp.o:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/fpt_bitwise.cpp.o
+.PHONY : source/fpt_bitwise.cpp.o
+
+source/fpt_bitwise.i: source/fpt_bitwise.cpp.i
+
+.PHONY : source/fpt_bitwise.i
+
+# target to preprocess a source file
+source/fpt_bitwise.cpp.i:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/fpt_bitwise.cpp.i
+.PHONY : source/fpt_bitwise.cpp.i
+
+source/fpt_bitwise.s: source/fpt_bitwise.cpp.s
+
+.PHONY : source/fpt_bitwise.s
+
+# target to generate assembly for a file
+source/fpt_bitwise.cpp.s:
+	$(MAKE) -f CMakeFiles/xplal.dir/build.make CMakeFiles/xplal.dir/source/fpt_bitwise.cpp.s
+.PHONY : source/fpt_bitwise.cpp.s
+
 source/fxpt_bitwise.o: source/fxpt_bitwise.cpp.o
 
 .PHONY : source/fxpt_bitwise.o
@@ -661,6 +715,9 @@ help:
 	@echo "... examples/c/pgd/pgd_gfloat.o"
 	@echo "... examples/c/pgd/pgd_gfloat.i"
 	@echo "... examples/c/pgd/pgd_gfloat.s"
+	@echo "... examples/c/pgd/pgd_xfpt.o"
+	@echo "... examples/c/pgd/pgd_xfpt.i"
+	@echo "... examples/c/pgd/pgd_xfpt.s"
 	@echo "... examples/c/pgd/pgd_xfxpt.o"
 	@echo "... examples/c/pgd/pgd_xfxpt.i"
 	@echo "... examples/c/pgd/pgd_xfxpt.s"
@@ -679,6 +736,9 @@ help:
 	@echo "... source/fpt_algebra.o"
 	@echo "... source/fpt_algebra.i"
 	@echo "... source/fpt_algebra.s"
+	@echo "... source/fpt_bitwise.o"
+	@echo "... source/fpt_bitwise.i"
+	@echo "... source/fpt_bitwise.s"
 	@echo "... source/fxpt_bitwise.o"
 	@echo "... source/fxpt_bitwise.i"
 	@echo "... source/fxpt_bitwise.s"

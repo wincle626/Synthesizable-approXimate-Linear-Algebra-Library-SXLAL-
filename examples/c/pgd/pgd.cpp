@@ -24,10 +24,11 @@
 #include "pgd_eigenf.hpp"
 #include "pgd_gdouble.hpp"
 #include "pgd_gfloat.hpp"
+#include "pgd_xfpt.hpp"
 #include "pgd_xfxpt.hpp"
 
-void PROXIMAL_GRADIENT_DECENT_EIGEN(){
-	
+void PROXIMAL_GRADIENT_DECENT(){
+
 	//Eigen::initParallel();
 
 	//int thnum = 4;
@@ -115,13 +116,14 @@ void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 		bvector = readvector_double(bvectorname);
 		std::cout << "read the bvector" << std::endl << std::endl;
 	}
-	
+
 	// gradient decent step factor;
 	double L;
 	if(!checkfileexist(Lname)){
 		Eigen::VectorXcd eigvector_complex( DIAG );
 		Eigen::VectorXd eigvector_real( DIAG );
-		Eigen_Algebra_obj.MAT_EIG<Eigen::MatrixXd, Eigen::VectorXcd>( Amatrix, eigvector_complex );
+		Eigen_Algebra_obj.MAT_EIG<Eigen::MatrixXd, Eigen::VectorXcd>( Amatrix,
+				eigvector_complex );
 		eigvector_real = eigvector_complex.real();
 		L = eigvector_real.maxCoeff();
 		//L = L * std::exp(ROW);
@@ -147,25 +149,25 @@ void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 	std::cout << "1/L: " << 1/L << std::endl << std::endl;
 #endif// endif DEBUG_DATA
 
-#ifdef DEBUG_DATA
-	std::cout << "Amatrix_c: " << std::endl;
-	for(int i=0;i<DIAG;i++){
-		for(int j=0;j<DIAG;j++)
-			std::cout << Amatrix_c[i][j] << " ";
-		std::cout << "\n";
-	}
-	std::cout << std::endl;
-	std::cout << "bvector_c: " << std::endl;
-	for(int i=0;i<DIAG;i++){
-		std::cout << bvector_c[i] << " ";
-	}
-	std::cout << std::endl;
-	std::cout << "L_c: " << L_c << std::endl << std::endl;
-#if defined(XILINX_FIXED_PRECISION)
-	std::cout << "factor: " << factor << std::endl << std::endl;
-#endif
-	std::exit(0);
-#endif
+//#ifdef DEBUG_DATA
+//	std::cout << "Amatrix_c: " << std::endl;
+//	for(int i=0;i<DIAG;i++){
+//		for(int j=0;j<DIAG;j++)
+//			std::cout << Amatrix_c[i][j] << " ";
+//		std::cout << "\n";
+//	}
+//	std::cout << std::endl;
+//	std::cout << "bvector_c: " << std::endl;
+//	for(int i=0;i<DIAG;i++){
+//		std::cout << bvector_c[i] << " ";
+//	}
+//	std::cout << std::endl;
+//	std::cout << "L_c: " << L_c << std::endl << std::endl;
+//#if defined(XILINX_FIXED_PRECISION)
+//	std::cout << "factor: " << factor << std::endl << std::endl;
+//#endif
+//	std::exit(0);
+//#endif
 
 #ifdef TIME_PROFILE
 	clock_t end = clock();
@@ -218,6 +220,22 @@ void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 #endif// endif FLOAT_PRECISION
 }
 {
+#if defined(COMSTOM_FLOAT_PRECISION)
+	fptx2 Amatrix_c3[DIAG][DIAG];
+	for(int i=0;i<DIAG;i++){
+		for(int j=0;j<DIAG;j++){
+			Amatrix_c3[i][j] = (fptx2) AmatrixT(i,j);
+		}
+	}
+	fptx2 bvector_c3[DIAG];
+	for(int i=0;i<DIAG;i++){
+		bvector_c3[i] = (fptx2) bvector(i);
+	}
+	fptx2 L_c3 = (fptx2) L;
+	PROXIMAL_GRADIENT_DECENT_XFLOAT2(Amatrix_c3, bvector_c3, L_c3);
+#endif
+}
+{
 #ifdef XILINX_FIXED_PRECISION
    	Xilinx_Fixed_Point_Algebra Xilinx_Fixed_Point_Algebra_obj;
 	double Amatrix_d[DIAG][DIAG];
@@ -235,8 +253,7 @@ void PROXIMAL_GRADIENT_DECENT_EIGEN(){
 	///////////////////////////////////////////////////////////
 }
 }
-
 int main(int argc, char** argv){
-	PROXIMAL_GRADIENT_DECENT_EIGEN();
+	PROXIMAL_GRADIENT_DECENT();
 	return 0;
 }

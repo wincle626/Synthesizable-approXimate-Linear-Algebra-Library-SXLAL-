@@ -116,9 +116,9 @@ void PROXIMAL_GRADIENT_DECENT_XFXPT(DATA_IN_T Amatrix_c[DIAG][DIAG],
 		for(int i=0;i<DIAG;i++)
 			std::cout << "tmp_sub_vec["<< i << "]: " << tmp_sub_vec[i] << std::endl << std::endl;
 #endif
-		Xilinx_Fixed_Point_Algebra_obj.VEC_NORM_FXSQRT<INPUT_BIT_WIDTH, INPUT_INTE_WIDTH,
+		Xilinx_Fixed_Point_Algebra_obj.VEC_NORM_FXSQRT<DATA_IN_T,INPUT_BIT_WIDTH, INPUT_INTE_WIDTH,
 				INPUT_BIT_WIDTH, INPUT_INTE_WIDTH, DIAG>(tmp_sub_vec, norm1);
-		Xilinx_Fixed_Point_Algebra_obj.VEC_NORM_FXSQRT<INPUT_BIT_WIDTH, INPUT_INTE_WIDTH,
+		Xilinx_Fixed_Point_Algebra_obj.VEC_NORM_FXSQRT<DATA_IN_T,INPUT_BIT_WIDTH, INPUT_INTE_WIDTH,
 				INPUT_BIT_WIDTH, INPUT_INTE_WIDTH, DIAG>(x_k_vec, norm2);
 //		Xilinx_Fixed_Point_Algebra_obj.VEC_NORM<DATA_IN_T, DIAG>(tmp_sub_vec, norm1);
 //		Xilinx_Fixed_Point_Algebra_obj.VEC_NORM<DATA_IN_T, DIAG>(x_k_vec, norm2);

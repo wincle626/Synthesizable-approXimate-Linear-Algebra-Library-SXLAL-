@@ -33,7 +33,7 @@
 #include <Eigen/QR>
 #include <boost/tuple/tuple.hpp>
 
-#define MAXBUFSIZE  ((int) 1e6)
+#define MAXBUFSIZE  ((unsigned int) 1e8)
 
 bool checkfileexist(std::string filename);
 int writematrix_double(const Eigen::MatrixXd& inputMatrix,

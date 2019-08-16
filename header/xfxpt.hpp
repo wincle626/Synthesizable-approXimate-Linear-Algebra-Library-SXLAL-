@@ -11,9 +11,9 @@
 #include "ap_int.h"
 #include "ap_fixed.h"
 
-#define INPUT_BIT_WIDTH 48
-#define INPUT_INTE_WIDTH 12
-#define INPUT_FRAC_WIDTH 12
+#define INPUT_BIT_WIDTH 40
+#define INPUT_INTE_WIDTH 24
+#define INPUT_FRAC_WIDTH 32
 #define OUTPUT_BIT_WIDTH 7
 #define OUTPUT_INTE_WIDTH 3
 #define OUTPUT_FRAC_WIDTH 4

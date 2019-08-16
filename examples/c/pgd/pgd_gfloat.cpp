@@ -7,7 +7,7 @@
 
 
 
-#include "pgd_gdouble.hpp"
+#include "pgd_gfloat.hpp"
 
 namespace plt = matplotlibcpp;
 
@@ -15,7 +15,7 @@ void PROXIMAL_GRADIENT_DECENT_GFLOAT(float Amatrix_c[DIAG][DIAG],
 									 float bvector_c[DIAG],
 									 float L_c){
 
-#ifdef FLOAT_PRECISION
+#ifdef GENERAL_FLOAT_PRECISION
 	Float_Point_Algebra Float_Point_Algebra_obj;
 	float error = 0;
 	float error_std = ERR_STD;

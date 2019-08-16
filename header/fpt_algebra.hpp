@@ -933,7 +933,7 @@ public:
 				    T MatB[M][N]){
 		for(int i=0;i<M;i++)
 			for(int j=0;j<N;j++)
-				MatB[i][j] = 1 / MatA[i][j];
+				MatB[i][j] = (T) 1 / MatA[i][j];
 	}
 
 	// Matrix dot multiply scalar
@@ -1074,11 +1074,18 @@ public:
 
 	// Vector dot division scalar
 	template<class EigenT, class T, int M>
-	void VEC_SCALAR_DOTDIV(EigenT MatA,
+	void VEC_SCALAR_DOTDIV(T MatA[M],
 						   T B,
-						   EigenT &MatC){
+						   T MatC[M]){
 		for(int i=0;i<M;i++)
 			MatC[i] = MatA[i]/B;
+	}
+	template<class EigenT, class T, int M>
+	void VEC_SCALAR_DOTDIV(T A,
+						   T MatB[M],
+						   T MatC[M]){
+		for(int i=0;i<M;i++)
+			MatC[i] = A/MatB[i];
 	}
 
 
