@@ -203,3 +203,19 @@ Similar situation happens for the dimension 128.
 ### 5. There is universal numbers, UNUM, data format alternative to the IEEE 754 standard. It worthes a exploration but again most of the modern processor does not support UNUM arithmetic instructions. It is doubt that the same situation happens to it as the fixed point data type. We will see. 
 
 ### 6. Through the ADMM example, it is very clear that in order to gain speedup of linear algebra, the simple approximation, such as various precision is not enough. Approximation does reduce the power consumption but it might also degrade the performance of either algorithm or executing time. So a concurrrent/parallel/distributed architecture is a must in such cases that reduce the executing time and improve the algorithm performance by adopting more executions, even with approximated approach. 
+
+### 7. The customized floating point precision is not supported by any modern processor which means the meaning of it is the same as the fixed point precision. It can ONLY be used as simulator for evaluating the precision effect on the algorithm but not consider the energy effect in practice. 
+
+## External Links
+
+### 1. [Xilinx HLS user guild.]https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_4/ug902-vivado-high-level-synthesis.pdf
+
+### 2. [Xilinx fixed point white paper.]https://www.xilinx.com/support/documentation/white_papers/wp491-floating-to-fixed-point.pdf
+
+### 3. [CVX: Matlab Software for Disciplined Convex Programming.]http://cvxr.com/cvx/
+
+### 4. [OPRECOMP project: aiming to build an innovative, reliable foundation for computing based on transprecision analytics.]http://oprecomp.eu/
+
+### 5. [Eigen3: a C++ template library for linear algebra: matrices, vectors, numerical solvers, and related algorithms]http://eigen.tuxfamily.org/index.php?title=Main_Page
+
+### 6. [Posit & Unum]https://posithub.org/index
