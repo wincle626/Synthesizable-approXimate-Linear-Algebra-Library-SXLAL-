@@ -1,5 +1,5 @@
-# Xprecision_Linear_Algebra
-This is just a simple example of proximal gradient algorithm implementation in C++. It use Eigen algebra library, Xilinx fixed point data type and some other general method for linear algreba. 
+# Xprecision Linear Algebra Library (XLAL)
+This is a C++ template libray for various precision linear algebra. It is aiming to research on the approximate computing for optimization algorithms with linear algebra arithmetics in the software layer. 
 
 ## Dependent Libraries
 sudo apt install python python-numpy python-matplotlib libboost-all-dev libeigen3-dev fftw-dev -y
