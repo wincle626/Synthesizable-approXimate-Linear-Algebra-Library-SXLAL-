@@ -206,6 +206,14 @@ Similar situation happens for the dimension 128.
 
 ### 7. The customized floating point precision is not supported by any modern processor which means the meaning of it is the same as the fixed point precision. It can ONLY be used as simulator for evaluating the precision effect on the algorithm but not consider the energy effect in practice. 
 
+## Reference
+
+### 1. [Approximate Computing: Challenges And Opportunities. ](https://ieeexplore.ieee.org/document/7738674)
+
+### 2. [Approximate Computing: A Survey.](https://ieeexplore.ieee.org/document/7348659)
+
+### 3. [A Survey Of Techniques for Approximate Computing.](https://dl.acm.org/citation.cfm?id=2893356)
+
 ## External Links
 
 ### 1. [Xilinx HLS user guild.](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_4/ug902-vivado-high-level-synthesis.pdf)
