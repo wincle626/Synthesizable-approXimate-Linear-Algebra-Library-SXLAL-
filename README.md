@@ -109,6 +109,42 @@ As shown, the executing time of double precision is alway larger than the float 
   <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Converge_Time_Compare_fvd.png" width="350">
 </p>
 
+## Illustration of customized floating point precision agains data size
+
+### 1. Data size 64
+
+<p align="center">
+  W10, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/xfpt_w10_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W12, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/xfpt_w12_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W16, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/xfpt_w16_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W24, M9<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/xfpt_w24_m9/ProximalGradientDecent_gfloat.png" width="350">
+</p>
+
+W10, M5: Number of iterations = 99998, Time Usage = 11750 ms
+
+W12, M5: Number of iterations = 99998, Time Usage = 11062.5 ms
+
+W16, M5: Number of iterations = 99998, Time Usage = 11265.6 ms
+
+W24, M9: Number of iterations = 40570, Time Usage = 4546.88 ms
+
+### 2. Data size 128
+
+<p align="center">
+  W10, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/xfpt_w10_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W12, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/xfpt_w12_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W16, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/xfpt_w16_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W24, M9<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/xfpt_w24_m9/ProximalGradientDecent_gfloat.png" width="350">
+</p>
+
+W10, M5: Number of iterations = 99998, Time Usage = 41703.1 ms
+
+W12, M5: Number of iterations = 99998, Time Usage = 41781.2 ms
+
+W16, M5: Number of iterations = 99998, Time Usage = 35000 ms
+
+W24, M9: Number of iterations = 47960, Time Usage = 19796.9 ms
+
 ## Various precision under the same data size
 
 ### 1. Data size 64
