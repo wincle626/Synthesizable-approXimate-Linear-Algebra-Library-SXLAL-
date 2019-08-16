@@ -19,8 +19,8 @@ Notice that: currently the fixed-point arithmetics are all based on the Xilinx V
 Different precision of gradient process is evaluated on x86 platform with Intel i7 6820HK with 8Gb DDR4 memory. 
 ### 1. Data size 64
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/64x64/float/ProximalGradientDecent.png" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/64x64/double/ProximalGradientDecent.png" width="350">
+  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/float/ProximalGradientDecent.png" width="350">
+  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/double/ProximalGradientDecent.png" width="350">
 </p>
 
 float: Number of iterations = 40529, Time Usage = 252.721 ms
@@ -29,8 +29,8 @@ double: Number of iterations = 40683, Time Usage = 574.483 ms
 
 ### 2. Data size 128
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/128x128/float/ProximalGradientDecent.png" "float" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/128x128/double/ProximalGradientDecent.png" "double" width="350">
+  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/float/ProximalGradientDecent.png" "float" width="350">
+  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/double/ProximalGradientDecent.png" "double" width="350">
 </p>
 
 float: Number of iterations = 47934, Time Usage = 833.31 ms
@@ -39,8 +39,8 @@ double: Number of iterations = 48191, Time Usage = 1487.99 ms
 
 ### 3. Data size 256
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/256x256/float/ProximalGradientDecent.png" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/256x256/double/ProximalGradientDecent.png" width="350">
+  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/256x256/float/ProximalGradientDecent.png" width="350">
+  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/256x256/double/ProximalGradientDecent.png" width="350">
 </p>
 
 float: Number of iterations = 224087, Time Usage = 11561.9 ms
@@ -49,8 +49,8 @@ double: Number of iterations = 224665, Time Usage = 21787.5 ms
 
 ### 4. Data size 512
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/512x512/float/ProximalGradientDecent.png" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/512x512/double/ProximalGradientDecent.png" width="350">
+  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/512x512/float/ProximalGradientDecent.png" width="350">
+  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/512x512/double/ProximalGradientDecent.png" width="350">
 </p>
 
 float: Number of iterations = 403136, Time Usage = 66061.3 ms
@@ -59,8 +59,8 @@ double: Number of iterations = 402571, Time Usage = 122316 ms
 
 ### 5. Data size 1024
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/1024x1024/float/ProximalGradientDecent.png" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/1024x1024/double/ProximalGradientDecent.png" width="350">
+  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/1024x1024/float/ProximalGradientDecent.png" width="350">
+  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/1024x1024/double/ProximalGradientDecent.png" width="350">
 </p>
 
 float: Number of iterations = 297133, Time Usage = 313763 ms
@@ -72,9 +72,9 @@ double: Number of iterations = 261360, Time Usage = 395742 ms
 ### 1. Data size 64
 
 <p align="center">
-  W28, I10<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/64x64/fxpt_w28_i10/ProximalGradientDecent.png" width="350">
-  W32, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/64x64/fxpt_w32_i12/ProximalGradientDecent.png" width="350">
-  W48, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/64x64/fxpt_w48_i12/ProximalGradientDecent.png" width="350">
+  W28, I10<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/fxpt_w28_i10/ProximalGradientDecent.png" width="350">
+  W32, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/fxpt_w32_i12/ProximalGradientDecent.png" width="350">
+  W48, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/fxpt_w48_i12/ProximalGradientDecent.png" width="350">
 </p>
 
 W28, I10: Number of iterations = 1617, Time Usage = 597.451 ms
@@ -86,9 +86,9 @@ W48, I12: Number of iterations = 41602, Time Usage = 70051.8 ms
 ### 2. Data size 128
 
 <p align="center">
-  W28, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/128x128/fxpt_w28_i12/ProximalGradientDecent.png" width="350">
-  W32, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/128x128/fxpt_w32_i12/ProximalGradientDecent.png" width="350">
-  W48, I16<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/128x128/fxpt_w48_i16/ProximalGradientDecent.png" width="350">
+  W28, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/fxpt_w28_i12/ProximalGradientDecent.png" width="350">
+  W32, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/fxpt_w32_i12/ProximalGradientDecent.png" width="350">
+  W48, I16<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/fxpt_w48_i16/ProximalGradientDecent.png" width="350">
 </p>
 
 W28, I12: Number of iterations = 2635, Time Usage = 332.926 ms
