@@ -1,4 +1,4 @@
-# approXimate Linear Algebra Library ( XLAL )
+# Synthesizable approXimate Linear Algebra Library ( SXLAL )
 This is a C++ template libray for various precision linear algebra. It is aiming to research on the approximate computing for optimization algorithms with linear algebra arithmetics in the software layer. 
 
 ## Dependent Libraries
