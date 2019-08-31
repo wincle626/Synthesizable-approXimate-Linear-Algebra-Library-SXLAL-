@@ -1,2 +1,0 @@
-It takes 15.625 ms to generate and save the data
-

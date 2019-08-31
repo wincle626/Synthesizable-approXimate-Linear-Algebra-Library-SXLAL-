@@ -1,5 +1,0 @@
-It takes 41703.1 ms to gradient decent
-
-Number of iterations = 99998 out of 100000
-Error: 0.0225525
-Relative Error: 0.000219226
