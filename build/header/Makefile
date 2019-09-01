@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library
+CMAKE_SOURCE_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build
+CMAKE_BINARY_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/header/CMakeFiles/progress.marks
-	cd /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build && $(MAKE) -f CMakeFiles/Makefile2 header/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles 0
+	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/header/CMakeFiles/progress.marks
+	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 header/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build && $(MAKE) -f CMakeFiles/Makefile2 header/clean
+	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 header/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,17 +97,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build && $(MAKE) -f CMakeFiles/Makefile2 header/preinstall
+	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 header/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build && $(MAKE) -f CMakeFiles/Makefile2 header/preinstall
+	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 header/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -129,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libxplal.a  CMakeFiles/xplal.dir/source/common.cpp.o CMakeFiles/xplal.dir/source/eigen_algebra.cpp.o CMakeFiles/xplal.dir/source/fpt_algebra.cpp.o CMakeFiles/xplal.dir/source/xfxpt_algebra.cpp.o CMakeFiles/xplal.dir/source/fpt_bitwise.cpp.o CMakeFiles/xplal.dir/source/fxpt_bitwise.cpp.o CMakeFiles/xplal.dir/source/fft.cpp.o CMakeFiles/xplal.dir/source/qrd.cpp.o
-/usr/bin/ranlib libxplal.a

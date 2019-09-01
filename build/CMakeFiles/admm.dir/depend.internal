@@ -7,8 +7,8 @@ CMakeFiles/admm.dir/examples/c/admm/admm.cpp.o
  ../header/eigen_algebra.hpp
  ../header/fft.hpp
  ../header/fpt_algebra.hpp
- /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/admm/admm.cpp
- /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/admm/admm.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/admm/admm.cpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/admm/admm.hpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense
@@ -221,9 +221,943 @@ CMakeFiles/admm.dir/examples/c/admm/admm.cpp.o
  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPositX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit16ToDec.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit32ToDec.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit8ToDec.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPositX1ToDec.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire16ToPosit16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire32ToPosit32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire8ToPosit8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuireX2ToPositX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/c_int.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_int.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i32_to_p16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i32_to_p32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i32_to_p8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i32_to_pX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_pX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i32_to_pX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_pX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i64_to_p16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i64_to_p32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i64_to_p8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/i64_to_pX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_pX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_add.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_add.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_div.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_div.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_eq.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_eq.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_le.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_le.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_lt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_lt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_mul.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_mul.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_mulAdd.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_mulAdd.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_roundToInt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_roundToInt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_sqrt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_sqrt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_sub.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_sub.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_to_i32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_i32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_to_i64.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_i64.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_to_p32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_p32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_to_p8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_p8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_to_pX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_pX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_to_pX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_pX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_to_ui32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_ui32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p16_to_ui64.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_ui64.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_add.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_add.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_div.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_div.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_eq.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_eq.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_le.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_le.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_lt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_lt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_mul.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_mul.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_mulAdd.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_mulAdd.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_roundToInt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_roundToInt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_sqrt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_sqrt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_sub.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_sub.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_to_i32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_i32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_to_i64.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_i64.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_to_p16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_p16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_to_p8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_p8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_to_pX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_pX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_to_pX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_pX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_to_ui32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_ui32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p32_to_ui64.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_ui64.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_add.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_add.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_div.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_div.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_eq.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_eq.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_le.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_le.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_lt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_lt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_mul.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_mul.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_mulAdd.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_mulAdd.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_roundToInt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_roundToInt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_sqrt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_sqrt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_sub.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_sub.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_to_i32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_i32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_to_i64.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_i64.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_to_p16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_p16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_to_p32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_p32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_to_pX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_pX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_to_pX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_pX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_to_ui32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_ui32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/p8_to_ui64.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_ui64.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_add.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_add.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_div.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_div.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_mul.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_mul.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_mulAdd.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_mulAdd.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_roundToInt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_roundToInt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_sub.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_sub.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_i32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_i32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_i64.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_i64.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_pX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_pX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_pX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_pX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_ui32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_ui32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX1_to_ui64.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_ui64.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_add.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_add.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_div.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_div.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_eq.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_eq.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_le.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_le.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_lt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_lt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_mul.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_mul.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_mulAdd.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_mulAdd.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_roundToInt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_roundToInt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_sqrt.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_sqrt.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_sub.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_sub.cpp
+CMakeFiles/admm.dir/external/SoftPosit/pX2_to_pX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_to_pX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/quire16_fdp_add.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire16_fdp_add.cpp
+CMakeFiles/admm.dir/external/SoftPosit/quire16_fdp_sub.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire16_fdp_sub.cpp
+CMakeFiles/admm.dir/external/SoftPosit/quire32_fdp_add.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire32_fdp_add.cpp
+CMakeFiles/admm.dir/external/SoftPosit/quire32_fdp_sub.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire32_fdp_sub.cpp
+CMakeFiles/admm.dir/external/SoftPosit/quire8_fdp_add.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire8_fdp_add.cpp
+CMakeFiles/admm.dir/external/SoftPosit/quire8_fdp_sub.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire8_fdp_sub.cpp
+CMakeFiles/admm.dir/external/SoftPosit/quire_helper.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire_helper.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_addMagsPX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsPX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_addMagsPX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsPX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o
+ ../external/SoftPosit/include/platform.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_mulAddPX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddPX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_mulAddPX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddPX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_subMagsPX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsPX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/s_subMagsPX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsPX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui32_to_pX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_pX2.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p16.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p16.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p32.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p32.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p8.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p8.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui64_to_pX1.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_pX1.cpp
+CMakeFiles/admm.dir/external/SoftPosit/ui64_to_pX2.cpp.o
+ ../external/SoftPosit/include/internals.hpp
+ ../external/SoftPosit/include/platform.hpp
+ ../external/SoftPosit/include/primitives.hpp
+ ../external/SoftPosit/include/softposit.hpp
+ ../external/SoftPosit/include/softposit_types.hpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_pX2.cpp
 CMakeFiles/admm.dir/source/common.cpp.o
  ../header/common.hpp
- /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/source/common.cpp
+ /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/source/common.cpp
  /usr/include/eigen3/Eigen/Cholesky
  /usr/include/eigen3/Eigen/Core
  /usr/include/eigen3/Eigen/Dense

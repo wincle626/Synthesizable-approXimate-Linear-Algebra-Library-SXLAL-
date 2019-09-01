@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library
+CMAKE_SOURCE_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build
+CMAKE_BINARY_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/pgd.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/pgd.dir/flags.make
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o: CMakeFiles/pgd.dir/flags.make
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o: ../examples/c/pgd/pgd_eigend.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_eigend.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_eigend.cpp
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_eigend.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_eigend.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.i
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_eigend.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_eigend.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.s
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o.provides.build: CMakeFiles/pg
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.o: CMakeFiles/pgd.dir/flags.make
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.o: ../examples/c/pgd/pgd_eigenf.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_eigenf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_eigenf.cpp
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_eigenf.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_eigenf.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.i
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_eigenf.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_eigenf.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.s
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigenf.cpp.o.provides.build: CMakeFiles/pg
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o: CMakeFiles/pgd.dir/flags.make
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o: ../examples/c/pgd/pgd_gdouble.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_gdouble.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_gdouble.cpp
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_gdouble.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_gdouble.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.i
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_gdouble.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_gdouble.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.s
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o.provides.build: CMakeFiles/p
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o: CMakeFiles/pgd.dir/flags.make
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o: ../examples/c/pgd/pgd_gfloat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_gfloat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_gfloat.cpp
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_gfloat.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_gfloat.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.i
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_gfloat.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_gfloat.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.s
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o.provides.build: CMakeFiles/pg
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o: CMakeFiles/pgd.dir/flags.make
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o: ../examples/c/pgd/pgd_xfpt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_xfpt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_xfpt.cpp
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_xfpt.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_xfpt.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.i
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_xfpt.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_xfpt.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.s
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o.provides.build: CMakeFiles/pgd.
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o: CMakeFiles/pgd.dir/flags.make
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o: ../examples/c/pgd/pgd_xfxpt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_xfxpt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_xfxpt.cpp
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_xfxpt.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_xfxpt.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.i
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd_xfxpt.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_xfxpt.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.s
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o.requires:
 
@@ -201,18 +201,90 @@ CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o.provides: CMakeFiles/pgd.dir/e
 CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o.provides.build: CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o
 
 
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o: ../examples/c/pgd/pgd_softposit8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit8.cpp
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit8.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.i
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit8.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.s
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o.requires
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o.provides: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o.provides
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o.provides.build: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o
+
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o: ../examples/c/pgd/pgd_softposit16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit16.cpp
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit16.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.i
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit16.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.s
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o.requires
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o.provides: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o.provides
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o.provides.build: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o
+
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o: ../examples/c/pgd/pgd_softposit32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit32.cpp
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit32.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.i
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd_softposit32.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.s
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o.requires
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o.provides: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o.provides
+
+CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o.provides.build: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o
+
+
 CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o: CMakeFiles/pgd.dir/flags.make
 CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o: ../examples/c/pgd/pgd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd.cpp
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd.cpp > CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.i
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/pgd/pgd.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/pgd/pgd.cpp -o CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.s
 
 CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o.requires:
 
@@ -227,16 +299,16 @@ CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o.provides.build: CMakeFiles/pgd.dir/e
 
 CMakeFiles/pgd.dir/source/common.cpp.o: CMakeFiles/pgd.dir/flags.make
 CMakeFiles/pgd.dir/source/common.cpp.o: ../source/common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pgd.dir/source/common.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/source/common.cpp.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/source/common.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pgd.dir/source/common.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/source/common.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/source/common.cpp
 
 CMakeFiles/pgd.dir/source/common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/source/common.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/source/common.cpp > CMakeFiles/pgd.dir/source/common.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/source/common.cpp > CMakeFiles/pgd.dir/source/common.cpp.i
 
 CMakeFiles/pgd.dir/source/common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/source/common.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/source/common.cpp -o CMakeFiles/pgd.dir/source/common.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/source/common.cpp -o CMakeFiles/pgd.dir/source/common.cpp.s
 
 CMakeFiles/pgd.dir/source/common.cpp.o.requires:
 
@@ -249,6 +321,3222 @@ CMakeFiles/pgd.dir/source/common.cpp.o.provides: CMakeFiles/pgd.dir/source/commo
 CMakeFiles/pgd.dir/source/common.cpp.o.provides.build: CMakeFiles/pgd.dir/source/common.cpp.o
 
 
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o: ../external/SoftPosit/c_convertDecToPosit16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o: ../external/SoftPosit/c_convertDecToPosit32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o: ../external/SoftPosit/c_convertDecToPosit8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPosit8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o: ../external/SoftPosit/c_convertDecToPositX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPositX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPositX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertDecToPositX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o: ../external/SoftPosit/c_convertPosit16ToDec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit16ToDec.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit16ToDec.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit16ToDec.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o: ../external/SoftPosit/c_convertPosit32ToDec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit32ToDec.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit32ToDec.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit32ToDec.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o: ../external/SoftPosit/c_convertPosit8ToDec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit8ToDec.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit8ToDec.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPosit8ToDec.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o: ../external/SoftPosit/c_convertPositX1ToDec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPositX1ToDec.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPositX1ToDec.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertPositX1ToDec.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o: ../external/SoftPosit/c_convertQuire16ToPosit16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire16ToPosit16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire16ToPosit16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire16ToPosit16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o: ../external/SoftPosit/c_convertQuire32ToPosit32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire32ToPosit32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire32ToPosit32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire32ToPosit32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o: ../external/SoftPosit/c_convertQuire8ToPosit8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire8ToPosit8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire8ToPosit8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuire8ToPosit8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o: ../external/SoftPosit/c_convertQuireX2ToPositX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuireX2ToPositX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuireX2ToPositX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_convertQuireX2ToPositX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o: ../external/SoftPosit/c_int.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_int.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_int.cpp > CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/c_int.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o: ../external/SoftPosit/i32_to_p16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o: ../external/SoftPosit/i32_to_p32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o: ../external/SoftPosit/i32_to_p8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_p8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o: ../external/SoftPosit/i32_to_pX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_pX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_pX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_pX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o: ../external/SoftPosit/i32_to_pX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_pX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_pX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i32_to_pX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o: ../external/SoftPosit/i64_to_p16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o: ../external/SoftPosit/i64_to_p32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o: ../external/SoftPosit/i64_to_p8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_p8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o: ../external/SoftPosit/i64_to_pX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_pX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_pX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/i64_to_pX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o: ../external/SoftPosit/p16_add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_add.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_add.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_add.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o: ../external/SoftPosit/p16_div.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_div.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_div.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_div.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o: ../external/SoftPosit/p16_eq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_eq.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_eq.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_eq.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o: ../external/SoftPosit/p16_le.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_le.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_le.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_le.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o: ../external/SoftPosit/p16_lt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_lt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_lt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_lt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o: ../external/SoftPosit/p16_mul.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_mul.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_mul.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_mul.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o: ../external/SoftPosit/p16_mulAdd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_mulAdd.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_mulAdd.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_mulAdd.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o: ../external/SoftPosit/p16_roundToInt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_roundToInt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_roundToInt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_roundToInt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o: ../external/SoftPosit/p16_sqrt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_sqrt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_sqrt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_sqrt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o: ../external/SoftPosit/p16_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_sub.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_sub.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_sub.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o: ../external/SoftPosit/p16_to_i32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_i32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_i32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_i32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o: ../external/SoftPosit/p16_to_i64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_i64.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_i64.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_i64.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o: ../external/SoftPosit/p16_to_p32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_p32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_p32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_p32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o: ../external/SoftPosit/p16_to_p8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_p8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_p8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_p8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o: ../external/SoftPosit/p16_to_pX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_pX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_pX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_pX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o: ../external/SoftPosit/p16_to_pX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_pX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_pX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_pX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o: ../external/SoftPosit/p16_to_ui32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_ui32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_ui32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_ui32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o: ../external/SoftPosit/p16_to_ui64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_ui64.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_ui64.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p16_to_ui64.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o: ../external/SoftPosit/p32_add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_add.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_add.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_add.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o: ../external/SoftPosit/p32_div.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_div.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_div.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_div.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o: ../external/SoftPosit/p32_eq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_eq.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_eq.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_eq.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o: ../external/SoftPosit/p32_le.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_le.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_le.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_le.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o: ../external/SoftPosit/p32_lt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_lt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_lt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_lt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o: ../external/SoftPosit/p32_mul.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_mul.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_mul.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_mul.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o: ../external/SoftPosit/p32_mulAdd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_mulAdd.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_mulAdd.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_mulAdd.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o: ../external/SoftPosit/p32_roundToInt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_roundToInt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_roundToInt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_roundToInt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o: ../external/SoftPosit/p32_sqrt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_sqrt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_sqrt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_sqrt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o: ../external/SoftPosit/p32_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_sub.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_sub.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_sub.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o: ../external/SoftPosit/p32_to_i32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_i32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_i32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_i32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o: ../external/SoftPosit/p32_to_i64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_i64.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_i64.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_i64.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o: ../external/SoftPosit/p32_to_p16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_p16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_p16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_p16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o: ../external/SoftPosit/p32_to_p8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_p8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_p8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_p8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o: ../external/SoftPosit/p32_to_pX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_pX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_pX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_pX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o: ../external/SoftPosit/p32_to_pX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_pX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_pX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_pX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o: ../external/SoftPosit/p32_to_ui32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_ui32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_ui32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_ui32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o: ../external/SoftPosit/p32_to_ui64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_ui64.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_ui64.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p32_to_ui64.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o: ../external/SoftPosit/p8_add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_add.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_add.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_add.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o: ../external/SoftPosit/p8_div.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_div.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_div.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_div.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o: ../external/SoftPosit/p8_eq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_eq.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_eq.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_eq.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o: ../external/SoftPosit/p8_le.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_le.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_le.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_le.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o: ../external/SoftPosit/p8_lt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_lt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_lt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_lt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o: ../external/SoftPosit/p8_mul.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_mul.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_mul.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_mul.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o: ../external/SoftPosit/p8_mulAdd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_mulAdd.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_mulAdd.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_mulAdd.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o: ../external/SoftPosit/p8_roundToInt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_roundToInt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_roundToInt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_roundToInt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o: ../external/SoftPosit/p8_sqrt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_sqrt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_sqrt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_sqrt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o: ../external/SoftPosit/p8_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_sub.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_sub.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_sub.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o: ../external/SoftPosit/p8_to_i32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_i32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_i32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_i32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o: ../external/SoftPosit/p8_to_i64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_i64.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_i64.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_i64.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o: ../external/SoftPosit/p8_to_p16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_p16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_p16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_p16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o: ../external/SoftPosit/p8_to_p32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_p32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_p32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_p32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o: ../external/SoftPosit/p8_to_pX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_pX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_pX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_pX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o: ../external/SoftPosit/p8_to_pX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_pX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_pX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_pX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o: ../external/SoftPosit/p8_to_ui32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_ui32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_ui32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_ui32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o: ../external/SoftPosit/p8_to_ui64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_ui64.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_ui64.cpp > CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/p8_to_ui64.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o: ../external/SoftPosit/pX1_add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_add.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_add.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_add.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o: ../external/SoftPosit/pX1_div.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_div.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_div.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_div.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o: ../external/SoftPosit/pX1_mul.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_mul.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_mul.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_mul.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o: ../external/SoftPosit/pX1_mulAdd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_mulAdd.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_mulAdd.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_mulAdd.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o: ../external/SoftPosit/pX1_roundToInt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_roundToInt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_roundToInt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_roundToInt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o: ../external/SoftPosit/pX1_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_sub.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_sub.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_sub.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o: ../external/SoftPosit/pX1_to_i32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_i32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_i32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_i32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o: ../external/SoftPosit/pX1_to_i64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_i64.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_i64.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_i64.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o: ../external/SoftPosit/pX1_to_p16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o: ../external/SoftPosit/pX1_to_p32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o: ../external/SoftPosit/pX1_to_p8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_p8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o: ../external/SoftPosit/pX1_to_pX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_pX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_pX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_pX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o: ../external/SoftPosit/pX1_to_pX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_pX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_pX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_pX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o: ../external/SoftPosit/pX1_to_ui32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_ui32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_ui32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_ui32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o: ../external/SoftPosit/pX1_to_ui64.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_ui64.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_ui64.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX1_to_ui64.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o: ../external/SoftPosit/pX2_add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_add.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_add.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_add.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o: ../external/SoftPosit/pX2_div.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_div.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_div.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_div.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o: ../external/SoftPosit/pX2_eq.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_eq.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_eq.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_eq.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o: ../external/SoftPosit/pX2_le.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_le.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_le.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_le.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o: ../external/SoftPosit/pX2_lt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_lt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_lt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_lt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o: ../external/SoftPosit/pX2_mul.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_mul.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_mul.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_mul.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o: ../external/SoftPosit/pX2_mulAdd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_mulAdd.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_mulAdd.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_mulAdd.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o: ../external/SoftPosit/pX2_roundToInt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_roundToInt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_roundToInt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_roundToInt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o: ../external/SoftPosit/pX2_sqrt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_sqrt.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_sqrt.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_sqrt.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o: ../external/SoftPosit/pX2_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_sub.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_sub.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_sub.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o: ../external/SoftPosit/pX2_to_pX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_to_pX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_to_pX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/pX2_to_pX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o: ../external/SoftPosit/quire16_fdp_add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire16_fdp_add.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire16_fdp_add.cpp > CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire16_fdp_add.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o: ../external/SoftPosit/quire16_fdp_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire16_fdp_sub.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire16_fdp_sub.cpp > CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire16_fdp_sub.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o: ../external/SoftPosit/quire32_fdp_add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire32_fdp_add.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire32_fdp_add.cpp > CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire32_fdp_add.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o: ../external/SoftPosit/quire32_fdp_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire32_fdp_sub.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire32_fdp_sub.cpp > CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire32_fdp_sub.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o: ../external/SoftPosit/quire8_fdp_add.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire8_fdp_add.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire8_fdp_add.cpp > CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire8_fdp_add.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o: ../external/SoftPosit/quire8_fdp_sub.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire8_fdp_sub.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire8_fdp_sub.cpp > CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire8_fdp_sub.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o: ../external/SoftPosit/quire_helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire_helper.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire_helper.cpp > CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/quire_helper.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o: ../external/SoftPosit/s_addMagsP16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o: ../external/SoftPosit/s_addMagsP32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o: ../external/SoftPosit/s_addMagsP8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsP8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o: ../external/SoftPosit/s_addMagsPX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsPX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsPX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsPX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o: ../external/SoftPosit/s_addMagsPX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsPX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsPX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_addMagsPX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o: ../external/SoftPosit/s_approxRecipSqrt_1Ks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o: ../external/SoftPosit/s_mulAddP16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o: ../external/SoftPosit/s_mulAddP32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o: ../external/SoftPosit/s_mulAddP8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddP8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o: ../external/SoftPosit/s_mulAddPX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddPX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddPX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddPX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o: ../external/SoftPosit/s_mulAddPX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddPX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddPX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_mulAddPX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o: ../external/SoftPosit/s_subMagsP16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o: ../external/SoftPosit/s_subMagsP32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o: ../external/SoftPosit/s_subMagsP8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsP8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o: ../external/SoftPosit/s_subMagsPX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsPX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsPX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsPX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o: ../external/SoftPosit/s_subMagsPX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsPX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsPX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/s_subMagsPX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o: ../external/SoftPosit/ui32_to_p16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o: ../external/SoftPosit/ui32_to_p32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o: ../external/SoftPosit/ui32_to_p8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_p8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o: ../external/SoftPosit/ui32_to_pX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_pX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_pX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui32_to_pX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o: ../external/SoftPosit/ui64_to_p16.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p16.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p16.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p16.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o: ../external/SoftPosit/ui64_to_p32.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p32.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p32.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p32.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o: ../external/SoftPosit/ui64_to_p8.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p8.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p8.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_p8.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o: ../external/SoftPosit/ui64_to_pX1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_pX1.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_pX1.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_pX1.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o
+
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o: CMakeFiles/pgd.dir/flags.make
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o: ../external/SoftPosit/ui64_to_pX2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_pX2.cpp
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_pX2.cpp > CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.i
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/ui64_to_pX2.cpp -o CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.s
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o.requires:
+
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o.requires
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o.provides: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o.requires
+	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o.provides.build
+.PHONY : CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o.provides
+
+CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o.provides.build: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o
+
+
 # Object files for target pgd
 pgd_OBJECTS = \
 "CMakeFiles/pgd.dir/examples/c/pgd/pgd_eigend.cpp.o" \
@@ -257,8 +3545,145 @@ pgd_OBJECTS = \
 "CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o" \
 "CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o" \
 "CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o" \
+"CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o" \
+"CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o" \
+"CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o" \
 "CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o" \
-"CMakeFiles/pgd.dir/source/common.cpp.o"
+"CMakeFiles/pgd.dir/source/common.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o" \
+"CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o"
 
 # External object files for target pgd
 pgd_EXTERNAL_OBJECTS =
@@ -269,11 +3694,148 @@ pgd: CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o
 pgd: CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o
 pgd: CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o
 pgd: CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o
+pgd: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o
+pgd: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o
+pgd: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o
 pgd: CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o
 pgd: CMakeFiles/pgd.dir/source/common.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o
+pgd: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o
 pgd: CMakeFiles/pgd.dir/build.make
 pgd: CMakeFiles/pgd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable pgd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Linking CXX executable pgd"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pgd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -287,8 +3849,145 @@ CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/examples/c/pgd/pgd_gdouble.cpp.o
 CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/examples/c/pgd/pgd_gfloat.cpp.o.requires
 CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfpt.cpp.o.requires
 CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/examples/c/pgd/pgd_xfxpt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/examples/c/pgd/pgd_softposit32.cpp.o.requires
 CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/examples/c/pgd/pgd.cpp.o.requires
 CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/source/common.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o.requires
+CMakeFiles/pgd.dir/requires: CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o.requires
 
 .PHONY : CMakeFiles/pgd.dir/requires
 
@@ -297,6 +3996,6 @@ CMakeFiles/pgd.dir/clean:
 .PHONY : CMakeFiles/pgd.dir/clean
 
 CMakeFiles/pgd.dir/depend:
-	cd /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/pgd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/pgd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pgd.dir/depend
 

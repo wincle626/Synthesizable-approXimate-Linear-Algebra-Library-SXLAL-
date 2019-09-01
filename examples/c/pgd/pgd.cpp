@@ -24,10 +24,14 @@
 #include "pgd_eigenf.hpp"
 #include "pgd_gdouble.hpp"
 #include "pgd_gfloat.hpp"
+#include "pgd_softposit32.hpp"
+#include "pgd_softposit16.hpp"
+#include "pgd_softposit8.hpp"
 #include "pgd_xfpt.hpp"
 #include "pgd_xfxpt.hpp"
 
 void PROXIMAL_GRADIENT_DECENT(){
+//	std::cout << __FILE__ << "," << __LINE__ << std::endl;
 
 	//Eigen::initParallel();
 
@@ -49,16 +53,19 @@ void PROXIMAL_GRADIENT_DECENT(){
 	std::remove(errorhistname.c_str());
 	std::remove(figurename.c_str());
 #endif
+//	std::cout << __FILE__ << "," << __LINE__ << std::endl;
 #ifdef TIME_PROFILE
 	clock_t start = clock();
 	std::ofstream TimeProfile;
 	TimeProfile.open(clockname);
 #endif
+//	std::cout << __FILE__ << "," << __LINE__ << std::endl;
 
 	// check if the data file already exist
 	Eigen_Algebra Eigen_Algebra_obj;
 	Eigen::MatrixXd Amatrix( DIAG, DIAG );
 	Eigen::MatrixXd AmatrixT( DIAG, DIAG );
+//	std::cout << __FILE__ << "," << __LINE__ << std::endl;
 	if(!checkfileexist(Amatrixname)){
 		// randn(n, n)
 		Eigen::MatrixXd RNDmatrix( ROW, COL );
@@ -102,7 +109,9 @@ void PROXIMAL_GRADIENT_DECENT(){
 		Amatrix = readmatrix_double(Amatrixname);
 		std::cout << "read the Amatrix" << std::endl << std::endl;
 	}
+//	std::cout << __FILE__ << "," << __LINE__ << std::endl;
 	AmatrixT = Amatrix.transpose();
+//	std::cout << __FILE__ << "," << __LINE__ << std::endl;
 
 	// measurement
 	Eigen::VectorXd bvector( DIAG );
@@ -113,9 +122,11 @@ void PROXIMAL_GRADIENT_DECENT(){
 		std::cout << "created the bvector" << std::endl << std::endl;
 	}else{
 		// read from data file
+//		std::cout << __FILE__ << "," << __LINE__ << std::endl;
 		bvector = readvector_double(bvectorname);
 		std::cout << "read the bvector" << std::endl << std::endl;
 	}
+//	std::cout << __FILE__ << "," << __LINE__ << std::endl;
 
 	// gradient decent step factor;
 	double L;
@@ -250,10 +261,62 @@ void PROXIMAL_GRADIENT_DECENT(){
 	DATA_IN_T factor = 1/L;
 	PROXIMAL_GRADIENT_DECENT_XFXPT(Amatrix_c3, bvector_c3, factor);
 #endif // endif XILINX_FIXED_PRECISION
+}
+
+{
+#if defined (SOFT_POSIT_PRECISION)
+	double Amatrix_d[DIAG][DIAG];
+	memcpy(Amatrix_d,AmatrixT.data(),sizeof(double)*DIAG*DIAG);
+	double bvector_d[DIAG];
+	memcpy(bvector_d,bvector.data(),sizeof(double)*DIAG);
+//	{
+//		posit32_t Amatrix_c4[DIAG][DIAG];
+//		posit32_t bvector_c4[DIAG];
+//		posit32_t L_c4;
+//		for(int i=0;i<DIAG;i++)
+//			for(int j=0;j<DIAG;j++)
+//				Amatrix_c4[i][j] = convertDoubleToP32(Amatrix_d[i][j]);
+//
+//		for(int i=0;i<DIAG;i++)
+//			bvector_c4[i] = convertDoubleToP32(bvector_d[i]);
+//		L_c4 = convertDoubleToP32(L);
+//		PROXIMAL_GRADIENT_DECENT_SPOSIT32(Amatrix_c4, bvector_c4, L_c4);
+//	}
+//	{
+//		posit16_t Amatrix_c4[DIAG][DIAG];
+//		posit16_t bvector_c4[DIAG];
+//		posit16_t L_c4;
+//		for(int i=0;i<DIAG;i++)
+//			for(int j=0;j<DIAG;j++)
+//				Amatrix_c4[i][j] = convertDoubleToP16(Amatrix_d[i][j]);
+//
+//		for(int i=0;i<DIAG;i++)
+//			bvector_c4[i] = convertDoubleToP16(bvector_d[i]);
+//		L_c4 = convertDoubleToP16(L);
+//		PROXIMAL_GRADIENT_DECENT_SPOSIT16(Amatrix_c4, bvector_c4, L_c4);
+//	}
+	{
+		posit8_t Amatrix_c4[DIAG][DIAG];
+		posit8_t bvector_c4[DIAG];
+		posit8_t L_c4;
+		for(int i=0;i<DIAG;i++)
+			for(int j=0;j<DIAG;j++)
+				Amatrix_c4[i][j] = convertDoubleToP8(Amatrix_d[i][j]);
+
+		for(int i=0;i<DIAG;i++)
+			bvector_c4[i] = convertDoubleToP8(bvector_d[i]);
+		L_c4 = convertDoubleToP8(L);
+		PROXIMAL_GRADIENT_DECENT_SPOSIT8(Amatrix_c4, bvector_c4, L_c4);
+	}
+#endif
+}
 	///////////////////////////////////////////////////////////
 }
-}
+
+
 int main(int argc, char** argv){
+
 	PROXIMAL_GRADIENT_DECENT();
 	return 0;
+
 }

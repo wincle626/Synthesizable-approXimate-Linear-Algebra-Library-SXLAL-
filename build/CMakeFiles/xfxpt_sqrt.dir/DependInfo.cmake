@@ -4,17 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/examples/c/xsqrt/xfxpt_sqrt.cpp" "/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/xfxpt_sqrt.dir/examples/c/xsqrt/xfxpt_sqrt.cpp.o"
+  "/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/xsqrt/xfxpt_sqrt.cpp" "/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/xfxpt_sqrt.dir/examples/c/xsqrt/xfxpt_sqrt.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../header"
+  "../external/SoftPosit/include"
+  "../external/SoftPosit/8086-SSE"
   "/usr/include/eigen3"
   "/usr/include/python2.7"
-  "../header/Xilinx"
-  "../header/FloatX"
+  "../external/Xilinx"
+  "../external/FloatX"
   )
 
 # Targets to which this target links.

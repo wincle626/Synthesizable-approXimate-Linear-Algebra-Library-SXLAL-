@@ -257,11 +257,29 @@ Eigen::MatrixXf readmatrix_float(std::string filename)
 {
 
 	int cols = 0, rows = 0;
-	float buff[MAXBUFSIZE];
+	//double buff[MAXBUFSIZE];
 
-	// Read numbers from file into buffer.
+	// Read numbers from file into reesult.
 	std::ifstream infile;
 	infile.open(filename);
+	while (! infile.eof())
+	{
+		std::string line;
+		std::getline(infile, line);
+		int temp_cols = 0;
+		std::stringstream stream(line);
+		std::string word;
+		while(std::getline(stream, word, ',')){
+			temp_cols += 1;
+		}
+		if (cols == 0)
+			cols = temp_cols;
+		rows++;
+	}
+	infile.close();
+	infile.open(filename);
+	Eigen::MatrixXf result(rows,cols);
+	rows = 0;
 	while (! infile.eof())
 	{
 		std::string line;
@@ -271,30 +289,67 @@ Eigen::MatrixXf readmatrix_float(std::string filename)
 		std::stringstream stream(line);
 		std::string word;
 		while(std::getline(stream, word, ',')){
-			buff[cols*rows+temp_cols++] = std::stof(word);
+			//buff[cols*rows+temp_cols++] = std::stod(word);
+			result(rows, temp_cols) = std::stod(word);
+			temp_cols += 1;
 		}
-
-		if (cols == 0)
-			cols = temp_cols;
 
 		rows++;
 	}
-
+	infile.close();
+/*
 	// Populate matrix with numbers.
-	Eigen::MatrixXf result(rows,cols);
+	Eigen::MatrixXd result(rows,cols);
     for (int i = 0; i < rows; i++)
         for (int j = 0; j < cols; j++)
             result(i,j) = buff[ cols*i+j ];
-
+*/
     return result;
 
 }
+
+//Eigen::MatrixXf readmatrix_float(std::string filename)
+//{
+//
+//	int cols = 0, rows = 0;
+//	float buff[MAXBUFSIZE];
+//
+//	// Read numbers from file into buffer.
+//	std::ifstream infile;
+//	infile.open(filename);
+//	while (! infile.eof())
+//	{
+//		std::string line;
+//		std::getline(infile, line);
+//
+//		int temp_cols = 0;
+//		std::stringstream stream(line);
+//		std::string word;
+//		while(std::getline(stream, word, ',')){
+//			buff[cols*rows+temp_cols++] = std::stof(word);
+//		}
+//
+//		if (cols == 0)
+//			cols = temp_cols;
+//
+//		rows++;
+//	}
+//
+//	// Populate matrix with numbers.
+//	Eigen::MatrixXf result(rows,cols);
+//    for (int i = 0; i < rows; i++)
+//        for (int j = 0; j < cols; j++)
+//            result(i,j) = buff[ cols*i+j ];
+//
+//    return result;
+//
+//}
 
 Eigen::VectorXd readvector_double(std::string filename)
 {
 
 	int size = 0;
-	double buff[MAXBUFSIZE];
+//	double buff[MAXBUFSIZE];
 
 	// Read numbers from file into buffer.
 	std::ifstream infile;
@@ -304,23 +359,38 @@ Eigen::VectorXd readvector_double(std::string filename)
 		std::string line;
 		std::getline(infile, line);
 
+//		int temp_cols = 0;
+		std::stringstream stream(line);
+		std::string word;
+		while(std::getline(stream, word, ',')){
+//			buff[temp_cols++] = std::stod(word);
+			size += 1;
+		}
+
+//		if (size == 0)
+//			size = temp_cols;
+
+	}
+	infile.close();
+	infile.open(filename);
+	Eigen::VectorXd result(size);
+	while (! infile.eof()){
+		std::string line;
+		std::getline(infile, line);
+
 		int temp_cols = 0;
 		std::stringstream stream(line);
 		std::string word;
 		while(std::getline(stream, word, ',')){
-			buff[temp_cols++] = std::stod(word);
+			result(temp_cols++) = std::stod(word);
 		}
-
-		if (size == 0)
-			size = temp_cols;
-
 	}
 
-	// Populate matrix with numbers.
-	Eigen::VectorXd result(size);
-	for (int j = 0; j < size; j++)
-		result(j) = buff[ j ];
-
+//	// Populate matrix with numbers.
+//	Eigen::VectorXd result(size);
+//	for (int j = 0; j < size; j++)
+//		result(j) = buff[ j ];
+//
     return result;
 
 }
@@ -329,7 +399,7 @@ Eigen::VectorXf readvector_float(std::string filename)
 {
 
 	int size = 0;
-	float buff[MAXBUFSIZE];
+//	double buff[MAXBUFSIZE];
 
 	// Read numbers from file into buffer.
 	std::ifstream infile;
@@ -339,23 +409,73 @@ Eigen::VectorXf readvector_float(std::string filename)
 		std::string line;
 		std::getline(infile, line);
 
+//		int temp_cols = 0;
+		std::stringstream stream(line);
+		std::string word;
+		while(std::getline(stream, word, ',')){
+//			buff[temp_cols++] = std::stod(word);
+			size += 1;
+		}
+
+//		if (size == 0)
+//			size = temp_cols;
+
+	}
+	infile.close();
+	infile.open(filename);
+	Eigen::VectorXf result(size);
+	while (! infile.eof()){
+		std::string line;
+		std::getline(infile, line);
+
 		int temp_cols = 0;
 		std::stringstream stream(line);
 		std::string word;
 		while(std::getline(stream, word, ',')){
-			buff[temp_cols++] = std::stod(word);
+			result(temp_cols++) = std::stod(word);
 		}
-
-		if (size == 0)
-			size = temp_cols;
-
 	}
 
-	// Populate matrix with numbers.
-	Eigen::VectorXf result(size);
-	for (int j = 0; j < size; j++)
-		result(j) = buff[ j ];
-
+//	// Populate matrix with numbers.
+//	Eigen::VectorXd result(size);
+//	for (int j = 0; j < size; j++)
+//		result(j) = buff[ j ];
+//
     return result;
 
 }
+
+//Eigen::VectorXf readvector_float(std::string filename)
+//{
+//
+//	int size = 0;
+//	float buff[MAXBUFSIZE];
+//
+//	// Read numbers from file into buffer.
+//	std::ifstream infile;
+//	infile.open(filename);
+//	while (! infile.eof())
+//	{
+//		std::string line;
+//		std::getline(infile, line);
+//
+//		int temp_cols = 0;
+//		std::stringstream stream(line);
+//		std::string word;
+//		while(std::getline(stream, word, ',')){
+//			buff[temp_cols++] = std::stod(word);
+//		}
+//
+//		if (size == 0)
+//			size = temp_cols;
+//
+//	}
+//
+//	// Populate matrix with numbers.
+//	Eigen::VectorXf result(size);
+//	for (int j = 0; j < size; j++)
+//		result(j) = buff[ j ];
+//
+//    return result;
+//
+//}

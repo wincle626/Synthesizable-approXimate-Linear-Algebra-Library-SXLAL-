@@ -12,7 +12,7 @@ set( CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" )
 
 
 ## project options
-set( PROJECT_NAME "XPRECISION_LINEAR_ALGEBRA" )
+set( PROJECT_NAME "Synthesizable approXimate Linear Algebra Library ( SXLAL )" )
 set( PROJECT_LANGUAGE CXX )
 set( PROJECT_VERSION 0.0.1)
 set( PROJECT_DESCRIPTION "This is a initial test project for proximal grediant descent algorithm" )
@@ -28,38 +28,45 @@ message( "${PROJECT_DESCRIPTION} of version ${PROJECT_VERSION} using ${PROJECT_L
 ## project folder
 if( NOT HEAD_DIR )
 	set( HEAD_DIR ${CMAKE_CURRENT_SOURCE_DIR}/header )
-	set( XILINX_HEADERS_DIR ${HEAD_DIR}/Xilinx)
-	set( FLOATX_HEADERS_DIR ${HEAD_DIR}/FloatX)
+	set( XILINX_HEADERS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/Xilinx)
+	set( FLOATX_HEADERS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/FloatX)
+	set( SOFTPOSIT_HEADERS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/SoftPosit/include)
+	set( SOFTPOSIT_SSE_HEADERS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/external/SoftPosit/8086-SSE)
 endif()
 if( NOT SRC_DIR )
 	set( SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/source )
 endif()
+aux_source_directory( ${CMAKE_CURRENT_SOURCE_DIR}/external/SoftPosit/ SOFTPOSIT_SRC)
 add_subdirectory( ${HEAD_DIR} )
 add_subdirectory( ${SRC_DIR} )
 include_directories( ${HEAD_DIR} )
+include_directories( ${SOFTPOSIT_HEADERS_DIR} )
+include_directories( ${SOFTPOSIT_SSE_HEADERS_DIR} )
 set( PROJECT_SRC
+     ${SOFTPOSIT_SRC}
      source/common.cpp
      source/eigen_algebra.cpp
      source/fpt_algebra.cpp
      source/xfxpt_algebra.cpp
      source/fpt_bitwise.cpp
      source/fxpt_bitwise.cpp
-	 source/fft.cpp
-	 source/qrd.cpp
+     source/fft.cpp
+     source/qrd.cpp
 )
 set( PROJECT_INC
      header/common.hpp
      header/data.hpp
      header/eigen_algebra.hpp
      header/fpt_algebra.hpp
+     header/softposit_algebra.hpp
      header/xfxpt_algebra.hpp
      header/xfxpt.hpp
      header/matplotlibcpp.hpp
      header/fpt_bitwise.hpp
      header/fxpt_bitwise.hpp
-	 header/softapprox.hpp
-	 header/fft.hpp
-	 header/qrd.hpp
+     header/softapprox.hpp
+     header/fft.hpp
+     header/qrd.hpp
 )
 
 
@@ -116,16 +123,22 @@ include(AddUninstallTarget)
 option(INSTALL_LOCAL "Make the installation at local folder instead of system directory" ON)
 
 ## project library
-add_library( xplal ${PROJECT_SRC} ${PROJECT_INC} ${PYTHON_INCLUDE_DIRS})
-target_include_directories( xplal SYSTEM
+add_library( sxlal ${PROJECT_SRC} 
+		   ${PROJECT_INC} 
+		   ${PYTHON_INCLUDE_DIRS} 
+		   ${SOFTPOSIT_HEADERS_DIR}
+		   ${SOFTPOSIT_SSE_HEADERS_DIR})
+target_include_directories( sxlal SYSTEM
 	PUBLIC ${EIGEN_INCLUDE_DIRS}
 	PUBLIC ${FFTW_INCLUDE_DIRS}
 	PUBLIC ${PYTHON_INCLUDE_DIRS}
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
 	PUBLIC ${FLOATX_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_SSE_HEADERS_DIR}
 )
-target_link_libraries( xplal
+target_link_libraries( sxlal
 	PUBLIC m
 	PUBLIC fftw3
 	PUBLIC pthread
@@ -141,6 +154,8 @@ target_include_directories( xfxpt_sqrt SYSTEM
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
 	PUBLIC ${FLOATX_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_SSE_HEADERS_DIR}
 )
 target_link_libraries( xfxpt_sqrt
 	PUBLIC m
@@ -153,6 +168,8 @@ target_include_directories( mm SYSTEM
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
 	PUBLIC ${FLOATX_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_SSE_HEADERS_DIR}
 )
 target_link_libraries( mm
 	PUBLIC m
@@ -164,8 +181,12 @@ add_executable( pgd examples/c/pgd/pgd_eigend.cpp examples/c/pgd/pgd_eigend.hpp
 		    examples/c/pgd/pgd_gfloat.cpp examples/c/pgd/pgd_gfloat.hpp
 		    examples/c/pgd/pgd_xfpt.cpp examples/c/pgd/pgd_xfpt.hpp
 		    examples/c/pgd/pgd_xfxpt.cpp examples/c/pgd/pgd_xfxpt.hpp
+		    examples/c/pgd/pgd_softposit8.cpp examples/c/pgd/pgd_softposit8.hpp
+		    examples/c/pgd/pgd_softposit16.cpp examples/c/pgd/pgd_softposit16.hpp
+		    examples/c/pgd/pgd_softposit32.cpp examples/c/pgd/pgd_softposit32.hpp
 		    examples/c/pgd/pgd.cpp examples/c/pgd/pgd.hpp
 		    source/common.cpp header/common.hpp header/data.hpp
+     		    ${SOFTPOSIT_SRC}
 )
 target_include_directories( pgd SYSTEM
 	PUBLIC ${EIGEN_INCLUDE_DIRS}
@@ -173,6 +194,8 @@ target_include_directories( pgd SYSTEM
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
 	PUBLIC ${FLOATX_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_SSE_HEADERS_DIR}
 )
 target_link_libraries( pgd
 	PUBLIC m
@@ -182,6 +205,7 @@ target_link_libraries( pgd
 # alternating direction method of multipliers (ADMM) 
 add_executable( admm examples/c/admm/admm.cpp examples/c/admm/admm.hpp
 		    source/common.cpp header/common.hpp header/data.hpp
+     		    ${SOFTPOSIT_SRC}
 )
 target_include_directories( admm SYSTEM
 	PUBLIC ${EIGEN_INCLUDE_DIRS}
@@ -189,6 +213,8 @@ target_include_directories( admm SYSTEM
 	PUBLIC ${HEAD_DIR}
 	PUBLIC ${XILINX_HEADERS_DIR}
 	PUBLIC ${FLOATX_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_SSE_HEADERS_DIR}
 )
 target_link_libraries( admm
 	PUBLIC m

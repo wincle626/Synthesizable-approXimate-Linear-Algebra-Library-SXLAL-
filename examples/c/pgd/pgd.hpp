@@ -17,9 +17,10 @@
 #include "fpt_algebra.hpp"
 #include "matplotlibcpp.hpp"
 #include "xfxpt_algebra.hpp"
+#include "softposit_algebra.hpp"
 #include "floatx.hpp"
 
-#define ITER_MAX 100000 // Iteration constraint
+#define ITER_MAX 1000000 // Iteration constraint
 #define EPS_STOP 0.00001 // Early termination constraint
 #define BOX_CONST 10 // Box constraint on the variable
 #define ERR_STD 0 // Error standard deviation when box projection
@@ -32,6 +33,7 @@
 #define COMSTOM_FLOAT_PRECISION // general float precision switch
 //#define GENERAL_INTEGER_PRECISION // general integer precision switch
 //#define XILINX_FIXED_PRECISION // fixed point precision swithc
+//#define SOFT_POSIT_PRECISION // SoftPosit precision
 
 //#define DEBUG_DATA // print data
 //#define DEBUG_LAFUNC // print comparison between Eigen3 and General Double
@@ -39,7 +41,7 @@
 
 #define TIME_PROFILE // print and save time profiling
 #define PLOT_FIGURE // plot the figure
-//#define SHOW_FIGURE // show the plot
+#define SHOW_FIGURE // show the plot
 //#define ALWAYS_DELETE // deleting saved file
 #define RECORD_RESULT // recording result switch
 //#define REACTIVE_ITERATION // reactive iteration switch

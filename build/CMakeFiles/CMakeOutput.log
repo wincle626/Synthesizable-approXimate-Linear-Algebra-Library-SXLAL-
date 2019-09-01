@@ -1,4 +1,4 @@
-The system is: Linux - 4.4.0-18362-Microsoft - x86_64
+The system is: Linux - 5.0.0-25-generic - x86_64
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
 Build flags: 
@@ -10,33 +10,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_03650/fast"
-/usr/bin/make -f CMakeFiles/cmTC_03650.dir/build.make CMakeFiles/cmTC_03650.dir/build
-make[1]: Entering directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_03650.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_03650.dir/testCXXCompiler.cxx.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_03650
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03650.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_03650.dir/testCXXCompiler.cxx.o  -o cmTC_03650 
-make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_fea51/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fea51.dir/build.make CMakeFiles/cmTC_fea51.dir/build
+make[1]: Entering directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fea51.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_fea51.dir/testCXXCompiler.cxx.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_fea51
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fea51.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_fea51.dir/testCXXCompiler.cxx.o  -o cmTC_fea51 
+make[1]: Leaving directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f6d6b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f6d6b.dir/build.make CMakeFiles/cmTC_f6d6b.dir/build
-make[1]: Entering directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_f6d6b
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6d6b.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f6d6b 
+Run Build Command:"/usr/bin/make" "cmTC_c11f3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c11f3.dir/build.make CMakeFiles/cmTC_c11f3.dir/build
+make[1]: Entering directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_c11f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c11f3.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c11f3 
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
@@ -48,24 +48,24 @@ Thread model: posix
 gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6d6b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJFzBpu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f6d6b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6d6b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c11f3' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvQrcM6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c11f3 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c11f3' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f6d6b/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f6d6b.dir/build.make CMakeFiles/cmTC_f6d6b.dir/build]
-  ignore line: [make[1]: Entering directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_f6d6b]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f6d6b.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f6d6b ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c11f3/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c11f3.dir/build.make CMakeFiles/cmTC_c11f3.dir/build]
+  ignore line: [make[1]: Entering directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_c11f3]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c11f3.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_c11f3 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
@@ -77,13 +77,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f6d6b' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJFzBpu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f6d6b /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c11f3' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvQrcM6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c11f3 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccJFzBpu.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccvQrcM6.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -102,7 +102,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f6d6b] ==> ignore
+    arg [cmTC_c11f3] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
@@ -114,7 +114,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_f6d6b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_c11f3.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -140,17 +140,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1b368/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1b368.dir/build.make CMakeFiles/cmTC_1b368.dir/build
-make[1]: Entering directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1b368.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_1b368.dir/feature_tests.cxx.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1b368
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b368.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_1b368.dir/feature_tests.cxx.o  -o cmTC_1b368 
-make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_d5821/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5821.dir/build.make CMakeFiles/cmTC_d5821.dir/build
+make[1]: Entering directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d5821.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_d5821.dir/feature_tests.cxx.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_d5821
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5821.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_d5821.dir/feature_tests.cxx.o  -o cmTC_d5821 
+make[1]: Leaving directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -213,17 +213,17 @@ make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xpre
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3b4cc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3b4cc.dir/build.make CMakeFiles/cmTC_3b4cc.dir/build
-make[1]: Entering directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3b4cc.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_3b4cc.dir/feature_tests.cxx.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_3b4cc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b4cc.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_3b4cc.dir/feature_tests.cxx.o  -o cmTC_3b4cc 
-make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_8950c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8950c.dir/build.make CMakeFiles/cmTC_8950c.dir/build
+make[1]: Entering directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8950c.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_8950c.dir/feature_tests.cxx.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8950c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8950c.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_8950c.dir/feature_tests.cxx.o  -o cmTC_8950c 
+make[1]: Leaving directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -286,17 +286,17 @@ make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xpre
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5baf2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5baf2.dir/build.make CMakeFiles/cmTC_5baf2.dir/build
-make[1]: Entering directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5baf2.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_5baf2.dir/feature_tests.cxx.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5baf2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5baf2.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_5baf2.dir/feature_tests.cxx.o  -o cmTC_5baf2 
-make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_6cf23/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6cf23.dir/build.make CMakeFiles/cmTC_6cf23.dir/build
+make[1]: Entering directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6cf23.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_6cf23.dir/feature_tests.cxx.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_6cf23
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cf23.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_6cf23.dir/feature_tests.cxx.o  -o cmTC_6cf23 
+make[1]: Leaving directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -359,17 +359,17 @@ make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xpre
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f83f6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f83f6.dir/build.make CMakeFiles/cmTC_f83f6.dir/build
-make[1]: Entering directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_f83f6.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_f83f6.dir/feature_tests.cxx.o -c /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_f83f6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f83f6.dir/link.txt --verbose=1
-/usr/bin/c++       CMakeFiles/cmTC_f83f6.dir/feature_tests.cxx.o  -o cmTC_f83f6 
-make[1]: Leaving directory '/mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTC_9f9eb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9f9eb.dir/build.make CMakeFiles/cmTC_9f9eb.dir/build
+make[1]: Entering directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9f9eb.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_9f9eb.dir/feature_tests.cxx.o -c /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9f9eb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f9eb.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_9f9eb.dir/feature_tests.cxx.o  -o cmTC_9f9eb 
+make[1]: Leaving directory '/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

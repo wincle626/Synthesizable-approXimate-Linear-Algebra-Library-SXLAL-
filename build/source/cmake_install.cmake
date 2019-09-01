@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/d/UDRC_HW/workspaces/gitworkspace/software/Xprecision_Linear_Algebra_Library/source
+# Install script for directory: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
