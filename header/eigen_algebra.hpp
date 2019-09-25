@@ -61,7 +61,7 @@ public:
 			for( int j=0; j<N; j++ ){
 				int rnd = rand() % FLOAT_SIZE;
 				double rndnum = INTEGER_SCALE * (double)( rnd ) / FLOAT_SIZE;
-				Mat( i, j ) = rndnum;
+				Mat( i, j ) = 2*rndnum-INTEGER_SCALE;
 			}
 		}
 	}
@@ -72,7 +72,7 @@ public:
 			for( int j=0; j<N; j++ ){
 				int rnd = rand() % FLOAT_SIZE;
 				double rndnum = INTEGER_SCALE * (double)( rnd ) / FLOAT_SIZE;
-				Mat( i, j ) = rndnum;
+				Mat( i, j ) = 2*rndnum-INTEGER_SCALE;
 			}
 		}
 	}
@@ -146,7 +146,7 @@ public:
 		for( int i=0; i<M; i++ ){
 			int rnd = rand() % FLOAT_SIZE;
 			double rndnum = INTEGER_SCALE * (double)( rnd ) / FLOAT_SIZE;
-			Vec(i) =  rndnum;
+			Vec(i) =  2*rndnum-INTEGER_SCALE;
 		}
 	}
 	template<class EigenT>
@@ -155,7 +155,22 @@ public:
 		for( int i=0; i<M; i++ ){
 			int rnd = rand() % FLOAT_SIZE;
 			double rndnum = INTEGER_SCALE * (double)( rnd ) / FLOAT_SIZE;
-			Vec(i) =  rndnum;
+			Vec(i) =  2*rndnum-INTEGER_SCALE;
+		}
+	}
+
+	template<class EigenT, int M>
+	void RND_SPVEC( EigenT &Vec){
+		srand (time(NULL));
+		int sparse_num = floor( SPARSE_RATIO * M );
+		for( int i=0; i<M; i++){
+			if( i<sparse_num){
+				int rnd = rand() % FLOAT_SIZE;
+				double rndnum = INTEGER_SCALE * (double)( rnd ) / FLOAT_SIZE;
+				Vec(i) =  2*rndnum-INTEGER_SCALE;
+			}else{
+				Vec(i) = 0;
+			}
 		}
 	}
 
@@ -559,6 +574,29 @@ public:
 		for(int i=0;i<M;i++)
 			for(int j=0;j<N;j++)
 				MatC(i,j) = MatA(i,j)/MatB(i,j);
+	}
+
+	// Matrix dot norm
+	template<class EigenT, int M, int N>
+	void MAT_DOTNORM2(EigenT MatA,
+					EigenT &MatC){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC(i,j) = MatA(i,j)*MatA(i,j);
+	}
+	template<class EigenT, int M, int N>
+	void MAT_DOTNORM(EigenT MatA,
+					EigenT &MatC){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC(i,j) = (MatA(i,j)>=0 ? MatA(i,j) : -MatA(i,j));
+	}
+
+	// Matrix subtraction
+	template<class EigenT1, class EigenT2>
+	void MAT_SUM( EigenT1 MatA,
+				  EigenT2 &MatC ){
+		MatC = MatA;
 	}
 
 	// Matrix dot division scalar

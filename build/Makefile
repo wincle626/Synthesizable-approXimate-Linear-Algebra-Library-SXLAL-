@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL
+CMAKE_SOURCE_DIR = /static/workspaces/gitworkspace/SXLAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build
+CMAKE_BINARY_DIR = /static/workspaces/gitworkspace/SXLAL/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named admm_lasso
+
+# Build rule for target.
+admm_lasso: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 admm_lasso
+.PHONY : admm_lasso
+
+# fast build rule for target.
+admm_lasso/fast:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/build
+.PHONY : admm_lasso/fast
 
 #=============================================================================
 # Target rules for targets named sxlal
@@ -214,6 +227,33 @@ examples/c/admm/admm.s: examples/c/admm/admm.cpp.s
 examples/c/admm/admm.cpp.s:
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/examples/c/admm/admm.cpp.s
 .PHONY : examples/c/admm/admm.cpp.s
+
+examples/c/admm_lasso/admm_lasso.o: examples/c/admm_lasso/admm_lasso.cpp.o
+
+.PHONY : examples/c/admm_lasso/admm_lasso.o
+
+# target to build an object file
+examples/c/admm_lasso/admm_lasso.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/examples/c/admm_lasso/admm_lasso.cpp.o
+.PHONY : examples/c/admm_lasso/admm_lasso.cpp.o
+
+examples/c/admm_lasso/admm_lasso.i: examples/c/admm_lasso/admm_lasso.cpp.i
+
+.PHONY : examples/c/admm_lasso/admm_lasso.i
+
+# target to preprocess a source file
+examples/c/admm_lasso/admm_lasso.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/examples/c/admm_lasso/admm_lasso.cpp.i
+.PHONY : examples/c/admm_lasso/admm_lasso.cpp.i
+
+examples/c/admm_lasso/admm_lasso.s: examples/c/admm_lasso/admm_lasso.cpp.s
+
+.PHONY : examples/c/admm_lasso/admm_lasso.s
+
+# target to generate assembly for a file
+examples/c/admm_lasso/admm_lasso.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/examples/c/admm_lasso/admm_lasso.cpp.s
+.PHONY : examples/c/admm_lasso/admm_lasso.cpp.s
 
 examples/c/mm/mm.o: examples/c/mm/mm.cpp.o
 
@@ -545,6 +585,7 @@ external/SoftPosit/c_convertDecToPosit16.o: external/SoftPosit/c_convertDecToPos
 
 # target to build an object file
 external/SoftPosit/c_convertDecToPosit16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.o
@@ -556,6 +597,7 @@ external/SoftPosit/c_convertDecToPosit16.i: external/SoftPosit/c_convertDecToPos
 
 # target to preprocess a source file
 external/SoftPosit/c_convertDecToPosit16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.i
@@ -567,6 +609,7 @@ external/SoftPosit/c_convertDecToPosit16.s: external/SoftPosit/c_convertDecToPos
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertDecToPosit16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit16.cpp.s
@@ -578,6 +621,7 @@ external/SoftPosit/c_convertDecToPosit32.o: external/SoftPosit/c_convertDecToPos
 
 # target to build an object file
 external/SoftPosit/c_convertDecToPosit32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.o
@@ -589,6 +633,7 @@ external/SoftPosit/c_convertDecToPosit32.i: external/SoftPosit/c_convertDecToPos
 
 # target to preprocess a source file
 external/SoftPosit/c_convertDecToPosit32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.i
@@ -600,6 +645,7 @@ external/SoftPosit/c_convertDecToPosit32.s: external/SoftPosit/c_convertDecToPos
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertDecToPosit32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit32.cpp.s
@@ -611,6 +657,7 @@ external/SoftPosit/c_convertDecToPosit8.o: external/SoftPosit/c_convertDecToPosi
 
 # target to build an object file
 external/SoftPosit/c_convertDecToPosit8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.o
@@ -622,6 +669,7 @@ external/SoftPosit/c_convertDecToPosit8.i: external/SoftPosit/c_convertDecToPosi
 
 # target to preprocess a source file
 external/SoftPosit/c_convertDecToPosit8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.i
@@ -633,6 +681,7 @@ external/SoftPosit/c_convertDecToPosit8.s: external/SoftPosit/c_convertDecToPosi
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertDecToPosit8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPosit8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPosit8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPosit8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPosit8.cpp.s
@@ -644,6 +693,7 @@ external/SoftPosit/c_convertDecToPositX1.o: external/SoftPosit/c_convertDecToPos
 
 # target to build an object file
 external/SoftPosit/c_convertDecToPositX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.o
@@ -655,6 +705,7 @@ external/SoftPosit/c_convertDecToPositX1.i: external/SoftPosit/c_convertDecToPos
 
 # target to preprocess a source file
 external/SoftPosit/c_convertDecToPositX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPositX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPositX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPositX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.i
@@ -666,6 +717,7 @@ external/SoftPosit/c_convertDecToPositX1.s: external/SoftPosit/c_convertDecToPos
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertDecToPositX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertDecToPositX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertDecToPositX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertDecToPositX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertDecToPositX1.cpp.s
@@ -677,6 +729,7 @@ external/SoftPosit/c_convertPosit16ToDec.o: external/SoftPosit/c_convertPosit16T
 
 # target to build an object file
 external/SoftPosit/c_convertPosit16ToDec.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.o
@@ -688,6 +741,7 @@ external/SoftPosit/c_convertPosit16ToDec.i: external/SoftPosit/c_convertPosit16T
 
 # target to preprocess a source file
 external/SoftPosit/c_convertPosit16ToDec.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.i
@@ -699,6 +753,7 @@ external/SoftPosit/c_convertPosit16ToDec.s: external/SoftPosit/c_convertPosit16T
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertPosit16ToDec.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit16ToDec.cpp.s
@@ -710,6 +765,7 @@ external/SoftPosit/c_convertPosit32ToDec.o: external/SoftPosit/c_convertPosit32T
 
 # target to build an object file
 external/SoftPosit/c_convertPosit32ToDec.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.o
@@ -721,6 +777,7 @@ external/SoftPosit/c_convertPosit32ToDec.i: external/SoftPosit/c_convertPosit32T
 
 # target to preprocess a source file
 external/SoftPosit/c_convertPosit32ToDec.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.i
@@ -732,6 +789,7 @@ external/SoftPosit/c_convertPosit32ToDec.s: external/SoftPosit/c_convertPosit32T
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertPosit32ToDec.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit32ToDec.cpp.s
@@ -743,6 +801,7 @@ external/SoftPosit/c_convertPosit8ToDec.o: external/SoftPosit/c_convertPosit8ToD
 
 # target to build an object file
 external/SoftPosit/c_convertPosit8ToDec.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.o
@@ -754,6 +813,7 @@ external/SoftPosit/c_convertPosit8ToDec.i: external/SoftPosit/c_convertPosit8ToD
 
 # target to preprocess a source file
 external/SoftPosit/c_convertPosit8ToDec.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.i
@@ -765,6 +825,7 @@ external/SoftPosit/c_convertPosit8ToDec.s: external/SoftPosit/c_convertPosit8ToD
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertPosit8ToDec.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPosit8ToDec.cpp.s
@@ -776,6 +837,7 @@ external/SoftPosit/c_convertPositX1ToDec.o: external/SoftPosit/c_convertPositX1T
 
 # target to build an object file
 external/SoftPosit/c_convertPositX1ToDec.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.o
@@ -787,6 +849,7 @@ external/SoftPosit/c_convertPositX1ToDec.i: external/SoftPosit/c_convertPositX1T
 
 # target to preprocess a source file
 external/SoftPosit/c_convertPositX1ToDec.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.i
@@ -798,6 +861,7 @@ external/SoftPosit/c_convertPositX1ToDec.s: external/SoftPosit/c_convertPositX1T
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertPositX1ToDec.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertPositX1ToDec.cpp.s
@@ -809,6 +873,7 @@ external/SoftPosit/c_convertQuire16ToPosit16.o: external/SoftPosit/c_convertQuir
 
 # target to build an object file
 external/SoftPosit/c_convertQuire16ToPosit16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.o
@@ -820,6 +885,7 @@ external/SoftPosit/c_convertQuire16ToPosit16.i: external/SoftPosit/c_convertQuir
 
 # target to preprocess a source file
 external/SoftPosit/c_convertQuire16ToPosit16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.i
@@ -831,6 +897,7 @@ external/SoftPosit/c_convertQuire16ToPosit16.s: external/SoftPosit/c_convertQuir
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertQuire16ToPosit16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire16ToPosit16.cpp.s
@@ -842,6 +909,7 @@ external/SoftPosit/c_convertQuire32ToPosit32.o: external/SoftPosit/c_convertQuir
 
 # target to build an object file
 external/SoftPosit/c_convertQuire32ToPosit32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.o
@@ -853,6 +921,7 @@ external/SoftPosit/c_convertQuire32ToPosit32.i: external/SoftPosit/c_convertQuir
 
 # target to preprocess a source file
 external/SoftPosit/c_convertQuire32ToPosit32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.i
@@ -864,6 +933,7 @@ external/SoftPosit/c_convertQuire32ToPosit32.s: external/SoftPosit/c_convertQuir
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertQuire32ToPosit32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire32ToPosit32.cpp.s
@@ -875,6 +945,7 @@ external/SoftPosit/c_convertQuire8ToPosit8.o: external/SoftPosit/c_convertQuire8
 
 # target to build an object file
 external/SoftPosit/c_convertQuire8ToPosit8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.o
@@ -886,6 +957,7 @@ external/SoftPosit/c_convertQuire8ToPosit8.i: external/SoftPosit/c_convertQuire8
 
 # target to preprocess a source file
 external/SoftPosit/c_convertQuire8ToPosit8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.i
@@ -897,6 +969,7 @@ external/SoftPosit/c_convertQuire8ToPosit8.s: external/SoftPosit/c_convertQuire8
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertQuire8ToPosit8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuire8ToPosit8.cpp.s
@@ -908,6 +981,7 @@ external/SoftPosit/c_convertQuireX2ToPositX2.o: external/SoftPosit/c_convertQuir
 
 # target to build an object file
 external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.o
@@ -919,6 +993,7 @@ external/SoftPosit/c_convertQuireX2ToPositX2.i: external/SoftPosit/c_convertQuir
 
 # target to preprocess a source file
 external/SoftPosit/c_convertQuireX2ToPositX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.i
@@ -930,6 +1005,7 @@ external/SoftPosit/c_convertQuireX2ToPositX2.s: external/SoftPosit/c_convertQuir
 
 # target to generate assembly for a file
 external/SoftPosit/c_convertQuireX2ToPositX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_convertQuireX2ToPositX2.cpp.s
@@ -941,6 +1017,7 @@ external/SoftPosit/c_int.o: external/SoftPosit/c_int.cpp.o
 
 # target to build an object file
 external/SoftPosit/c_int.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_int.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_int.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_int.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.o
@@ -952,6 +1029,7 @@ external/SoftPosit/c_int.i: external/SoftPosit/c_int.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/c_int.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_int.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_int.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_int.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.i
@@ -963,6 +1041,7 @@ external/SoftPosit/c_int.s: external/SoftPosit/c_int.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/c_int.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/c_int.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/c_int.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/c_int.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/c_int.cpp.s
@@ -974,6 +1053,7 @@ external/SoftPosit/i32_to_p16.o: external/SoftPosit/i32_to_p16.cpp.o
 
 # target to build an object file
 external/SoftPosit/i32_to_p16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.o
@@ -985,6 +1065,7 @@ external/SoftPosit/i32_to_p16.i: external/SoftPosit/i32_to_p16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i32_to_p16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.i
@@ -996,6 +1077,7 @@ external/SoftPosit/i32_to_p16.s: external/SoftPosit/i32_to_p16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i32_to_p16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p16.cpp.s
@@ -1007,6 +1089,7 @@ external/SoftPosit/i32_to_p32.o: external/SoftPosit/i32_to_p32.cpp.o
 
 # target to build an object file
 external/SoftPosit/i32_to_p32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.o
@@ -1018,6 +1101,7 @@ external/SoftPosit/i32_to_p32.i: external/SoftPosit/i32_to_p32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i32_to_p32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.i
@@ -1029,6 +1113,7 @@ external/SoftPosit/i32_to_p32.s: external/SoftPosit/i32_to_p32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i32_to_p32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p32.cpp.s
@@ -1040,6 +1125,7 @@ external/SoftPosit/i32_to_p8.o: external/SoftPosit/i32_to_p8.cpp.o
 
 # target to build an object file
 external/SoftPosit/i32_to_p8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.o
@@ -1051,6 +1137,7 @@ external/SoftPosit/i32_to_p8.i: external/SoftPosit/i32_to_p8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i32_to_p8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.i
@@ -1062,6 +1149,7 @@ external/SoftPosit/i32_to_p8.s: external/SoftPosit/i32_to_p8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i32_to_p8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_p8.cpp.s
@@ -1073,6 +1161,7 @@ external/SoftPosit/i32_to_pX1.o: external/SoftPosit/i32_to_pX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/i32_to_pX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.o
@@ -1084,6 +1173,7 @@ external/SoftPosit/i32_to_pX1.i: external/SoftPosit/i32_to_pX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i32_to_pX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.i
@@ -1095,6 +1185,7 @@ external/SoftPosit/i32_to_pX1.s: external/SoftPosit/i32_to_pX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i32_to_pX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX1.cpp.s
@@ -1106,6 +1197,7 @@ external/SoftPosit/i32_to_pX2.o: external/SoftPosit/i32_to_pX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/i32_to_pX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.o
@@ -1117,6 +1209,7 @@ external/SoftPosit/i32_to_pX2.i: external/SoftPosit/i32_to_pX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i32_to_pX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.i
@@ -1128,6 +1221,7 @@ external/SoftPosit/i32_to_pX2.s: external/SoftPosit/i32_to_pX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i32_to_pX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i32_to_pX2.cpp.s
@@ -1139,6 +1233,7 @@ external/SoftPosit/i64_to_p16.o: external/SoftPosit/i64_to_p16.cpp.o
 
 # target to build an object file
 external/SoftPosit/i64_to_p16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.o
@@ -1150,6 +1245,7 @@ external/SoftPosit/i64_to_p16.i: external/SoftPosit/i64_to_p16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i64_to_p16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.i
@@ -1161,6 +1257,7 @@ external/SoftPosit/i64_to_p16.s: external/SoftPosit/i64_to_p16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i64_to_p16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p16.cpp.s
@@ -1172,6 +1269,7 @@ external/SoftPosit/i64_to_p32.o: external/SoftPosit/i64_to_p32.cpp.o
 
 # target to build an object file
 external/SoftPosit/i64_to_p32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.o
@@ -1183,6 +1281,7 @@ external/SoftPosit/i64_to_p32.i: external/SoftPosit/i64_to_p32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i64_to_p32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.i
@@ -1194,6 +1293,7 @@ external/SoftPosit/i64_to_p32.s: external/SoftPosit/i64_to_p32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i64_to_p32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p32.cpp.s
@@ -1205,6 +1305,7 @@ external/SoftPosit/i64_to_p8.o: external/SoftPosit/i64_to_p8.cpp.o
 
 # target to build an object file
 external/SoftPosit/i64_to_p8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.o
@@ -1216,6 +1317,7 @@ external/SoftPosit/i64_to_p8.i: external/SoftPosit/i64_to_p8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i64_to_p8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.i
@@ -1227,6 +1329,7 @@ external/SoftPosit/i64_to_p8.s: external/SoftPosit/i64_to_p8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i64_to_p8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_p8.cpp.s
@@ -1238,6 +1341,7 @@ external/SoftPosit/i64_to_pX2.o: external/SoftPosit/i64_to_pX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/i64_to_pX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.o
@@ -1249,6 +1353,7 @@ external/SoftPosit/i64_to_pX2.i: external/SoftPosit/i64_to_pX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/i64_to_pX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.i
@@ -1260,6 +1365,7 @@ external/SoftPosit/i64_to_pX2.s: external/SoftPosit/i64_to_pX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/i64_to_pX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/i64_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/i64_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/i64_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/i64_to_pX2.cpp.s
@@ -1271,6 +1377,7 @@ external/SoftPosit/p16_add.o: external/SoftPosit/p16_add.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_add.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_add.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_add.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_add.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.o
@@ -1282,6 +1389,7 @@ external/SoftPosit/p16_add.i: external/SoftPosit/p16_add.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_add.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_add.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_add.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_add.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.i
@@ -1293,6 +1401,7 @@ external/SoftPosit/p16_add.s: external/SoftPosit/p16_add.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_add.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_add.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_add.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_add.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_add.cpp.s
@@ -1304,6 +1413,7 @@ external/SoftPosit/p16_div.o: external/SoftPosit/p16_div.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_div.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_div.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_div.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_div.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.o
@@ -1315,6 +1425,7 @@ external/SoftPosit/p16_div.i: external/SoftPosit/p16_div.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_div.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_div.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_div.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_div.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.i
@@ -1326,6 +1437,7 @@ external/SoftPosit/p16_div.s: external/SoftPosit/p16_div.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_div.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_div.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_div.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_div.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_div.cpp.s
@@ -1337,6 +1449,7 @@ external/SoftPosit/p16_eq.o: external/SoftPosit/p16_eq.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_eq.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_eq.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_eq.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_eq.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.o
@@ -1348,6 +1461,7 @@ external/SoftPosit/p16_eq.i: external/SoftPosit/p16_eq.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_eq.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_eq.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_eq.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_eq.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.i
@@ -1359,6 +1473,7 @@ external/SoftPosit/p16_eq.s: external/SoftPosit/p16_eq.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_eq.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_eq.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_eq.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_eq.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_eq.cpp.s
@@ -1370,6 +1485,7 @@ external/SoftPosit/p16_le.o: external/SoftPosit/p16_le.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_le.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_le.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_le.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_le.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.o
@@ -1381,6 +1497,7 @@ external/SoftPosit/p16_le.i: external/SoftPosit/p16_le.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_le.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_le.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_le.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_le.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.i
@@ -1392,6 +1509,7 @@ external/SoftPosit/p16_le.s: external/SoftPosit/p16_le.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_le.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_le.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_le.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_le.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_le.cpp.s
@@ -1403,6 +1521,7 @@ external/SoftPosit/p16_lt.o: external/SoftPosit/p16_lt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_lt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_lt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_lt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_lt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.o
@@ -1414,6 +1533,7 @@ external/SoftPosit/p16_lt.i: external/SoftPosit/p16_lt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_lt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_lt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_lt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_lt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.i
@@ -1425,6 +1545,7 @@ external/SoftPosit/p16_lt.s: external/SoftPosit/p16_lt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_lt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_lt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_lt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_lt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_lt.cpp.s
@@ -1436,6 +1557,7 @@ external/SoftPosit/p16_mul.o: external/SoftPosit/p16_mul.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_mul.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_mul.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_mul.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_mul.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.o
@@ -1447,6 +1569,7 @@ external/SoftPosit/p16_mul.i: external/SoftPosit/p16_mul.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_mul.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_mul.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_mul.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_mul.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.i
@@ -1458,6 +1581,7 @@ external/SoftPosit/p16_mul.s: external/SoftPosit/p16_mul.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_mul.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_mul.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_mul.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_mul.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_mul.cpp.s
@@ -1469,6 +1593,7 @@ external/SoftPosit/p16_mulAdd.o: external/SoftPosit/p16_mulAdd.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_mulAdd.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.o
@@ -1480,6 +1605,7 @@ external/SoftPosit/p16_mulAdd.i: external/SoftPosit/p16_mulAdd.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_mulAdd.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.i
@@ -1491,6 +1617,7 @@ external/SoftPosit/p16_mulAdd.s: external/SoftPosit/p16_mulAdd.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_mulAdd.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_mulAdd.cpp.s
@@ -1502,6 +1629,7 @@ external/SoftPosit/p16_roundToInt.o: external/SoftPosit/p16_roundToInt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_roundToInt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.o
@@ -1513,6 +1641,7 @@ external/SoftPosit/p16_roundToInt.i: external/SoftPosit/p16_roundToInt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_roundToInt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.i
@@ -1524,6 +1653,7 @@ external/SoftPosit/p16_roundToInt.s: external/SoftPosit/p16_roundToInt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_roundToInt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_roundToInt.cpp.s
@@ -1535,6 +1665,7 @@ external/SoftPosit/p16_sqrt.o: external/SoftPosit/p16_sqrt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_sqrt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.o
@@ -1546,6 +1677,7 @@ external/SoftPosit/p16_sqrt.i: external/SoftPosit/p16_sqrt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_sqrt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.i
@@ -1557,6 +1689,7 @@ external/SoftPosit/p16_sqrt.s: external/SoftPosit/p16_sqrt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_sqrt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_sqrt.cpp.s
@@ -1568,6 +1701,7 @@ external/SoftPosit/p16_sub.o: external/SoftPosit/p16_sub.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_sub.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_sub.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_sub.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.o
@@ -1579,6 +1713,7 @@ external/SoftPosit/p16_sub.i: external/SoftPosit/p16_sub.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_sub.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_sub.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_sub.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.i
@@ -1590,6 +1725,7 @@ external/SoftPosit/p16_sub.s: external/SoftPosit/p16_sub.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_sub.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_sub.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_sub.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_sub.cpp.s
@@ -1601,6 +1737,7 @@ external/SoftPosit/p16_to_i32.o: external/SoftPosit/p16_to_i32.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_to_i32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.o
@@ -1612,6 +1749,7 @@ external/SoftPosit/p16_to_i32.i: external/SoftPosit/p16_to_i32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_to_i32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.i
@@ -1623,6 +1761,7 @@ external/SoftPosit/p16_to_i32.s: external/SoftPosit/p16_to_i32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_to_i32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i32.cpp.s
@@ -1634,6 +1773,7 @@ external/SoftPosit/p16_to_i64.o: external/SoftPosit/p16_to_i64.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_to_i64.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.o
@@ -1645,6 +1785,7 @@ external/SoftPosit/p16_to_i64.i: external/SoftPosit/p16_to_i64.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_to_i64.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.i
@@ -1656,6 +1797,7 @@ external/SoftPosit/p16_to_i64.s: external/SoftPosit/p16_to_i64.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_to_i64.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_i64.cpp.s
@@ -1667,6 +1809,7 @@ external/SoftPosit/p16_to_p32.o: external/SoftPosit/p16_to_p32.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_to_p32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.o
@@ -1678,6 +1821,7 @@ external/SoftPosit/p16_to_p32.i: external/SoftPosit/p16_to_p32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_to_p32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.i
@@ -1689,6 +1833,7 @@ external/SoftPosit/p16_to_p32.s: external/SoftPosit/p16_to_p32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_to_p32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p32.cpp.s
@@ -1700,6 +1845,7 @@ external/SoftPosit/p16_to_p8.o: external/SoftPosit/p16_to_p8.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_to_p8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.o
@@ -1711,6 +1857,7 @@ external/SoftPosit/p16_to_p8.i: external/SoftPosit/p16_to_p8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_to_p8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.i
@@ -1722,6 +1869,7 @@ external/SoftPosit/p16_to_p8.s: external/SoftPosit/p16_to_p8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_to_p8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_p8.cpp.s
@@ -1733,6 +1881,7 @@ external/SoftPosit/p16_to_pX1.o: external/SoftPosit/p16_to_pX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_to_pX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.o
@@ -1744,6 +1893,7 @@ external/SoftPosit/p16_to_pX1.i: external/SoftPosit/p16_to_pX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_to_pX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.i
@@ -1755,6 +1905,7 @@ external/SoftPosit/p16_to_pX1.s: external/SoftPosit/p16_to_pX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_to_pX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX1.cpp.s
@@ -1766,6 +1917,7 @@ external/SoftPosit/p16_to_pX2.o: external/SoftPosit/p16_to_pX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_to_pX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.o
@@ -1777,6 +1929,7 @@ external/SoftPosit/p16_to_pX2.i: external/SoftPosit/p16_to_pX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_to_pX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.i
@@ -1788,6 +1941,7 @@ external/SoftPosit/p16_to_pX2.s: external/SoftPosit/p16_to_pX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_to_pX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_pX2.cpp.s
@@ -1799,6 +1953,7 @@ external/SoftPosit/p16_to_ui32.o: external/SoftPosit/p16_to_ui32.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_to_ui32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.o
@@ -1810,6 +1965,7 @@ external/SoftPosit/p16_to_ui32.i: external/SoftPosit/p16_to_ui32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_to_ui32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.i
@@ -1821,6 +1977,7 @@ external/SoftPosit/p16_to_ui32.s: external/SoftPosit/p16_to_ui32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_to_ui32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui32.cpp.s
@@ -1832,6 +1989,7 @@ external/SoftPosit/p16_to_ui64.o: external/SoftPosit/p16_to_ui64.cpp.o
 
 # target to build an object file
 external/SoftPosit/p16_to_ui64.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.o
@@ -1843,6 +2001,7 @@ external/SoftPosit/p16_to_ui64.i: external/SoftPosit/p16_to_ui64.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p16_to_ui64.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.i
@@ -1854,6 +2013,7 @@ external/SoftPosit/p16_to_ui64.s: external/SoftPosit/p16_to_ui64.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p16_to_ui64.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p16_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p16_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p16_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p16_to_ui64.cpp.s
@@ -1865,6 +2025,7 @@ external/SoftPosit/p32_add.o: external/SoftPosit/p32_add.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_add.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_add.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_add.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_add.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.o
@@ -1876,6 +2037,7 @@ external/SoftPosit/p32_add.i: external/SoftPosit/p32_add.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_add.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_add.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_add.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_add.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.i
@@ -1887,6 +2049,7 @@ external/SoftPosit/p32_add.s: external/SoftPosit/p32_add.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_add.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_add.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_add.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_add.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_add.cpp.s
@@ -1898,6 +2061,7 @@ external/SoftPosit/p32_div.o: external/SoftPosit/p32_div.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_div.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_div.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_div.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_div.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.o
@@ -1909,6 +2073,7 @@ external/SoftPosit/p32_div.i: external/SoftPosit/p32_div.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_div.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_div.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_div.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_div.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.i
@@ -1920,6 +2085,7 @@ external/SoftPosit/p32_div.s: external/SoftPosit/p32_div.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_div.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_div.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_div.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_div.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_div.cpp.s
@@ -1931,6 +2097,7 @@ external/SoftPosit/p32_eq.o: external/SoftPosit/p32_eq.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_eq.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_eq.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_eq.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_eq.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.o
@@ -1942,6 +2109,7 @@ external/SoftPosit/p32_eq.i: external/SoftPosit/p32_eq.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_eq.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_eq.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_eq.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_eq.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.i
@@ -1953,6 +2121,7 @@ external/SoftPosit/p32_eq.s: external/SoftPosit/p32_eq.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_eq.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_eq.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_eq.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_eq.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_eq.cpp.s
@@ -1964,6 +2133,7 @@ external/SoftPosit/p32_le.o: external/SoftPosit/p32_le.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_le.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_le.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_le.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_le.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.o
@@ -1975,6 +2145,7 @@ external/SoftPosit/p32_le.i: external/SoftPosit/p32_le.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_le.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_le.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_le.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_le.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.i
@@ -1986,6 +2157,7 @@ external/SoftPosit/p32_le.s: external/SoftPosit/p32_le.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_le.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_le.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_le.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_le.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_le.cpp.s
@@ -1997,6 +2169,7 @@ external/SoftPosit/p32_lt.o: external/SoftPosit/p32_lt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_lt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_lt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_lt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_lt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.o
@@ -2008,6 +2181,7 @@ external/SoftPosit/p32_lt.i: external/SoftPosit/p32_lt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_lt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_lt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_lt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_lt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.i
@@ -2019,6 +2193,7 @@ external/SoftPosit/p32_lt.s: external/SoftPosit/p32_lt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_lt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_lt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_lt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_lt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_lt.cpp.s
@@ -2030,6 +2205,7 @@ external/SoftPosit/p32_mul.o: external/SoftPosit/p32_mul.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_mul.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_mul.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_mul.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_mul.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.o
@@ -2041,6 +2217,7 @@ external/SoftPosit/p32_mul.i: external/SoftPosit/p32_mul.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_mul.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_mul.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_mul.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_mul.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.i
@@ -2052,6 +2229,7 @@ external/SoftPosit/p32_mul.s: external/SoftPosit/p32_mul.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_mul.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_mul.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_mul.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_mul.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_mul.cpp.s
@@ -2063,6 +2241,7 @@ external/SoftPosit/p32_mulAdd.o: external/SoftPosit/p32_mulAdd.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_mulAdd.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.o
@@ -2074,6 +2253,7 @@ external/SoftPosit/p32_mulAdd.i: external/SoftPosit/p32_mulAdd.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_mulAdd.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.i
@@ -2085,6 +2265,7 @@ external/SoftPosit/p32_mulAdd.s: external/SoftPosit/p32_mulAdd.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_mulAdd.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_mulAdd.cpp.s
@@ -2096,6 +2277,7 @@ external/SoftPosit/p32_roundToInt.o: external/SoftPosit/p32_roundToInt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_roundToInt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.o
@@ -2107,6 +2289,7 @@ external/SoftPosit/p32_roundToInt.i: external/SoftPosit/p32_roundToInt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_roundToInt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.i
@@ -2118,6 +2301,7 @@ external/SoftPosit/p32_roundToInt.s: external/SoftPosit/p32_roundToInt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_roundToInt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_roundToInt.cpp.s
@@ -2129,6 +2313,7 @@ external/SoftPosit/p32_sqrt.o: external/SoftPosit/p32_sqrt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_sqrt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.o
@@ -2140,6 +2325,7 @@ external/SoftPosit/p32_sqrt.i: external/SoftPosit/p32_sqrt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_sqrt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.i
@@ -2151,6 +2337,7 @@ external/SoftPosit/p32_sqrt.s: external/SoftPosit/p32_sqrt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_sqrt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_sqrt.cpp.s
@@ -2162,6 +2349,7 @@ external/SoftPosit/p32_sub.o: external/SoftPosit/p32_sub.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_sub.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_sub.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_sub.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.o
@@ -2173,6 +2361,7 @@ external/SoftPosit/p32_sub.i: external/SoftPosit/p32_sub.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_sub.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_sub.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_sub.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.i
@@ -2184,6 +2373,7 @@ external/SoftPosit/p32_sub.s: external/SoftPosit/p32_sub.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_sub.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_sub.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_sub.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_sub.cpp.s
@@ -2195,6 +2385,7 @@ external/SoftPosit/p32_to_i32.o: external/SoftPosit/p32_to_i32.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_to_i32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.o
@@ -2206,6 +2397,7 @@ external/SoftPosit/p32_to_i32.i: external/SoftPosit/p32_to_i32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_to_i32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.i
@@ -2217,6 +2409,7 @@ external/SoftPosit/p32_to_i32.s: external/SoftPosit/p32_to_i32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_to_i32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i32.cpp.s
@@ -2228,6 +2421,7 @@ external/SoftPosit/p32_to_i64.o: external/SoftPosit/p32_to_i64.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_to_i64.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.o
@@ -2239,6 +2433,7 @@ external/SoftPosit/p32_to_i64.i: external/SoftPosit/p32_to_i64.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_to_i64.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.i
@@ -2250,6 +2445,7 @@ external/SoftPosit/p32_to_i64.s: external/SoftPosit/p32_to_i64.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_to_i64.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_i64.cpp.s
@@ -2261,6 +2457,7 @@ external/SoftPosit/p32_to_p16.o: external/SoftPosit/p32_to_p16.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_to_p16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.o
@@ -2272,6 +2469,7 @@ external/SoftPosit/p32_to_p16.i: external/SoftPosit/p32_to_p16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_to_p16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.i
@@ -2283,6 +2481,7 @@ external/SoftPosit/p32_to_p16.s: external/SoftPosit/p32_to_p16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_to_p16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p16.cpp.s
@@ -2294,6 +2493,7 @@ external/SoftPosit/p32_to_p8.o: external/SoftPosit/p32_to_p8.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_to_p8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.o
@@ -2305,6 +2505,7 @@ external/SoftPosit/p32_to_p8.i: external/SoftPosit/p32_to_p8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_to_p8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.i
@@ -2316,6 +2517,7 @@ external/SoftPosit/p32_to_p8.s: external/SoftPosit/p32_to_p8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_to_p8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_p8.cpp.s
@@ -2327,6 +2529,7 @@ external/SoftPosit/p32_to_pX1.o: external/SoftPosit/p32_to_pX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_to_pX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.o
@@ -2338,6 +2541,7 @@ external/SoftPosit/p32_to_pX1.i: external/SoftPosit/p32_to_pX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_to_pX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.i
@@ -2349,6 +2553,7 @@ external/SoftPosit/p32_to_pX1.s: external/SoftPosit/p32_to_pX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_to_pX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX1.cpp.s
@@ -2360,6 +2565,7 @@ external/SoftPosit/p32_to_pX2.o: external/SoftPosit/p32_to_pX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_to_pX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.o
@@ -2371,6 +2577,7 @@ external/SoftPosit/p32_to_pX2.i: external/SoftPosit/p32_to_pX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_to_pX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.i
@@ -2382,6 +2589,7 @@ external/SoftPosit/p32_to_pX2.s: external/SoftPosit/p32_to_pX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_to_pX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_pX2.cpp.s
@@ -2393,6 +2601,7 @@ external/SoftPosit/p32_to_ui32.o: external/SoftPosit/p32_to_ui32.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_to_ui32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.o
@@ -2404,6 +2613,7 @@ external/SoftPosit/p32_to_ui32.i: external/SoftPosit/p32_to_ui32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_to_ui32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.i
@@ -2415,6 +2625,7 @@ external/SoftPosit/p32_to_ui32.s: external/SoftPosit/p32_to_ui32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_to_ui32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui32.cpp.s
@@ -2426,6 +2637,7 @@ external/SoftPosit/p32_to_ui64.o: external/SoftPosit/p32_to_ui64.cpp.o
 
 # target to build an object file
 external/SoftPosit/p32_to_ui64.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.o
@@ -2437,6 +2649,7 @@ external/SoftPosit/p32_to_ui64.i: external/SoftPosit/p32_to_ui64.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p32_to_ui64.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.i
@@ -2448,6 +2661,7 @@ external/SoftPosit/p32_to_ui64.s: external/SoftPosit/p32_to_ui64.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p32_to_ui64.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p32_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p32_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p32_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p32_to_ui64.cpp.s
@@ -2459,6 +2673,7 @@ external/SoftPosit/p8_add.o: external/SoftPosit/p8_add.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_add.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_add.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_add.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_add.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.o
@@ -2470,6 +2685,7 @@ external/SoftPosit/p8_add.i: external/SoftPosit/p8_add.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_add.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_add.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_add.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_add.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.i
@@ -2481,6 +2697,7 @@ external/SoftPosit/p8_add.s: external/SoftPosit/p8_add.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_add.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_add.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_add.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_add.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_add.cpp.s
@@ -2492,6 +2709,7 @@ external/SoftPosit/p8_div.o: external/SoftPosit/p8_div.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_div.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_div.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_div.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_div.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.o
@@ -2503,6 +2721,7 @@ external/SoftPosit/p8_div.i: external/SoftPosit/p8_div.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_div.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_div.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_div.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_div.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.i
@@ -2514,6 +2733,7 @@ external/SoftPosit/p8_div.s: external/SoftPosit/p8_div.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_div.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_div.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_div.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_div.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_div.cpp.s
@@ -2525,6 +2745,7 @@ external/SoftPosit/p8_eq.o: external/SoftPosit/p8_eq.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_eq.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_eq.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_eq.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_eq.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.o
@@ -2536,6 +2757,7 @@ external/SoftPosit/p8_eq.i: external/SoftPosit/p8_eq.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_eq.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_eq.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_eq.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_eq.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.i
@@ -2547,6 +2769,7 @@ external/SoftPosit/p8_eq.s: external/SoftPosit/p8_eq.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_eq.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_eq.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_eq.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_eq.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_eq.cpp.s
@@ -2558,6 +2781,7 @@ external/SoftPosit/p8_le.o: external/SoftPosit/p8_le.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_le.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_le.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_le.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_le.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.o
@@ -2569,6 +2793,7 @@ external/SoftPosit/p8_le.i: external/SoftPosit/p8_le.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_le.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_le.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_le.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_le.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.i
@@ -2580,6 +2805,7 @@ external/SoftPosit/p8_le.s: external/SoftPosit/p8_le.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_le.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_le.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_le.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_le.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_le.cpp.s
@@ -2591,6 +2817,7 @@ external/SoftPosit/p8_lt.o: external/SoftPosit/p8_lt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_lt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_lt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_lt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_lt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.o
@@ -2602,6 +2829,7 @@ external/SoftPosit/p8_lt.i: external/SoftPosit/p8_lt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_lt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_lt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_lt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_lt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.i
@@ -2613,6 +2841,7 @@ external/SoftPosit/p8_lt.s: external/SoftPosit/p8_lt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_lt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_lt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_lt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_lt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_lt.cpp.s
@@ -2624,6 +2853,7 @@ external/SoftPosit/p8_mul.o: external/SoftPosit/p8_mul.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_mul.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_mul.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_mul.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_mul.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.o
@@ -2635,6 +2865,7 @@ external/SoftPosit/p8_mul.i: external/SoftPosit/p8_mul.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_mul.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_mul.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_mul.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_mul.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.i
@@ -2646,6 +2877,7 @@ external/SoftPosit/p8_mul.s: external/SoftPosit/p8_mul.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_mul.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_mul.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_mul.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_mul.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_mul.cpp.s
@@ -2657,6 +2889,7 @@ external/SoftPosit/p8_mulAdd.o: external/SoftPosit/p8_mulAdd.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_mulAdd.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.o
@@ -2668,6 +2901,7 @@ external/SoftPosit/p8_mulAdd.i: external/SoftPosit/p8_mulAdd.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_mulAdd.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.i
@@ -2679,6 +2913,7 @@ external/SoftPosit/p8_mulAdd.s: external/SoftPosit/p8_mulAdd.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_mulAdd.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_mulAdd.cpp.s
@@ -2690,6 +2925,7 @@ external/SoftPosit/p8_roundToInt.o: external/SoftPosit/p8_roundToInt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_roundToInt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.o
@@ -2701,6 +2937,7 @@ external/SoftPosit/p8_roundToInt.i: external/SoftPosit/p8_roundToInt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_roundToInt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.i
@@ -2712,6 +2949,7 @@ external/SoftPosit/p8_roundToInt.s: external/SoftPosit/p8_roundToInt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_roundToInt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_roundToInt.cpp.s
@@ -2723,6 +2961,7 @@ external/SoftPosit/p8_sqrt.o: external/SoftPosit/p8_sqrt.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_sqrt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.o
@@ -2734,6 +2973,7 @@ external/SoftPosit/p8_sqrt.i: external/SoftPosit/p8_sqrt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_sqrt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.i
@@ -2745,6 +2985,7 @@ external/SoftPosit/p8_sqrt.s: external/SoftPosit/p8_sqrt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_sqrt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_sqrt.cpp.s
@@ -2756,6 +2997,7 @@ external/SoftPosit/p8_sub.o: external/SoftPosit/p8_sub.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_sub.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_sub.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_sub.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.o
@@ -2767,6 +3009,7 @@ external/SoftPosit/p8_sub.i: external/SoftPosit/p8_sub.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_sub.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_sub.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_sub.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.i
@@ -2778,6 +3021,7 @@ external/SoftPosit/p8_sub.s: external/SoftPosit/p8_sub.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_sub.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_sub.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_sub.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_sub.cpp.s
@@ -2789,6 +3033,7 @@ external/SoftPosit/p8_to_i32.o: external/SoftPosit/p8_to_i32.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_to_i32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.o
@@ -2800,6 +3045,7 @@ external/SoftPosit/p8_to_i32.i: external/SoftPosit/p8_to_i32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_to_i32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.i
@@ -2811,6 +3057,7 @@ external/SoftPosit/p8_to_i32.s: external/SoftPosit/p8_to_i32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_to_i32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i32.cpp.s
@@ -2822,6 +3069,7 @@ external/SoftPosit/p8_to_i64.o: external/SoftPosit/p8_to_i64.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_to_i64.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.o
@@ -2833,6 +3081,7 @@ external/SoftPosit/p8_to_i64.i: external/SoftPosit/p8_to_i64.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_to_i64.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.i
@@ -2844,6 +3093,7 @@ external/SoftPosit/p8_to_i64.s: external/SoftPosit/p8_to_i64.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_to_i64.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_i64.cpp.s
@@ -2855,6 +3105,7 @@ external/SoftPosit/p8_to_p16.o: external/SoftPosit/p8_to_p16.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_to_p16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.o
@@ -2866,6 +3117,7 @@ external/SoftPosit/p8_to_p16.i: external/SoftPosit/p8_to_p16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_to_p16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.i
@@ -2877,6 +3129,7 @@ external/SoftPosit/p8_to_p16.s: external/SoftPosit/p8_to_p16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_to_p16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p16.cpp.s
@@ -2888,6 +3141,7 @@ external/SoftPosit/p8_to_p32.o: external/SoftPosit/p8_to_p32.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_to_p32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.o
@@ -2899,6 +3153,7 @@ external/SoftPosit/p8_to_p32.i: external/SoftPosit/p8_to_p32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_to_p32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.i
@@ -2910,6 +3165,7 @@ external/SoftPosit/p8_to_p32.s: external/SoftPosit/p8_to_p32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_to_p32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_p32.cpp.s
@@ -2921,6 +3177,7 @@ external/SoftPosit/p8_to_pX1.o: external/SoftPosit/p8_to_pX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_to_pX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.o
@@ -2932,6 +3189,7 @@ external/SoftPosit/p8_to_pX1.i: external/SoftPosit/p8_to_pX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_to_pX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.i
@@ -2943,6 +3201,7 @@ external/SoftPosit/p8_to_pX1.s: external/SoftPosit/p8_to_pX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_to_pX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX1.cpp.s
@@ -2954,6 +3213,7 @@ external/SoftPosit/p8_to_pX2.o: external/SoftPosit/p8_to_pX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_to_pX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.o
@@ -2965,6 +3225,7 @@ external/SoftPosit/p8_to_pX2.i: external/SoftPosit/p8_to_pX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_to_pX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.i
@@ -2976,6 +3237,7 @@ external/SoftPosit/p8_to_pX2.s: external/SoftPosit/p8_to_pX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_to_pX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_pX2.cpp.s
@@ -2987,6 +3249,7 @@ external/SoftPosit/p8_to_ui32.o: external/SoftPosit/p8_to_ui32.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_to_ui32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.o
@@ -2998,6 +3261,7 @@ external/SoftPosit/p8_to_ui32.i: external/SoftPosit/p8_to_ui32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_to_ui32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.i
@@ -3009,6 +3273,7 @@ external/SoftPosit/p8_to_ui32.s: external/SoftPosit/p8_to_ui32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_to_ui32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui32.cpp.s
@@ -3020,6 +3285,7 @@ external/SoftPosit/p8_to_ui64.o: external/SoftPosit/p8_to_ui64.cpp.o
 
 # target to build an object file
 external/SoftPosit/p8_to_ui64.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.o
@@ -3031,6 +3297,7 @@ external/SoftPosit/p8_to_ui64.i: external/SoftPosit/p8_to_ui64.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/p8_to_ui64.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.i
@@ -3042,6 +3309,7 @@ external/SoftPosit/p8_to_ui64.s: external/SoftPosit/p8_to_ui64.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/p8_to_ui64.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/p8_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/p8_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/p8_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/p8_to_ui64.cpp.s
@@ -3053,6 +3321,7 @@ external/SoftPosit/pX1_add.o: external/SoftPosit/pX1_add.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_add.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_add.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_add.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_add.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.o
@@ -3064,6 +3333,7 @@ external/SoftPosit/pX1_add.i: external/SoftPosit/pX1_add.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_add.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_add.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_add.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_add.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.i
@@ -3075,6 +3345,7 @@ external/SoftPosit/pX1_add.s: external/SoftPosit/pX1_add.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_add.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_add.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_add.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_add.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_add.cpp.s
@@ -3086,6 +3357,7 @@ external/SoftPosit/pX1_div.o: external/SoftPosit/pX1_div.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_div.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_div.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_div.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_div.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.o
@@ -3097,6 +3369,7 @@ external/SoftPosit/pX1_div.i: external/SoftPosit/pX1_div.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_div.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_div.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_div.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_div.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.i
@@ -3108,6 +3381,7 @@ external/SoftPosit/pX1_div.s: external/SoftPosit/pX1_div.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_div.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_div.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_div.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_div.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_div.cpp.s
@@ -3119,6 +3393,7 @@ external/SoftPosit/pX1_mul.o: external/SoftPosit/pX1_mul.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_mul.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_mul.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_mul.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_mul.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.o
@@ -3130,6 +3405,7 @@ external/SoftPosit/pX1_mul.i: external/SoftPosit/pX1_mul.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_mul.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_mul.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_mul.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_mul.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.i
@@ -3141,6 +3417,7 @@ external/SoftPosit/pX1_mul.s: external/SoftPosit/pX1_mul.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_mul.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_mul.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_mul.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_mul.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_mul.cpp.s
@@ -3152,6 +3429,7 @@ external/SoftPosit/pX1_mulAdd.o: external/SoftPosit/pX1_mulAdd.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_mulAdd.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.o
@@ -3163,6 +3441,7 @@ external/SoftPosit/pX1_mulAdd.i: external/SoftPosit/pX1_mulAdd.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_mulAdd.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.i
@@ -3174,6 +3453,7 @@ external/SoftPosit/pX1_mulAdd.s: external/SoftPosit/pX1_mulAdd.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_mulAdd.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_mulAdd.cpp.s
@@ -3185,6 +3465,7 @@ external/SoftPosit/pX1_roundToInt.o: external/SoftPosit/pX1_roundToInt.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_roundToInt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.o
@@ -3196,6 +3477,7 @@ external/SoftPosit/pX1_roundToInt.i: external/SoftPosit/pX1_roundToInt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_roundToInt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.i
@@ -3207,6 +3489,7 @@ external/SoftPosit/pX1_roundToInt.s: external/SoftPosit/pX1_roundToInt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_roundToInt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_roundToInt.cpp.s
@@ -3218,6 +3501,7 @@ external/SoftPosit/pX1_sub.o: external/SoftPosit/pX1_sub.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_sub.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_sub.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_sub.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.o
@@ -3229,6 +3513,7 @@ external/SoftPosit/pX1_sub.i: external/SoftPosit/pX1_sub.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_sub.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_sub.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_sub.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.i
@@ -3240,6 +3525,7 @@ external/SoftPosit/pX1_sub.s: external/SoftPosit/pX1_sub.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_sub.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_sub.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_sub.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_sub.cpp.s
@@ -3251,6 +3537,7 @@ external/SoftPosit/pX1_to_i32.o: external/SoftPosit/pX1_to_i32.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_i32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_i32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.o
@@ -3262,6 +3549,7 @@ external/SoftPosit/pX1_to_i32.i: external/SoftPosit/pX1_to_i32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_i32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_i32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.i
@@ -3273,6 +3561,7 @@ external/SoftPosit/pX1_to_i32.s: external/SoftPosit/pX1_to_i32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_i32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_i32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i32.cpp.s
@@ -3284,6 +3573,7 @@ external/SoftPosit/pX1_to_i64.o: external/SoftPosit/pX1_to_i64.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_i64.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_i64.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.o
@@ -3295,6 +3585,7 @@ external/SoftPosit/pX1_to_i64.i: external/SoftPosit/pX1_to_i64.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_i64.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_i64.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.i
@@ -3306,6 +3597,7 @@ external/SoftPosit/pX1_to_i64.s: external/SoftPosit/pX1_to_i64.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_i64.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_i64.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_i64.cpp.s
@@ -3317,6 +3609,7 @@ external/SoftPosit/pX1_to_p16.o: external/SoftPosit/pX1_to_p16.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_p16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.o
@@ -3328,6 +3621,7 @@ external/SoftPosit/pX1_to_p16.i: external/SoftPosit/pX1_to_p16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_p16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.i
@@ -3339,6 +3633,7 @@ external/SoftPosit/pX1_to_p16.s: external/SoftPosit/pX1_to_p16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_p16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p16.cpp.s
@@ -3350,6 +3645,7 @@ external/SoftPosit/pX1_to_p32.o: external/SoftPosit/pX1_to_p32.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_p32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.o
@@ -3361,6 +3657,7 @@ external/SoftPosit/pX1_to_p32.i: external/SoftPosit/pX1_to_p32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_p32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.i
@@ -3372,6 +3669,7 @@ external/SoftPosit/pX1_to_p32.s: external/SoftPosit/pX1_to_p32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_p32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p32.cpp.s
@@ -3383,6 +3681,7 @@ external/SoftPosit/pX1_to_p8.o: external/SoftPosit/pX1_to_p8.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_p8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.o
@@ -3394,6 +3693,7 @@ external/SoftPosit/pX1_to_p8.i: external/SoftPosit/pX1_to_p8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_p8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.i
@@ -3405,6 +3705,7 @@ external/SoftPosit/pX1_to_p8.s: external/SoftPosit/pX1_to_p8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_p8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_p8.cpp.s
@@ -3416,6 +3717,7 @@ external/SoftPosit/pX1_to_pX1.o: external/SoftPosit/pX1_to_pX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_pX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.o
@@ -3427,6 +3729,7 @@ external/SoftPosit/pX1_to_pX1.i: external/SoftPosit/pX1_to_pX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_pX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.i
@@ -3438,6 +3741,7 @@ external/SoftPosit/pX1_to_pX1.s: external/SoftPosit/pX1_to_pX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_pX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX1.cpp.s
@@ -3449,6 +3753,7 @@ external/SoftPosit/pX1_to_pX2.o: external/SoftPosit/pX1_to_pX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_pX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.o
@@ -3460,6 +3765,7 @@ external/SoftPosit/pX1_to_pX2.i: external/SoftPosit/pX1_to_pX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_pX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.i
@@ -3471,6 +3777,7 @@ external/SoftPosit/pX1_to_pX2.s: external/SoftPosit/pX1_to_pX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_pX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_pX2.cpp.s
@@ -3482,6 +3789,7 @@ external/SoftPosit/pX1_to_ui32.o: external/SoftPosit/pX1_to_ui32.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_ui32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_ui32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.o
@@ -3493,6 +3801,7 @@ external/SoftPosit/pX1_to_ui32.i: external/SoftPosit/pX1_to_ui32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_ui32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_ui32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.i
@@ -3504,6 +3813,7 @@ external/SoftPosit/pX1_to_ui32.s: external/SoftPosit/pX1_to_ui32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_ui32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_ui32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui32.cpp.s
@@ -3515,6 +3825,7 @@ external/SoftPosit/pX1_to_ui64.o: external/SoftPosit/pX1_to_ui64.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX1_to_ui64.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_ui64.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.o
@@ -3526,6 +3837,7 @@ external/SoftPosit/pX1_to_ui64.i: external/SoftPosit/pX1_to_ui64.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX1_to_ui64.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_ui64.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.i
@@ -3537,6 +3849,7 @@ external/SoftPosit/pX1_to_ui64.s: external/SoftPosit/pX1_to_ui64.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX1_to_ui64.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX1_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX1_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX1_to_ui64.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX1_to_ui64.cpp.s
@@ -3548,6 +3861,7 @@ external/SoftPosit/pX2_add.o: external/SoftPosit/pX2_add.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_add.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_add.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_add.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_add.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.o
@@ -3559,6 +3873,7 @@ external/SoftPosit/pX2_add.i: external/SoftPosit/pX2_add.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_add.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_add.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_add.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_add.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.i
@@ -3570,6 +3885,7 @@ external/SoftPosit/pX2_add.s: external/SoftPosit/pX2_add.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_add.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_add.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_add.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_add.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_add.cpp.s
@@ -3581,6 +3897,7 @@ external/SoftPosit/pX2_div.o: external/SoftPosit/pX2_div.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_div.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_div.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_div.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_div.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.o
@@ -3592,6 +3909,7 @@ external/SoftPosit/pX2_div.i: external/SoftPosit/pX2_div.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_div.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_div.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_div.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_div.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.i
@@ -3603,6 +3921,7 @@ external/SoftPosit/pX2_div.s: external/SoftPosit/pX2_div.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_div.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_div.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_div.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_div.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_div.cpp.s
@@ -3614,6 +3933,7 @@ external/SoftPosit/pX2_eq.o: external/SoftPosit/pX2_eq.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_eq.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_eq.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_eq.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_eq.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.o
@@ -3625,6 +3945,7 @@ external/SoftPosit/pX2_eq.i: external/SoftPosit/pX2_eq.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_eq.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_eq.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_eq.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_eq.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.i
@@ -3636,6 +3957,7 @@ external/SoftPosit/pX2_eq.s: external/SoftPosit/pX2_eq.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_eq.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_eq.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_eq.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_eq.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_eq.cpp.s
@@ -3647,6 +3969,7 @@ external/SoftPosit/pX2_le.o: external/SoftPosit/pX2_le.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_le.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_le.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_le.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_le.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.o
@@ -3658,6 +3981,7 @@ external/SoftPosit/pX2_le.i: external/SoftPosit/pX2_le.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_le.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_le.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_le.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_le.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.i
@@ -3669,6 +3993,7 @@ external/SoftPosit/pX2_le.s: external/SoftPosit/pX2_le.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_le.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_le.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_le.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_le.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_le.cpp.s
@@ -3680,6 +4005,7 @@ external/SoftPosit/pX2_lt.o: external/SoftPosit/pX2_lt.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_lt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_lt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_lt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_lt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.o
@@ -3691,6 +4017,7 @@ external/SoftPosit/pX2_lt.i: external/SoftPosit/pX2_lt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_lt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_lt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_lt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_lt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.i
@@ -3702,6 +4029,7 @@ external/SoftPosit/pX2_lt.s: external/SoftPosit/pX2_lt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_lt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_lt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_lt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_lt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_lt.cpp.s
@@ -3713,6 +4041,7 @@ external/SoftPosit/pX2_mul.o: external/SoftPosit/pX2_mul.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_mul.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_mul.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_mul.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_mul.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.o
@@ -3724,6 +4053,7 @@ external/SoftPosit/pX2_mul.i: external/SoftPosit/pX2_mul.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_mul.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_mul.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_mul.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_mul.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.i
@@ -3735,6 +4065,7 @@ external/SoftPosit/pX2_mul.s: external/SoftPosit/pX2_mul.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_mul.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_mul.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_mul.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_mul.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_mul.cpp.s
@@ -3746,6 +4077,7 @@ external/SoftPosit/pX2_mulAdd.o: external/SoftPosit/pX2_mulAdd.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_mulAdd.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_mulAdd.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.o
@@ -3757,6 +4089,7 @@ external/SoftPosit/pX2_mulAdd.i: external/SoftPosit/pX2_mulAdd.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_mulAdd.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_mulAdd.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.i
@@ -3768,6 +4101,7 @@ external/SoftPosit/pX2_mulAdd.s: external/SoftPosit/pX2_mulAdd.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_mulAdd.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_mulAdd.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_mulAdd.cpp.s
@@ -3779,6 +4113,7 @@ external/SoftPosit/pX2_roundToInt.o: external/SoftPosit/pX2_roundToInt.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_roundToInt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_roundToInt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.o
@@ -3790,6 +4125,7 @@ external/SoftPosit/pX2_roundToInt.i: external/SoftPosit/pX2_roundToInt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_roundToInt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_roundToInt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.i
@@ -3801,6 +4137,7 @@ external/SoftPosit/pX2_roundToInt.s: external/SoftPosit/pX2_roundToInt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_roundToInt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_roundToInt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_roundToInt.cpp.s
@@ -3812,6 +4149,7 @@ external/SoftPosit/pX2_sqrt.o: external/SoftPosit/pX2_sqrt.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_sqrt.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_sqrt.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.o
@@ -3823,6 +4161,7 @@ external/SoftPosit/pX2_sqrt.i: external/SoftPosit/pX2_sqrt.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_sqrt.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_sqrt.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.i
@@ -3834,6 +4173,7 @@ external/SoftPosit/pX2_sqrt.s: external/SoftPosit/pX2_sqrt.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_sqrt.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_sqrt.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_sqrt.cpp.s
@@ -3845,6 +4185,7 @@ external/SoftPosit/pX2_sub.o: external/SoftPosit/pX2_sub.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_sub.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_sub.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_sub.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.o
@@ -3856,6 +4197,7 @@ external/SoftPosit/pX2_sub.i: external/SoftPosit/pX2_sub.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_sub.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_sub.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_sub.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.i
@@ -3867,6 +4209,7 @@ external/SoftPosit/pX2_sub.s: external/SoftPosit/pX2_sub.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_sub.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_sub.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_sub.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_sub.cpp.s
@@ -3878,6 +4221,7 @@ external/SoftPosit/pX2_to_pX1.o: external/SoftPosit/pX2_to_pX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/pX2_to_pX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.o
@@ -3889,6 +4233,7 @@ external/SoftPosit/pX2_to_pX1.i: external/SoftPosit/pX2_to_pX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/pX2_to_pX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.i
@@ -3900,6 +4245,7 @@ external/SoftPosit/pX2_to_pX1.s: external/SoftPosit/pX2_to_pX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/pX2_to_pX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/pX2_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/pX2_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/pX2_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/pX2_to_pX1.cpp.s
@@ -3911,6 +4257,7 @@ external/SoftPosit/quire16_fdp_add.o: external/SoftPosit/quire16_fdp_add.cpp.o
 
 # target to build an object file
 external/SoftPosit/quire16_fdp_add.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire16_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire16_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire16_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.o
@@ -3922,6 +4269,7 @@ external/SoftPosit/quire16_fdp_add.i: external/SoftPosit/quire16_fdp_add.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/quire16_fdp_add.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire16_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire16_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire16_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.i
@@ -3933,6 +4281,7 @@ external/SoftPosit/quire16_fdp_add.s: external/SoftPosit/quire16_fdp_add.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/quire16_fdp_add.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire16_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire16_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire16_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_add.cpp.s
@@ -3944,6 +4293,7 @@ external/SoftPosit/quire16_fdp_sub.o: external/SoftPosit/quire16_fdp_sub.cpp.o
 
 # target to build an object file
 external/SoftPosit/quire16_fdp_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire16_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire16_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire16_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.o
@@ -3955,6 +4305,7 @@ external/SoftPosit/quire16_fdp_sub.i: external/SoftPosit/quire16_fdp_sub.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/quire16_fdp_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire16_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire16_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire16_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.i
@@ -3966,6 +4317,7 @@ external/SoftPosit/quire16_fdp_sub.s: external/SoftPosit/quire16_fdp_sub.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/quire16_fdp_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire16_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire16_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire16_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire16_fdp_sub.cpp.s
@@ -3977,6 +4329,7 @@ external/SoftPosit/quire32_fdp_add.o: external/SoftPosit/quire32_fdp_add.cpp.o
 
 # target to build an object file
 external/SoftPosit/quire32_fdp_add.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire32_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire32_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire32_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.o
@@ -3988,6 +4341,7 @@ external/SoftPosit/quire32_fdp_add.i: external/SoftPosit/quire32_fdp_add.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/quire32_fdp_add.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire32_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire32_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire32_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.i
@@ -3999,6 +4353,7 @@ external/SoftPosit/quire32_fdp_add.s: external/SoftPosit/quire32_fdp_add.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/quire32_fdp_add.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire32_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire32_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire32_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_add.cpp.s
@@ -4010,6 +4365,7 @@ external/SoftPosit/quire32_fdp_sub.o: external/SoftPosit/quire32_fdp_sub.cpp.o
 
 # target to build an object file
 external/SoftPosit/quire32_fdp_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire32_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire32_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire32_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.o
@@ -4021,6 +4377,7 @@ external/SoftPosit/quire32_fdp_sub.i: external/SoftPosit/quire32_fdp_sub.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/quire32_fdp_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire32_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire32_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire32_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.i
@@ -4032,6 +4389,7 @@ external/SoftPosit/quire32_fdp_sub.s: external/SoftPosit/quire32_fdp_sub.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/quire32_fdp_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire32_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire32_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire32_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire32_fdp_sub.cpp.s
@@ -4043,6 +4401,7 @@ external/SoftPosit/quire8_fdp_add.o: external/SoftPosit/quire8_fdp_add.cpp.o
 
 # target to build an object file
 external/SoftPosit/quire8_fdp_add.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire8_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire8_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire8_fdp_add.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.o
@@ -4054,6 +4413,7 @@ external/SoftPosit/quire8_fdp_add.i: external/SoftPosit/quire8_fdp_add.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/quire8_fdp_add.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire8_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire8_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire8_fdp_add.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.i
@@ -4065,6 +4425,7 @@ external/SoftPosit/quire8_fdp_add.s: external/SoftPosit/quire8_fdp_add.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/quire8_fdp_add.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire8_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire8_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire8_fdp_add.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_add.cpp.s
@@ -4076,6 +4437,7 @@ external/SoftPosit/quire8_fdp_sub.o: external/SoftPosit/quire8_fdp_sub.cpp.o
 
 # target to build an object file
 external/SoftPosit/quire8_fdp_sub.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire8_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire8_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire8_fdp_sub.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.o
@@ -4087,6 +4449,7 @@ external/SoftPosit/quire8_fdp_sub.i: external/SoftPosit/quire8_fdp_sub.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/quire8_fdp_sub.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire8_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire8_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire8_fdp_sub.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.i
@@ -4098,6 +4461,7 @@ external/SoftPosit/quire8_fdp_sub.s: external/SoftPosit/quire8_fdp_sub.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/quire8_fdp_sub.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire8_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire8_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire8_fdp_sub.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire8_fdp_sub.cpp.s
@@ -4109,6 +4473,7 @@ external/SoftPosit/quire_helper.o: external/SoftPosit/quire_helper.cpp.o
 
 # target to build an object file
 external/SoftPosit/quire_helper.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire_helper.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire_helper.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire_helper.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.o
@@ -4120,6 +4485,7 @@ external/SoftPosit/quire_helper.i: external/SoftPosit/quire_helper.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/quire_helper.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire_helper.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire_helper.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire_helper.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.i
@@ -4131,6 +4497,7 @@ external/SoftPosit/quire_helper.s: external/SoftPosit/quire_helper.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/quire_helper.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/quire_helper.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/quire_helper.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/quire_helper.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/quire_helper.cpp.s
@@ -4142,6 +4509,7 @@ external/SoftPosit/s_addMagsP16.o: external/SoftPosit/s_addMagsP16.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_addMagsP16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.o
@@ -4153,6 +4521,7 @@ external/SoftPosit/s_addMagsP16.i: external/SoftPosit/s_addMagsP16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_addMagsP16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.i
@@ -4164,6 +4533,7 @@ external/SoftPosit/s_addMagsP16.s: external/SoftPosit/s_addMagsP16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_addMagsP16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP16.cpp.s
@@ -4175,6 +4545,7 @@ external/SoftPosit/s_addMagsP32.o: external/SoftPosit/s_addMagsP32.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_addMagsP32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.o
@@ -4186,6 +4557,7 @@ external/SoftPosit/s_addMagsP32.i: external/SoftPosit/s_addMagsP32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_addMagsP32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.i
@@ -4197,6 +4569,7 @@ external/SoftPosit/s_addMagsP32.s: external/SoftPosit/s_addMagsP32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_addMagsP32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP32.cpp.s
@@ -4208,6 +4581,7 @@ external/SoftPosit/s_addMagsP8.o: external/SoftPosit/s_addMagsP8.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_addMagsP8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.o
@@ -4219,6 +4593,7 @@ external/SoftPosit/s_addMagsP8.i: external/SoftPosit/s_addMagsP8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_addMagsP8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.i
@@ -4230,6 +4605,7 @@ external/SoftPosit/s_addMagsP8.s: external/SoftPosit/s_addMagsP8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_addMagsP8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsP8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsP8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsP8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsP8.cpp.s
@@ -4241,6 +4617,7 @@ external/SoftPosit/s_addMagsPX1.o: external/SoftPosit/s_addMagsPX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_addMagsPX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsPX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsPX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsPX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.o
@@ -4252,6 +4629,7 @@ external/SoftPosit/s_addMagsPX1.i: external/SoftPosit/s_addMagsPX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_addMagsPX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsPX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsPX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsPX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.i
@@ -4263,6 +4641,7 @@ external/SoftPosit/s_addMagsPX1.s: external/SoftPosit/s_addMagsPX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_addMagsPX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsPX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsPX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsPX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX1.cpp.s
@@ -4274,6 +4653,7 @@ external/SoftPosit/s_addMagsPX2.o: external/SoftPosit/s_addMagsPX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_addMagsPX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsPX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsPX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsPX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.o
@@ -4285,6 +4665,7 @@ external/SoftPosit/s_addMagsPX2.i: external/SoftPosit/s_addMagsPX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_addMagsPX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsPX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsPX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsPX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.i
@@ -4296,6 +4677,7 @@ external/SoftPosit/s_addMagsPX2.s: external/SoftPosit/s_addMagsPX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_addMagsPX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_addMagsPX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_addMagsPX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_addMagsPX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_addMagsPX2.cpp.s
@@ -4307,6 +4689,7 @@ external/SoftPosit/s_approxRecipSqrt_1Ks.o: external/SoftPosit/s_approxRecipSqrt
 
 # target to build an object file
 external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.o
@@ -4318,6 +4701,7 @@ external/SoftPosit/s_approxRecipSqrt_1Ks.i: external/SoftPosit/s_approxRecipSqrt
 
 # target to preprocess a source file
 external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.i
@@ -4329,6 +4713,7 @@ external/SoftPosit/s_approxRecipSqrt_1Ks.s: external/SoftPosit/s_approxRecipSqrt
 
 # target to generate assembly for a file
 external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_approxRecipSqrt_1Ks.cpp.s
@@ -4340,6 +4725,7 @@ external/SoftPosit/s_mulAddP16.o: external/SoftPosit/s_mulAddP16.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_mulAddP16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.o
@@ -4351,6 +4737,7 @@ external/SoftPosit/s_mulAddP16.i: external/SoftPosit/s_mulAddP16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_mulAddP16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.i
@@ -4362,6 +4749,7 @@ external/SoftPosit/s_mulAddP16.s: external/SoftPosit/s_mulAddP16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_mulAddP16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP16.cpp.s
@@ -4373,6 +4761,7 @@ external/SoftPosit/s_mulAddP32.o: external/SoftPosit/s_mulAddP32.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_mulAddP32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.o
@@ -4384,6 +4773,7 @@ external/SoftPosit/s_mulAddP32.i: external/SoftPosit/s_mulAddP32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_mulAddP32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.i
@@ -4395,6 +4785,7 @@ external/SoftPosit/s_mulAddP32.s: external/SoftPosit/s_mulAddP32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_mulAddP32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP32.cpp.s
@@ -4406,6 +4797,7 @@ external/SoftPosit/s_mulAddP8.o: external/SoftPosit/s_mulAddP8.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_mulAddP8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.o
@@ -4417,6 +4809,7 @@ external/SoftPosit/s_mulAddP8.i: external/SoftPosit/s_mulAddP8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_mulAddP8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.i
@@ -4428,6 +4821,7 @@ external/SoftPosit/s_mulAddP8.s: external/SoftPosit/s_mulAddP8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_mulAddP8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddP8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddP8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddP8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddP8.cpp.s
@@ -4439,6 +4833,7 @@ external/SoftPosit/s_mulAddPX1.o: external/SoftPosit/s_mulAddPX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_mulAddPX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddPX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddPX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddPX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.o
@@ -4450,6 +4845,7 @@ external/SoftPosit/s_mulAddPX1.i: external/SoftPosit/s_mulAddPX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_mulAddPX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddPX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddPX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddPX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.i
@@ -4461,6 +4857,7 @@ external/SoftPosit/s_mulAddPX1.s: external/SoftPosit/s_mulAddPX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_mulAddPX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddPX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddPX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddPX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX1.cpp.s
@@ -4472,6 +4869,7 @@ external/SoftPosit/s_mulAddPX2.o: external/SoftPosit/s_mulAddPX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_mulAddPX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddPX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddPX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddPX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.o
@@ -4483,6 +4881,7 @@ external/SoftPosit/s_mulAddPX2.i: external/SoftPosit/s_mulAddPX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_mulAddPX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddPX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddPX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddPX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.i
@@ -4494,6 +4893,7 @@ external/SoftPosit/s_mulAddPX2.s: external/SoftPosit/s_mulAddPX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_mulAddPX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_mulAddPX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_mulAddPX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_mulAddPX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_mulAddPX2.cpp.s
@@ -4505,6 +4905,7 @@ external/SoftPosit/s_subMagsP16.o: external/SoftPosit/s_subMagsP16.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_subMagsP16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.o
@@ -4516,6 +4917,7 @@ external/SoftPosit/s_subMagsP16.i: external/SoftPosit/s_subMagsP16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_subMagsP16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.i
@@ -4527,6 +4929,7 @@ external/SoftPosit/s_subMagsP16.s: external/SoftPosit/s_subMagsP16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_subMagsP16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP16.cpp.s
@@ -4538,6 +4941,7 @@ external/SoftPosit/s_subMagsP32.o: external/SoftPosit/s_subMagsP32.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_subMagsP32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.o
@@ -4549,6 +4953,7 @@ external/SoftPosit/s_subMagsP32.i: external/SoftPosit/s_subMagsP32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_subMagsP32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.i
@@ -4560,6 +4965,7 @@ external/SoftPosit/s_subMagsP32.s: external/SoftPosit/s_subMagsP32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_subMagsP32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP32.cpp.s
@@ -4571,6 +4977,7 @@ external/SoftPosit/s_subMagsP8.o: external/SoftPosit/s_subMagsP8.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_subMagsP8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.o
@@ -4582,6 +4989,7 @@ external/SoftPosit/s_subMagsP8.i: external/SoftPosit/s_subMagsP8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_subMagsP8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.i
@@ -4593,6 +5001,7 @@ external/SoftPosit/s_subMagsP8.s: external/SoftPosit/s_subMagsP8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_subMagsP8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsP8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsP8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsP8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsP8.cpp.s
@@ -4604,6 +5013,7 @@ external/SoftPosit/s_subMagsPX1.o: external/SoftPosit/s_subMagsPX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_subMagsPX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsPX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsPX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsPX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.o
@@ -4615,6 +5025,7 @@ external/SoftPosit/s_subMagsPX1.i: external/SoftPosit/s_subMagsPX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_subMagsPX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsPX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsPX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsPX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.i
@@ -4626,6 +5037,7 @@ external/SoftPosit/s_subMagsPX1.s: external/SoftPosit/s_subMagsPX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_subMagsPX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsPX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsPX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsPX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX1.cpp.s
@@ -4637,6 +5049,7 @@ external/SoftPosit/s_subMagsPX2.o: external/SoftPosit/s_subMagsPX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/s_subMagsPX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsPX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsPX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsPX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.o
@@ -4648,6 +5061,7 @@ external/SoftPosit/s_subMagsPX2.i: external/SoftPosit/s_subMagsPX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/s_subMagsPX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsPX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsPX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsPX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.i
@@ -4659,6 +5073,7 @@ external/SoftPosit/s_subMagsPX2.s: external/SoftPosit/s_subMagsPX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/s_subMagsPX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/s_subMagsPX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/s_subMagsPX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/s_subMagsPX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/s_subMagsPX2.cpp.s
@@ -4670,6 +5085,7 @@ external/SoftPosit/ui32_to_p16.o: external/SoftPosit/ui32_to_p16.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui32_to_p16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.o
@@ -4681,6 +5097,7 @@ external/SoftPosit/ui32_to_p16.i: external/SoftPosit/ui32_to_p16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui32_to_p16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.i
@@ -4692,6 +5109,7 @@ external/SoftPosit/ui32_to_p16.s: external/SoftPosit/ui32_to_p16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui32_to_p16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p16.cpp.s
@@ -4703,6 +5121,7 @@ external/SoftPosit/ui32_to_p32.o: external/SoftPosit/ui32_to_p32.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui32_to_p32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.o
@@ -4714,6 +5133,7 @@ external/SoftPosit/ui32_to_p32.i: external/SoftPosit/ui32_to_p32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui32_to_p32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.i
@@ -4725,6 +5145,7 @@ external/SoftPosit/ui32_to_p32.s: external/SoftPosit/ui32_to_p32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui32_to_p32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p32.cpp.s
@@ -4736,6 +5157,7 @@ external/SoftPosit/ui32_to_p8.o: external/SoftPosit/ui32_to_p8.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui32_to_p8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.o
@@ -4747,6 +5169,7 @@ external/SoftPosit/ui32_to_p8.i: external/SoftPosit/ui32_to_p8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui32_to_p8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.i
@@ -4758,6 +5181,7 @@ external/SoftPosit/ui32_to_p8.s: external/SoftPosit/ui32_to_p8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui32_to_p8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_p8.cpp.s
@@ -4769,6 +5193,7 @@ external/SoftPosit/ui32_to_pX2.o: external/SoftPosit/ui32_to_pX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui32_to_pX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.o
@@ -4780,6 +5205,7 @@ external/SoftPosit/ui32_to_pX2.i: external/SoftPosit/ui32_to_pX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui32_to_pX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.i
@@ -4791,6 +5217,7 @@ external/SoftPosit/ui32_to_pX2.s: external/SoftPosit/ui32_to_pX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui32_to_pX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui32_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui32_to_pX2.cpp.s
@@ -4802,6 +5229,7 @@ external/SoftPosit/ui64_to_p16.o: external/SoftPosit/ui64_to_p16.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui64_to_p16.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p16.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.o
@@ -4813,6 +5241,7 @@ external/SoftPosit/ui64_to_p16.i: external/SoftPosit/ui64_to_p16.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui64_to_p16.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p16.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.i
@@ -4824,6 +5253,7 @@ external/SoftPosit/ui64_to_p16.s: external/SoftPosit/ui64_to_p16.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui64_to_p16.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p16.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p16.cpp.s
@@ -4835,6 +5265,7 @@ external/SoftPosit/ui64_to_p32.o: external/SoftPosit/ui64_to_p32.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui64_to_p32.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p32.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.o
@@ -4846,6 +5277,7 @@ external/SoftPosit/ui64_to_p32.i: external/SoftPosit/ui64_to_p32.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui64_to_p32.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p32.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.i
@@ -4857,6 +5289,7 @@ external/SoftPosit/ui64_to_p32.s: external/SoftPosit/ui64_to_p32.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui64_to_p32.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p32.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p32.cpp.s
@@ -4868,6 +5301,7 @@ external/SoftPosit/ui64_to_p8.o: external/SoftPosit/ui64_to_p8.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui64_to_p8.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p8.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.o
@@ -4879,6 +5313,7 @@ external/SoftPosit/ui64_to_p8.i: external/SoftPosit/ui64_to_p8.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui64_to_p8.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p8.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.i
@@ -4890,6 +5325,7 @@ external/SoftPosit/ui64_to_p8.s: external/SoftPosit/ui64_to_p8.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui64_to_p8.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_p8.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_p8.cpp.s
@@ -4901,6 +5337,7 @@ external/SoftPosit/ui64_to_pX1.o: external/SoftPosit/ui64_to_pX1.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui64_to_pX1.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_pX1.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.o
@@ -4912,6 +5349,7 @@ external/SoftPosit/ui64_to_pX1.i: external/SoftPosit/ui64_to_pX1.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui64_to_pX1.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_pX1.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.i
@@ -4923,6 +5361,7 @@ external/SoftPosit/ui64_to_pX1.s: external/SoftPosit/ui64_to_pX1.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui64_to_pX1.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_pX1.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX1.cpp.s
@@ -4934,6 +5373,7 @@ external/SoftPosit/ui64_to_pX2.o: external/SoftPosit/ui64_to_pX2.cpp.o
 
 # target to build an object file
 external/SoftPosit/ui64_to_pX2.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_pX2.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.o
@@ -4945,6 +5385,7 @@ external/SoftPosit/ui64_to_pX2.i: external/SoftPosit/ui64_to_pX2.cpp.i
 
 # target to preprocess a source file
 external/SoftPosit/ui64_to_pX2.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_pX2.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.i
@@ -4956,6 +5397,7 @@ external/SoftPosit/ui64_to_pX2.s: external/SoftPosit/ui64_to_pX2.cpp.s
 
 # target to generate assembly for a file
 external/SoftPosit/ui64_to_pX2.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/external/SoftPosit/ui64_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/external/SoftPosit/ui64_to_pX2.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/external/SoftPosit/ui64_to_pX2.cpp.s
@@ -4967,6 +5409,7 @@ source/common.o: source/common.cpp.o
 
 # target to build an object file
 source/common.cpp.o:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/source/common.cpp.o
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/common.cpp.o
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/source/common.cpp.o
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/source/common.cpp.o
@@ -4978,6 +5421,7 @@ source/common.i: source/common.cpp.i
 
 # target to preprocess a source file
 source/common.cpp.i:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/source/common.cpp.i
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/common.cpp.i
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/source/common.cpp.i
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/source/common.cpp.i
@@ -4989,37 +5433,11 @@ source/common.s: source/common.cpp.s
 
 # target to generate assembly for a file
 source/common.cpp.s:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/source/common.cpp.s
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/common.cpp.s
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/source/common.cpp.s
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/source/common.cpp.s
 .PHONY : source/common.cpp.s
-
-source/eigen_algebra.o: source/eigen_algebra.cpp.o
-
-.PHONY : source/eigen_algebra.o
-
-# target to build an object file
-source/eigen_algebra.cpp.o:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/eigen_algebra.cpp.o
-.PHONY : source/eigen_algebra.cpp.o
-
-source/eigen_algebra.i: source/eigen_algebra.cpp.i
-
-.PHONY : source/eigen_algebra.i
-
-# target to preprocess a source file
-source/eigen_algebra.cpp.i:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/eigen_algebra.cpp.i
-.PHONY : source/eigen_algebra.cpp.i
-
-source/eigen_algebra.s: source/eigen_algebra.cpp.s
-
-.PHONY : source/eigen_algebra.s
-
-# target to generate assembly for a file
-source/eigen_algebra.cpp.s:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/eigen_algebra.cpp.s
-.PHONY : source/eigen_algebra.cpp.s
 
 source/fft.o: source/fft.cpp.o
 
@@ -5048,60 +5466,6 @@ source/fft.cpp.s:
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/fft.cpp.s
 .PHONY : source/fft.cpp.s
 
-source/fpt_algebra.o: source/fpt_algebra.cpp.o
-
-.PHONY : source/fpt_algebra.o
-
-# target to build an object file
-source/fpt_algebra.cpp.o:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/fpt_algebra.cpp.o
-.PHONY : source/fpt_algebra.cpp.o
-
-source/fpt_algebra.i: source/fpt_algebra.cpp.i
-
-.PHONY : source/fpt_algebra.i
-
-# target to preprocess a source file
-source/fpt_algebra.cpp.i:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/fpt_algebra.cpp.i
-.PHONY : source/fpt_algebra.cpp.i
-
-source/fpt_algebra.s: source/fpt_algebra.cpp.s
-
-.PHONY : source/fpt_algebra.s
-
-# target to generate assembly for a file
-source/fpt_algebra.cpp.s:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/fpt_algebra.cpp.s
-.PHONY : source/fpt_algebra.cpp.s
-
-source/fpt_bitwise.o: source/fpt_bitwise.cpp.o
-
-.PHONY : source/fpt_bitwise.o
-
-# target to build an object file
-source/fpt_bitwise.cpp.o:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/fpt_bitwise.cpp.o
-.PHONY : source/fpt_bitwise.cpp.o
-
-source/fpt_bitwise.i: source/fpt_bitwise.cpp.i
-
-.PHONY : source/fpt_bitwise.i
-
-# target to preprocess a source file
-source/fpt_bitwise.cpp.i:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/fpt_bitwise.cpp.i
-.PHONY : source/fpt_bitwise.cpp.i
-
-source/fpt_bitwise.s: source/fpt_bitwise.cpp.s
-
-.PHONY : source/fpt_bitwise.s
-
-# target to generate assembly for a file
-source/fpt_bitwise.cpp.s:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/fpt_bitwise.cpp.s
-.PHONY : source/fpt_bitwise.cpp.s
-
 source/fxpt_bitwise.o: source/fxpt_bitwise.cpp.o
 
 .PHONY : source/fxpt_bitwise.o
@@ -5129,60 +5493,6 @@ source/fxpt_bitwise.cpp.s:
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/fxpt_bitwise.cpp.s
 .PHONY : source/fxpt_bitwise.cpp.s
 
-source/qrd.o: source/qrd.cpp.o
-
-.PHONY : source/qrd.o
-
-# target to build an object file
-source/qrd.cpp.o:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/qrd.cpp.o
-.PHONY : source/qrd.cpp.o
-
-source/qrd.i: source/qrd.cpp.i
-
-.PHONY : source/qrd.i
-
-# target to preprocess a source file
-source/qrd.cpp.i:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/qrd.cpp.i
-.PHONY : source/qrd.cpp.i
-
-source/qrd.s: source/qrd.cpp.s
-
-.PHONY : source/qrd.s
-
-# target to generate assembly for a file
-source/qrd.cpp.s:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/qrd.cpp.s
-.PHONY : source/qrd.cpp.s
-
-source/xfxpt_algebra.o: source/xfxpt_algebra.cpp.o
-
-.PHONY : source/xfxpt_algebra.o
-
-# target to build an object file
-source/xfxpt_algebra.cpp.o:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/xfxpt_algebra.cpp.o
-.PHONY : source/xfxpt_algebra.cpp.o
-
-source/xfxpt_algebra.i: source/xfxpt_algebra.cpp.i
-
-.PHONY : source/xfxpt_algebra.i
-
-# target to preprocess a source file
-source/xfxpt_algebra.cpp.i:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/xfxpt_algebra.cpp.i
-.PHONY : source/xfxpt_algebra.cpp.i
-
-source/xfxpt_algebra.s: source/xfxpt_algebra.cpp.s
-
-.PHONY : source/xfxpt_algebra.s
-
-# target to generate assembly for a file
-source/xfxpt_algebra.cpp.s:
-	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/source/xfxpt_algebra.cpp.s
-.PHONY : source/xfxpt_algebra.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -5190,6 +5500,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... admm_lasso"
 	@echo "... sxlal"
 	@echo "... uninstall"
 	@echo "... xfxpt_sqrt"
@@ -5200,6 +5511,9 @@ help:
 	@echo "... examples/c/admm/admm.o"
 	@echo "... examples/c/admm/admm.i"
 	@echo "... examples/c/admm/admm.s"
+	@echo "... examples/c/admm_lasso/admm_lasso.o"
+	@echo "... examples/c/admm_lasso/admm_lasso.i"
+	@echo "... examples/c/admm_lasso/admm_lasso.s"
 	@echo "... examples/c/mm/mm.o"
 	@echo "... examples/c/mm/mm.i"
 	@echo "... examples/c/mm/mm.s"
@@ -5641,27 +5955,12 @@ help:
 	@echo "... source/common.o"
 	@echo "... source/common.i"
 	@echo "... source/common.s"
-	@echo "... source/eigen_algebra.o"
-	@echo "... source/eigen_algebra.i"
-	@echo "... source/eigen_algebra.s"
 	@echo "... source/fft.o"
 	@echo "... source/fft.i"
 	@echo "... source/fft.s"
-	@echo "... source/fpt_algebra.o"
-	@echo "... source/fpt_algebra.i"
-	@echo "... source/fpt_algebra.s"
-	@echo "... source/fpt_bitwise.o"
-	@echo "... source/fpt_bitwise.i"
-	@echo "... source/fpt_bitwise.s"
 	@echo "... source/fxpt_bitwise.o"
 	@echo "... source/fxpt_bitwise.i"
 	@echo "... source/fxpt_bitwise.s"
-	@echo "... source/qrd.o"
-	@echo "... source/qrd.i"
-	@echo "... source/qrd.s"
-	@echo "... source/xfxpt_algebra.o"
-	@echo "... source/xfxpt_algebra.i"
-	@echo "... source/xfxpt_algebra.s"
 .PHONY : help
 
 

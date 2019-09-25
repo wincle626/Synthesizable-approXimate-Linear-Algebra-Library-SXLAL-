@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/header
+# Install script for directory: /static/workspaces/gitworkspace/SXLAL/header
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

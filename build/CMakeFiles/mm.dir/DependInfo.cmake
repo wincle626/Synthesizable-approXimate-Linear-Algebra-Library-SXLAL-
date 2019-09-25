@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/examples/c/mm/mm.cpp" "/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/mm.dir/examples/c/mm/mm.cpp.o"
+  "/static/workspaces/gitworkspace/SXLAL/examples/c/mm/mm.cpp" "/static/workspaces/gitworkspace/SXLAL/build/CMakeFiles/mm.dir/examples/c/mm/mm.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

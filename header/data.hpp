@@ -9,11 +9,12 @@
 #define SRC_DATA_HPP_
 
 // Data structure
-#define ROW 256 // matrix row number
-#define COL 256 // matrix column number
+#define ROW 4 // matrix row number
+#define COL 4 // matrix column number
 #define DIAG (COL<ROW ? COL : ROW) // diagonal matrix size
 #define DIAG_VALUE 50 // diagonal matrix value scale
 #define DIAG_RATIO 0.5 // diagonal matrix sparse ratio
+#define SPARSE_RATIO 0.5 // vector sparse ratio
 
 #define SIZE (COL>ROW ? COL : ROW) // square matrix size
 
@@ -23,7 +24,7 @@
 #define COL2 240 // right multiply matrix column number
 
 // Data type
-#define FLOAT_SIZE 1000 // floating point fraction scale
+#define FLOAT_SIZE RAND_MAX // floating point fraction scale
 #define INTEGER_SCALE 10 // floating point integer scale
 
 const double PI = 3.141592653589793238460; // PI constant

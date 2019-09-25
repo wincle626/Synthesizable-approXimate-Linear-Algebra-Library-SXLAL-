@@ -134,13 +134,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_pX1.cpp.o"
   "CMakeFiles/sxlal.dir/external/SoftPosit/ui64_to_pX2.cpp.o"
   "CMakeFiles/sxlal.dir/source/common.cpp.o"
-  "CMakeFiles/sxlal.dir/source/eigen_algebra.cpp.o"
-  "CMakeFiles/sxlal.dir/source/fpt_algebra.cpp.o"
-  "CMakeFiles/sxlal.dir/source/xfxpt_algebra.cpp.o"
-  "CMakeFiles/sxlal.dir/source/fpt_bitwise.cpp.o"
   "CMakeFiles/sxlal.dir/source/fxpt_bitwise.cpp.o"
   "CMakeFiles/sxlal.dir/source/fft.cpp.o"
-  "CMakeFiles/sxlal.dir/source/qrd.cpp.o"
   "libsxlal.pdb"
   "libsxlal.a"
 )

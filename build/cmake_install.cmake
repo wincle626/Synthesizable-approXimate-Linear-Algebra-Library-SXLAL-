@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL
+# Install script for directory: /static/workspaces/gitworkspace/SXLAL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/header/cmake_install.cmake")
-  include("/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/source/cmake_install.cmake")
+  include("/static/workspaces/gitworkspace/SXLAL/build/header/cmake_install.cmake")
+  include("/static/workspaces/gitworkspace/SXLAL/build/source/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +52,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/static/workspaces/gitworkspace/SXLAL/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

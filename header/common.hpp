@@ -32,6 +32,7 @@
 #include <Eigen/Eigenvalues>
 #include <Eigen/QR>
 #include <boost/tuple/tuple.hpp>
+#include <Python.h>
 
 #define MAXBUFSIZE  ((unsigned int) 1e7)
 

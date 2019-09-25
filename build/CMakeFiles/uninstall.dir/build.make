@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL
+CMAKE_SOURCE_DIR = /static/workspaces/gitworkspace/SXLAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build
+CMAKE_BINARY_DIR = /static/workspaces/gitworkspace/SXLAL/build
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/buil
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/cmake_uninstall.cmake
+	/usr/bin/cmake -P /static/workspaces/gitworkspace/SXLAL/build/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /static/workspaces/gitworkspace/SXLAL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /static/workspaces/gitworkspace/SXLAL /static/workspaces/gitworkspace/SXLAL /static/workspaces/gitworkspace/SXLAL/build /static/workspaces/gitworkspace/SXLAL/build /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

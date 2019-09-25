@@ -54,10 +54,47 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL
+CMAKE_SOURCE_DIR = /static/workspaces/gitworkspace/SXLAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build
+CMAKE_BINARY_DIR = /static/workspaces/gitworkspace/SXLAL/build
+
+#=============================================================================
+# Target rules for target CMakeFiles/admm_lasso.dir
+
+# All Build rule for target.
+CMakeFiles/admm_lasso.dir/all:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/depend
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/static/workspaces/gitworkspace/SXLAL/build/CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48 "Built target admm_lasso"
+.PHONY : CMakeFiles/admm_lasso.dir/all
+
+# Include target in all.
+all: CMakeFiles/admm_lasso.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/admm_lasso.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 24
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/admm_lasso.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
+.PHONY : CMakeFiles/admm_lasso.dir/rule
+
+# Convenience name for target.
+admm_lasso: CMakeFiles/admm_lasso.dir/rule
+
+.PHONY : admm_lasso
+
+# clean rule for target.
+CMakeFiles/admm_lasso.dir/clean:
+	$(MAKE) -f CMakeFiles/admm_lasso.dir/build.make CMakeFiles/admm_lasso.dir/clean
+.PHONY : CMakeFiles/admm_lasso.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/admm_lasso.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/sxlal.dir
@@ -66,7 +103,7 @@ CMAKE_BINARY_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/buil
 CMakeFiles/sxlal.dir/all:
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/depend
 	$(MAKE) -f CMakeFiles/sxlal.dir/build.make CMakeFiles/sxlal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99 "Built target sxlal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/static/workspaces/gitworkspace/SXLAL/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99 "Built target sxlal"
 .PHONY : CMakeFiles/sxlal.dir/all
 
 # Include target in all.
@@ -76,9 +113,9 @@ all: CMakeFiles/sxlal.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/sxlal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 24
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sxlal.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 .PHONY : CMakeFiles/sxlal.dir/rule
 
 # Convenience name for target.
@@ -103,14 +140,14 @@ clean: CMakeFiles/sxlal.dir/clean
 CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/static/workspaces/gitworkspace/SXLAL/build/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -135,7 +172,7 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/xfxpt_sqrt.dir/all:
 	$(MAKE) -f CMakeFiles/xfxpt_sqrt.dir/build.make CMakeFiles/xfxpt_sqrt.dir/depend
 	$(MAKE) -f CMakeFiles/xfxpt_sqrt.dir/build.make CMakeFiles/xfxpt_sqrt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=100 "Built target xfxpt_sqrt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/static/workspaces/gitworkspace/SXLAL/build/CMakeFiles --progress-num=100 "Built target xfxpt_sqrt"
 .PHONY : CMakeFiles/xfxpt_sqrt.dir/all
 
 # Include target in all.
@@ -145,9 +182,9 @@ all: CMakeFiles/xfxpt_sqrt.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/xfxpt_sqrt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/xfxpt_sqrt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 .PHONY : CMakeFiles/xfxpt_sqrt.dir/rule
 
 # Convenience name for target.
@@ -172,7 +209,7 @@ clean: CMakeFiles/xfxpt_sqrt.dir/clean
 CMakeFiles/mm.dir/all:
 	$(MAKE) -f CMakeFiles/mm.dir/build.make CMakeFiles/mm.dir/depend
 	$(MAKE) -f CMakeFiles/mm.dir/build.make CMakeFiles/mm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=32 "Built target mm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/static/workspaces/gitworkspace/SXLAL/build/CMakeFiles --progress-num=49 "Built target mm"
 .PHONY : CMakeFiles/mm.dir/all
 
 # Include target in all.
@@ -182,9 +219,9 @@ all: CMakeFiles/mm.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 .PHONY : CMakeFiles/mm.dir/rule
 
 # Convenience name for target.
@@ -209,7 +246,7 @@ clean: CMakeFiles/mm.dir/clean
 CMakeFiles/admm.dir/all:
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/depend
 	$(MAKE) -f CMakeFiles/admm.dir/build.make CMakeFiles/admm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target admm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/static/workspaces/gitworkspace/SXLAL/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24 "Built target admm"
 .PHONY : CMakeFiles/admm.dir/all
 
 # Include target in all.
@@ -219,9 +256,9 @@ all: CMakeFiles/admm.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/admm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 24
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/admm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 .PHONY : CMakeFiles/admm.dir/rule
 
 # Convenience name for target.
@@ -246,7 +283,7 @@ clean: CMakeFiles/admm.dir/clean
 CMakeFiles/pgd.dir/all:
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/depend
 	$(MAKE) -f CMakeFiles/pgd.dir/build.make CMakeFiles/pgd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles --progress-num=33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66 "Built target pgd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/static/workspaces/gitworkspace/SXLAL/build/CMakeFiles --progress-num=50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75 "Built target pgd"
 .PHONY : CMakeFiles/pgd.dir/all
 
 # Include target in all.
@@ -256,9 +293,9 @@ all: CMakeFiles/pgd.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pgd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pgd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 .PHONY : CMakeFiles/pgd.dir/rule
 
 # Convenience name for target.

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL
+CMAKE_SOURCE_DIR = /static/workspaces/gitworkspace/SXLAL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build
+CMAKE_BINARY_DIR = /static/workspaces/gitworkspace/SXLAL/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/source/CMakeFiles/progress.marks
-	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build/CMakeFiles 0
+	cd /static/workspaces/gitworkspace/SXLAL/build && $(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles /static/workspaces/gitworkspace/SXLAL/build/source/CMakeFiles/progress.marks
+	cd /static/workspaces/gitworkspace/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /static/workspaces/gitworkspace/SXLAL/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
+	cd /static/workspaces/gitworkspace/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,17 +97,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /static/workspaces/gitworkspace/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /static/workspaces/gitworkspace/SXLAL/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /static/workspaces/gitworkspace/SXLAL/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -129,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /static/workspaces/gitworkspace/SXLAL/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

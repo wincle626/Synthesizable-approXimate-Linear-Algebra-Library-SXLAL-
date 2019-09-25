@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra -O3   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/header -isystem /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/include -isystem /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/SoftPosit/8086-SSE -isystem /usr/include/eigen3 -isystem /usr/local/include -isystem /usr/include/python2.7 -isystem /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/Xilinx -isystem /mnt/hgfs/UDRC_HW/workspaces/gitworkspace/software/SXLAL/external/FloatX 
+CXX_INCLUDES = -isystem /static/workspaces/gitworkspace/SXLAL/header -isystem /static/workspaces/gitworkspace/SXLAL/external/SoftPosit/include -isystem /static/workspaces/gitworkspace/SXLAL/external/SoftPosit/8086-SSE -isystem /usr/include/eigen3 -isystem /usr/include/python2.7 -isystem /static/workspaces/gitworkspace/SXLAL/external/Xilinx -isystem /static/workspaces/gitworkspace/SXLAL/external/FloatX 
 

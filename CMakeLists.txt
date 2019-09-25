@@ -45,13 +45,8 @@ include_directories( ${SOFTPOSIT_SSE_HEADERS_DIR} )
 set( PROJECT_SRC
      ${SOFTPOSIT_SRC}
      source/common.cpp
-     source/eigen_algebra.cpp
-     source/fpt_algebra.cpp
-     source/xfxpt_algebra.cpp
-     source/fpt_bitwise.cpp
      source/fxpt_bitwise.cpp
      source/fft.cpp
-     source/qrd.cpp
 )
 set( PROJECT_INC
      header/common.hpp
@@ -202,7 +197,7 @@ target_link_libraries( pgd
 	PUBLIC pthread
 	PUBLIC python2.7
 )
-# alternating direction method of multipliers (ADMM) 
+# alternating direction method of multipliers (ADMM) - ali's case
 add_executable( admm examples/c/admm/admm.cpp examples/c/admm/admm.hpp
 		    source/common.cpp header/common.hpp header/data.hpp
      		    ${SOFTPOSIT_SRC}
@@ -222,4 +217,23 @@ target_link_libraries( admm
 	PUBLIC pthread
 	PUBLIC python2.7
 )
-
+# ADMM LASSO
+add_executable( admm_lasso examples/c/admm_lasso/admm_lasso.cpp examples/c/admm_lasso/admm_lasso.hpp
+		    source/common.cpp header/common.hpp header/data.hpp
+     		    ${SOFTPOSIT_SRC}
+)
+target_include_directories( admm_lasso SYSTEM
+	PUBLIC ${EIGEN_INCLUDE_DIRS}
+	PUBLIC ${PYTHON_INCLUDE_DIRS}
+	PUBLIC ${HEAD_DIR}
+	PUBLIC ${XILINX_HEADERS_DIR}
+	PUBLIC ${FLOATX_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_HEADERS_DIR}
+	PUBLIC ${SOFTPOSIT_SSE_HEADERS_DIR}
+)
+target_link_libraries( admm_lasso
+	PUBLIC m
+	PUBLIC fftw3
+	PUBLIC pthread
+	PUBLIC python2.7
+)
