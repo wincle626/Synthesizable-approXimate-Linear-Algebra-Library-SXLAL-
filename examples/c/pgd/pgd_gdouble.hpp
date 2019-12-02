@@ -14,5 +14,8 @@ void PROXIMAL_GRADIENT_DECENT_GDOUBLE(double Amatrix_c[DIAG][DIAG],
 									  double bvector_c[DIAG],
 									  double L_c);
 
+void PROXIMAL_GRADIENT_DECENT_GDOUBLE(double **Amatrix_c,
+									  double *bvector_c,
+									  double L_c);
 
 #endif /* SRC_PGD_GDOUBLE_HPP_ */

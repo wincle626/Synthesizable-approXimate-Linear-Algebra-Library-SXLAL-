@@ -30,6 +30,7 @@ b = rand(n, 1);
 ones_n  = ones(n, 1);
 
 L = max(eigs(A));
+
 % ====================================================================== 
 
 
@@ -45,8 +46,42 @@ cvx_end
 % ====================================================================== 
 
 
+% % ====================================================================== 
+% % Proximal gradient descent
+% 
+% x_k = zeros(n, 1);
+% 
+% error_hist = zeros(MAX_ITER, 1);
+% 
+% for k = 1 : MAX_ITER
+% 
+%     % Save previous point
+%     x_k_1 = x_k;
+% 
+%     % Compute gradient
+%     grad_g = A*x_k + b;
+% 
+%     new_point = x_k - (1/L)*grad_g;
+% 
+%     % Project onto [-a, a]
+%     x_k = max(min(new_point, a*ones_n), -a*ones_n) + error_std*randn(n,1);
+% 
+%     error_hist(k) = norm(x_k - x_k_1)/norm(x_k);
+% 
+%     if norm(x_k - x_k_1) <= eps_stop
+%         break;
+%     end
+% end
+% % ====================================================================== 
+
+
 % ====================================================================== 
-% Proximal gradient descent
+% Scaled Proximal gradient descent
+
+scaling_factor = ceil(1/eps_stop);
+A = round(A*scaling_factor);
+b = round(b*scaling_factor);
+a = a*scaling_factor;
 
 x_k = zeros(n, 1);
 
@@ -60,14 +95,14 @@ for k = 1 : MAX_ITER
     % Compute gradient
     grad_g = A*x_k + b;
 
-    new_point = x_k - (1/L)*grad_g;
+    new_point = x_k - floor((1/L)*grad_g);
 
     % Project onto [-a, a]
-    x_k = max(min(new_point, a*ones_n), -a*ones_n) + error_std*randn(n,1);
+    x_k = floor(max(min(new_point, a*ones_n), -a*ones_n) + error_std*randn(n,1));
 
     error_hist(k) = norm(x_k - x_k_1)/norm(x_k);
 
-    if norm(x_k - x_k_1) <= eps_stop
+    if norm(x_k - x_k_1) <= 1 && norm(x_k - x_k_1) > 0
         break;
     end
 end

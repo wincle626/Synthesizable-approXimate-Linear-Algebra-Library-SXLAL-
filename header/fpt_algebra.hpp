@@ -48,6 +48,17 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N>
+	void IDENDTITY_MAT( T **A ){
+		for( int i=0; i<M; i++ ){
+			for( int j=0; j<N; j++ ){
+				if(i==j)
+					A[i][j] = 1;
+				else
+					A[i][j] = 0;
+			}
+		}
+	}
 
 	// Generate random matrix
 	template<class T, int M, int N>
@@ -102,7 +113,16 @@ public:
 		for( int i=0; i<M; i++ ){
 			double rnd = 2 * (std::rand() % FLOAT_SIZE) / FLOAT_SIZE - 1;
 			double rndnum = (double) INTEGER_SCALE * rnd ;
-			V[i] = rndnum;
+			V[i] = (T) rndnum;
+		}
+	}
+	template<class T, int M>
+	void RND_VEC_SCALE( T V[M], T scale ){
+		srand (time(NULL));
+		for( int i=0; i<M; i++ ){
+			double rnd = 2 * (std::rand() % FLOAT_SIZE) / FLOAT_SIZE - 1;
+			double rndnum = (double) scale * INTEGER_SCALE * rnd ;
+			V[i] = (T) rndnum;
 		}
 	}
 
@@ -213,7 +233,7 @@ public:
 			S += V1[i] * V1[i];
 		}
 		double tmp = (double) S;
-		S = (T2) std::sqrt(S);
+		S = (T2) std::sqrt(tmp);
 	}
 
 	// Vector norm .^2
@@ -327,6 +347,16 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N>
+	void MAT_ADD(T **A,
+									      T **B,
+									      T **C){
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<N; j++ ){
+				C[i][j] = A[i][j] + B[i][j];
+			}
+		}
+	}
 	template<class T1, class T2, class T3, int M, int N>
 	void MAT_ADD(T1 A[M][N],
 									      T2 B[M][N],
@@ -368,6 +398,14 @@ public:
 			}
 		}
 	}
+	template<class T, unsigned int M, unsigned int N>
+	void MAT_TRANS(T **Mat, T **MatT){
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<N;j++){
+				MatT[i][j] = Mat[j][i];
+			}
+		}
+	}
 
 	// Matrix Vector multiplication
 	template<class T, int M, int N>
@@ -378,6 +416,21 @@ public:
 			C[i] = 0;
 			for ( int j=0; j<N; j++ ){
 				C[i] += A[i][j] * B[j];
+			}
+		}
+	}
+	template<class T, int M, int N>
+	void MAT_VEC_MUL(T **A,
+										  T *B,
+										  T *C){
+//	   	std::cout << __FILE__ << __LINE__ << std::endl;
+//		printf("%lf\n",A[0][0]);
+		for ( int i=0; i<M; i++ ){
+			C[i] = 0;
+//		   	std::cout << __FILE__ << __LINE__ << std::endl;
+			for ( int j=0; j<N; j++ ){
+				C[i] += A[i][j] * B[j];
+//			   	std::cout << __FILE__ << __LINE__ << std::endl;
 			}
 		}
 	}
@@ -440,6 +493,19 @@ public:
 	void MAT_MUL(T A[M][N],
 												    T B[N][P],
 													T C[M][P]){
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<P; j++ ){
+				C[i][j] = 0;
+				for ( int k=0; k<N; k++ ){
+					C[i][j] += A[i][k] * B[k][j];
+				}
+			}
+		}
+	}
+	template<class T, int M, int N, int P>
+	void MAT_MUL(T **A,
+												    T **B,
+													T **C){
 		for ( int i=0; i<M; i++ ){
 			for ( int j=0; j<P; j++ ){
 				C[i][j] = 0;
@@ -798,9 +864,106 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N>
+	void QRD_HH(T **Mat,
+				T **MatQ,
+				T **MatR){
+		int i,j,k;
+		//R=A;
+		for(j=0;j<M;j++){
+			for(i=0;i<N;i++){
+				MatR[j][i] = Mat[j][i];
+				//Q=eye(m);
+				if(i==j)
+					MatQ[j][i] = (T) 1;
+				else
+					MatQ[j][i] = (T) 0;
+			}
+		}
+
+		T g, s;
+		T *x, *v, *w, *u;
+		x = (T*) malloc(sizeof(T)*M);
+		v = (T*) malloc(sizeof(T)*M);
+		w = (T*) malloc(sizeof(T)*M);
+		u = (T*) malloc(sizeof(T)*N);
+		T **tmp1, **tmp2;
+		tmp1 = (T**) malloc(sizeof(T*)*M);
+		tmp2 = (T**) malloc(sizeof(T*)*M);
+		for(int i=0;i<N;i++){
+			tmp1[i] = (T*) malloc(sizeof(T)*N);
+			tmp2[i] = (T*) malloc(sizeof(T)*N);
+		}
+		for(k=0;k<M-1;k++){
+			// x=zeros(m,1);
+			for(j=0;j<M;j++){
+				x[j] = (T) 0;
+			}
+			ZEROS_VEC<T, M>(x);
+			//x(k:m,1)=R(k:m,k);
+			for(j=k;j<M;j++){
+				x[j] = MatR[j][k];
+			}
+			//g=norm(x);
+			VEC_NORM<T, M>(x, g);
+			// v=x;
+			VEC_EQ<T, M>(x, v);
+			// v(k)=x(k)+g;
+			v[k] = x[k] + g;
+			//s=norm(v);
+			VEC_NORM<T, M>(v, s);
+			if(s!=0){
+				// w=v/s;
+				VEC_DIV<T, M>(v, s, w);
+				// u=2*R'*w;
+				for(i=0;i<N;i++){
+					u[i] = 0;
+					for(j=0;j<M;j++){
+						u[i] += 2 * MatR[j][i] * w[j];
+					}
+				}
+				// R=R-w*u'; %Product HR
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						MatR[j][i] = MatR[j][i] - w[j] * u[i];
+					}
+				}
+				// Q=Q-2*Q*w*w'; %Product QR
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						tmp1[j][i] = w[j] * w[i];
+					}
+				}
+				MAT_MUL<T, M, N, N>(MatQ, tmp1, tmp2);
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						MatQ[j][i] = MatQ[j][i] - 2 * tmp2[j][i];
+					}
+				}
+			}
+		}
+	}
 
 	template<class T, int M>
 	void UPTRIANGULARMATINV(T R[M][M],T Ri[M][M]){
+		int i=0,j=0,k=0;
+		// R inversion
+		for(i=0;i<M;i++){
+			for(j=0;j<M;j++){
+				Ri[i][j]=0;
+			}
+		}
+		for(i=0;i<M;i++){
+			Ri[i][i]=1/R[i][i];
+			for(j=i+1;j<M;j++){
+				for(k=0;k<=j-1;k++){
+					Ri[i][j] = Ri[i][j] - Ri[i][k] * R[k][j] / R[j][j];
+				}
+			}
+		}
+	}
+	template<class T, int M>
+	void UPTRIANGULARMATINV(T **R,T **Ri){
 		int i=0,j=0,k=0;
 		// R inversion
 		for(i=0;i<M;i++){
@@ -828,9 +991,38 @@ public:
 		}
 	}
 	template<class T, int M>
+	void ORTHOGONALMATINV(T **Q,T **Qi){
+		int i=0,j=0;
+		// Q inversion
+		for(i=0;i<M;i++){
+			for(j=0;j<M;j++){
+				Qi[i][j] = Q[j][i];
+			}
+		}
+	}
+	template<class T, int M>
 	void MAT_QRINV(T A[M][M], T B[M][M]){
 		T Q[M][M], R[M][M];
 		T Qi[M][M], Ri[M][M];
+		QRD_HH<T, M, M>(A, Q, R);
+		UPTRIANGULARMATINV<T, M>(R, Ri);
+		ORTHOGONALMATINV<T, M>(Q, Qi);
+		MAT_MUL<T, M, M, M>(Ri, Qi, B);
+	}
+	template<class T, int M>
+	void MAT_QRINV(T **A, T **B){
+		T **Q, **R;
+		T **Qi, **Ri;
+		Q = (T**) malloc(sizeof(T*)*M);
+		R = (T**) malloc(sizeof(T*)*M);
+		Qi = (T**) malloc(sizeof(T*)*M);
+		Ri = (T**) malloc(sizeof(T*)*M);
+		for(int i=0;i<M;i++){
+			Q[i] = (T*) malloc(sizeof(T)*M);
+			R[i] = (T*) malloc(sizeof(T)*M);
+			Qi[i] = (T*) malloc(sizeof(T)*M);
+			Ri[i] = (T*) malloc(sizeof(T)*M);
+		}
 		QRD_HH<T, M, M>(A, Q, R);
 		UPTRIANGULARMATINV<T, M>(R, Ri);
 		ORTHOGONALMATINV<T, M>(Q, Qi);
@@ -842,6 +1034,73 @@ public:
 	// LU decomposition
 	template<class T, unsigned int M>
 	void LU_CHOLBANACHROUT(T Mat[M][M], T MatL[M][M], T MatU[M][M]){
+
+		// copy the matrix
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatL[i][j] = 0;
+			}
+		}
+
+		// decomposition in-place
+		for(unsigned int j=0;j<M;j++){
+			// compute the diagonal element
+			T LL = Mat[j][j];
+//			std::cout << j << "th diag update:" << std::endl;
+//			std::cout << LL;
+			for(unsigned int k=0;k<j;k++){
+//				std::cout << "-"
+//						  << MatL[j][k]
+//					      << "^2";
+				LL -= MatL[j][k] * MatL[j][k];
+				if(LL<0){
+//					std::cout << "=" LL << std::endl << std::endl;
+//					std::cout << "something is wrong at ["
+//							  << j << "]["
+//							  << k << "]=";
+					exit(-1);
+				}
+			}
+			MatL[j][j] = (T) std::sqrt((double)LL);
+//			std::cout << "=" << MatL[j][j] << std::endl << std::endl;
+
+			// compute the non-diagonal element
+//			std::cout << j << "th non-diag update:" << std::endl;
+			T inv = 1 / MatL[j][j];
+			for(unsigned int i=j+1;i<M;i++){
+				LL = Mat[i][j];
+//				std::cout << LL;
+				for(unsigned int k=0;k<j;k++){
+//					std::cout << "-"
+//							  << MatL[i][k]
+//						      << "x"
+//							  << MatL[j][k];
+					LL -= MatL[i][k] * MatL[j][k];
+				}
+				MatL[i][j] = LL * inv;
+//				std::cout << "x" << inv << "=" << MatL[i][j] << std::endl;
+			}
+//			std::cout << std::endl;
+
+//			std::cout << "L Matrix: " << std::endl;;
+//			for(int i=0;i<4;i++){
+//				for(int j=0;j<4;j++){
+//					std::cout << MatL[i][j] << ", ";
+//				}
+//				std::cout << std::endl;
+//			}
+//			std::cout << std::endl;
+		}
+
+		// transpose L to get U
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatU[i][j] = MatL[j][i];
+			}
+		}
+	}
+	template<class T, unsigned int M>
+	void LU_CHOLBANACHROUT(T **Mat, T **MatL, T **MatU){
 
 		// copy the matrix
 		for(unsigned int i=0;i<M;i++){
@@ -1243,6 +1502,14 @@ public:
 	void MAT_SCALAR_DOTMUL(T MatA[M][N],
 						   T B,
 						   T MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = MatA[i][j] * B;
+	}
+	template<class T, int M, int N>
+	void MAT_SCALAR_DOTMUL(T **MatA,
+						   T B,
+						   T **MatC){
 		for(int i=0;i<M;i++)
 			for(int j=0;j<N;j++)
 				MatC[i][j] = MatA[i][j] * B;

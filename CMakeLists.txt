@@ -179,6 +179,7 @@ add_executable( pgd examples/c/pgd/pgd_eigend.cpp examples/c/pgd/pgd_eigend.hpp
 		    examples/c/pgd/pgd_softposit8.cpp examples/c/pgd/pgd_softposit8.hpp
 		    examples/c/pgd/pgd_softposit16.cpp examples/c/pgd/pgd_softposit16.hpp
 		    examples/c/pgd/pgd_softposit32.cpp examples/c/pgd/pgd_softposit32.hpp
+		    examples/c/pgd/pgd_softpositX.cpp examples/c/pgd/pgd_softpositX.hpp
 		    examples/c/pgd/pgd.cpp examples/c/pgd/pgd.hpp
 		    source/common.cpp header/common.hpp header/data.hpp
      		    ${SOFTPOSIT_SRC}
@@ -218,7 +219,15 @@ target_link_libraries( admm
 	PUBLIC python2.7
 )
 # ADMM LASSO
-add_executable( admm_lasso examples/c/admm_lasso/admm_lasso.cpp examples/c/admm_lasso/admm_lasso.hpp
+add_executable( admm_lasso examples/c/admm_lasso/admmlasso_gdouble.cpp examples/c/admm_lasso/admmlasso_gdouble.hpp
+		    examples/c/admm_lasso/admmlasso_gfloat.cpp examples/c/admm_lasso/admmlasso_gfloat.hpp
+		    examples/c/admm_lasso/admmlasso_xfloat.cpp examples/c/admm_lasso/admmlasso_xfloat.hpp
+		    examples/c/admm_lasso/admmlasso_xfxpt.cpp examples/c/admm_lasso/admmlasso_xfxpt.hpp
+		    examples/c/admm_lasso/admmlasso_posit8.cpp examples/c/admm_lasso/admmlasso_posit8.hpp
+		    examples/c/admm_lasso/admmlasso_posit16.cpp examples/c/admm_lasso/admmlasso_posit16.hpp
+		    examples/c/admm_lasso/admmlasso_posit32.cpp examples/c/admm_lasso/admmlasso_posit32.hpp
+		    examples/c/admm_lasso/admmlasso_positx.cpp examples/c/admm_lasso/admmlasso_positx.hpp
+		    examples/c/admm_lasso/admm_lasso.cpp examples/c/admm_lasso/admm_lasso.hpp
 		    source/common.cpp header/common.hpp header/data.hpp
      		    ${SOFTPOSIT_SRC}
 )

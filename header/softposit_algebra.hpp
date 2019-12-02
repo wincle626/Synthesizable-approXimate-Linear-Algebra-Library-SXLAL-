@@ -25,6 +25,14 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N, T spfunc(double, int), int BITS>
+	void ZEROS_MAT( T A[M][N] ){
+		for( int i=0; i<M; i++ ){
+			for( int j=0; j<N; j++ ){
+				A[i][j] = spfunc(0, BITS);
+			}
+		}
+	}
 
 	// Generate all one matrix
 	template<class T, int M, int N, T spfunc(double)>
@@ -35,6 +43,15 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N, T spfunc(double, int), int BITS>
+	void ONES_MAT( T A[M][N] ){
+		for( int i=0; i<M; i++ ){
+			for( int j=0; j<N; j++ ){
+				A[i][j] = spfunc(1, BITS);
+			}
+		}
+	}
+
 	// Generate identity matrix
 	template<class T, int M, int N, T spfunc(double)>
 	void IDENDTITY_MAT( T A[M][N] ){
@@ -44,6 +61,39 @@ public:
 					A[i][j] = spfunc(1);
 				else
 					A[i][j] = spfunc(0);
+			}
+		}
+	}
+	template<class T, int M, int N, T spfunc(double)>
+	void IDENDTITY_MAT( T **A ){
+		for( int i=0; i<M; i++ ){
+			for( int j=0; j<N; j++ ){
+				if(i==j)
+					A[i][j] = spfunc(1);
+				else
+					A[i][j] = spfunc(0);
+			}
+		}
+	}
+	template<class T, class T1, int M, int N, T1 spfunc(double, int), T spfunc1(T1, int), int BITS>
+	void IDENDTITY_MAT( T A[M][N] ){
+		for( int i=0; i<M; i++ ){
+			for( int j=0; j<N; j++ ){
+				if(i==j)
+					A[i][j] = spfunc1(spfunc(1, BITS), BITS);
+				else
+					A[i][j] = spfunc1(spfunc(0, BITS), BITS);
+			}
+		}
+	}
+	template<class T, class T1, int M, int N, T1 spfunc(double, int), T spfunc1(T1, int), int BITS>
+	void IDENDTITY_MAT( T **A ){
+		for( int i=0; i<M; i++ ){
+			for( int j=0; j<N; j++ ){
+				if(i==j)
+					A[i][j] = spfunc1(spfunc(1, BITS), BITS);
+				else
+					A[i][j] = spfunc1(spfunc(0, BITS), BITS);
 			}
 		}
 	}
@@ -85,12 +135,26 @@ public:
 			V[i] = spfunc(0);
 		}
 	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int), int BITS>
+	void ZEROS_VEC( T V[M] ){
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for( int i=0; i<M; i++ ){
+			V[i] = zero;
+		}
+	}
 
 	// Generate all one vector
 	template<class T, int M, T spfunc(double)>
 	void ONES_VEC( T V[M] ){
 		for( int i=0; i<M; i++ ){
 			V[i] = spfunc(1);
+		}
+	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int), int BITS>
+	void ONES_VEC( T V[M] ){
+		T one = spfunc1(spfunc(1, BITS), BITS);
+		for( int i=0; i<M; i++ ){
+			V[i] = one;
 		}
 	}
 
@@ -102,6 +166,15 @@ public:
 			int rnd = INTEGER_SCALE * rand() % FLOAT_SIZE;
 			double rndnum = (double)( rnd ) / FLOAT_SIZE;
 			V[i] = spfunc(rndnum);
+		}
+	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int), int BITS>
+	void RND_VEC( T V[M] ){
+		srand (time(NULL));
+		for( int i=0; i<M; i++ ){
+			int rnd = INTEGER_SCALE * rand() % FLOAT_SIZE;
+			double rndnum = (double)( rnd ) / FLOAT_SIZE;
+			V[i] = spfunc1(spfunc(rndnum, BITS), BITS);
 		}
 	}
 
@@ -126,12 +199,25 @@ public:
 			V2[i] = spfuncmul(spfunc(-1),V1[i]);
 		}
 	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int), T spfuncmul(T, T, int), int BITS>
+	void VEC_MINUS( T V1[M], T V2[M] ){
+		T minusone = spfunc1(spfunc(-1, BITS), BITS);
+		for( int i=0; i<M; i++ ){
+			V2[i] = spfuncmul(minusone,V1[i], BITS);
+		}
+	}
 
 	// Vector addition
 	template<class T, int M, T spfuncadd(T, T)>
 	void VEC_ADD( T V1[M], T V2[M], T V3[M] ){
 		for( int i=0; i<M; i++ ){
 			V3[i] = spfuncadd(V1[i], V2[i]);
+		}
+	}
+	template<class T, int M, T spfuncadd(T, T, int), int BITS>
+	void VEC_ADD( T V1[M], T V2[M], T V3[M] ){
+		for( int i=0; i<M; i++ ){
+			V3[i] = spfuncadd(V1[i], V2[i], BITS);
 		}
 	}
 	template<class T1, class T2, class T3, int M, T3 spfuncadd(T3, T3)>
@@ -148,9 +234,23 @@ public:
 			V3[i] = spfuncsub(V1[i], V2[i]);
 		}
 	}
+	template<class T, int M, T spfuncsub(T, T, int), int BITS>
+	void VEC_SUB( T V1[M], T V2[M], T V3[M] ){
+		for( int i=0; i<M; i++ ){
+			V3[i] = spfuncsub(V1[i], V2[i], BITS);
+		}
+	}
 
 	template<class T, unsigned int M, unsigned int N>
 	void MAT_TRANS(T Mat[M][N], T MatT[N][M]){
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<N;j++){
+				MatT[i][j] = Mat[j][i];
+			}
+		}
+	}
+	template<class T, unsigned int M, unsigned int N>
+	void MAT_TRANS(T **Mat, T **MatT){
 		for(unsigned int i=0;i<M;i++){
 			for(unsigned int j=0;j<N;j++){
 				MatT[i][j] = Mat[j][i];
@@ -200,10 +300,22 @@ public:
 			V3[i] = spfuncdiv(V1[i], V2[i]);
 		}
 	}
+	template<class T, int M, T spfuncdiv(T,T,int), int BITS>
+	void VEC_DIV( T V1[M], T V2[M], T V3[M] ){
+		for( int i=0; i<M; i++ ){
+			V3[i] = spfuncdiv(V1[i], V2[i], BITS);
+		}
+	}
 	template<class T, int M, T spfuncdiv(T,T)>
 	void VEC_DIV( T V1[M], T v, T V3[M] ){
 		for( int i=0; i<M; i++ ){
 			V3[i] = spfuncdiv(V1[i], v);
+		}
+	}
+	template<class T, int M, T spfuncdiv(T,T,int), int BITS>
+	void VEC_DIV( T V1[M], T v, T V3[M] ){
+		for( int i=0; i<M; i++ ){
+			V3[i] = spfuncdiv(V1[i], v, BITS);
 		}
 	}
 
@@ -219,6 +331,18 @@ public:
 			S = spfuncadd(S, tmp);
 		}
 		S = spfuncsqrt(S);
+	}
+	template<class T, class T1, int M, T1 spfunc(double, int),
+			T spfunc1(T1, int),T spfuncmul(T, T, int), T spfuncadd(T, T, int),
+			T spfuncsqrt(T, int), int BITS>
+	void VEC_NORM( T V1[M], T &S ){
+		T tmp = spfunc1(spfunc(0, BITS), BITS);
+		S = spfunc1(spfunc(0, BITS), BITS);
+		for( int i=0; i<M; i++ ){
+			tmp = spfuncmul(V1[i], V1[i], BITS);
+			S = spfuncadd(S, tmp, BITS);
+		}
+		S = spfuncsqrt(S, BITS);
 	}
 	template<class T1, class T2, int M>
 	void VEC_NORM( T1 V1[M], T2 &S ){
@@ -241,6 +365,16 @@ public:
 			S = spfuncadd(S, tmp);
 		}
 	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int), int BITS>
+	void VEC_NORM2( T V1[M], T &S ){
+		T tmp = spfunc1(spfunc(0, BITS), BITS);
+		S = spfunc1(spfunc(0, BITS), BITS);
+		for( int i=0; i<M; i++ ){
+			tmp = spfuncmul(V1[i], V1[i], BITS);
+			S = spfuncadd(S, tmp, BITS);
+		}
+	}
 	template<class T, int M, T spfunc(double),
 			T spfuncmul(T, T), T spfuncadd(T, T)>
 	void VEC_SQUARE_NORM( T V1[M], T &S ){
@@ -249,6 +383,16 @@ public:
 		for( int i=0; i<M; i++ ){
 			tmp = spfuncmul(V1[i], V1[i]);
 			S = spfuncadd(S, tmp);
+		}
+	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int), int BITS>
+	void VEC_SQUARE_NORM( T V1[M], T &S ){
+		T tmp = spfunc1(spfunc(0, BITS), BITS);
+		S = spfunc1(spfunc(0, BITS), BITS);
+		for( int i=0; i<M; i++ ){
+			tmp = spfuncmul(V1[i], V1[i], BITS);
+			S = spfuncadd(S, tmp, BITS);
 		}
 	}
 	template<class T1, class T2, int M>
@@ -266,6 +410,12 @@ public:
 			V3[i] = spfuncadd(V1[i], S);
 		}
 	}
+	template<class T, int M, T spfuncadd(T, T, int), int BITS>
+	void VEC_SCALAR_ADD( T V1[M], T S, T V3[M] ){
+		for( int i=0; i<M; i++ ){
+			V3[i] = spfuncadd(V1[i], S, BITS);
+		}
+	}
 	template<class T1, class T2, class T3, int M>
 	void VEC_SCALAR_ADD( T1 V1[M], T2 S, T3 V3[M] ){
 		for( int i=0; i<M; i++ ){
@@ -278,6 +428,12 @@ public:
 	void VEC_SCALAR_SUB( T V1[M], T S, T V3[M] ){
 		for( int i=0; i<M; i++ ){
 			V3[i] = spfuncsub(V1[i], S);
+		}
+	}
+	template<class T, int M, T spfuncsub(T, T, int), int BITS>
+	void VEC_SCALAR_SUB( T V1[M], T S, T V3[M] ){
+		for( int i=0; i<M; i++ ){
+			V3[i] = spfuncsub(V1[i], S, BITS);
 		}
 	}
 	template<class T1, class T2, class T3, int M>
@@ -294,10 +450,22 @@ public:
 			V3[i] = spfuncmul(V1[i], S);
 		}
 	}
+	template<class T, int M, T spfuncmul(T, T, int), int BITS>
+	void VEC_SCALAR_MUL( T V1[M], T S, T V3[M] ){
+		for( int i=0; i<M; i++ ){
+			V3[i] = spfuncmul(V1[i], S, BITS);
+		}
+	}
 	template<class T, int M, T spfuncmul(T, T)>
 	void VEC_SCALAR_MUL( T S, T V1[M], T V3[M] ){
 		for( int i=0; i<M; i++ ){
 			V3[i] = spfuncmul(V1[i], S);
+		}
+	}
+	template<class T, int M, T spfuncmul(T, T, int), int BITS>
+	void VEC_SCALAR_MUL( T S, T V1[M], T V3[M] ){
+		for( int i=0; i<M; i++ ){
+			V3[i] = spfuncmul(V1[i], S, BITS);
 		}
 	}
 
@@ -362,6 +530,36 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N, T spfuncadd(T, T)>
+	void MAT_ADD(T **A,
+									      T **B,
+									      T **C){
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<N; j++ ){
+				C[i][j] = spfuncadd(A[i][j], B[i][j]);
+			}
+		}
+	}
+	template<class T, int M, int N, T spfuncadd(T, T, int), int BITS>
+	void MAT_ADD(T A[M][N],
+									      T B[M][N],
+									      T C[M][N]){
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<N; j++ ){
+				C[i][j] = spfuncadd(A[i][j], B[i][j], BITS);
+			}
+		}
+	}
+	template<class T, int M, int N, T spfuncadd(T, T, int), int BITS>
+	void MAT_ADD(T **A,
+									      T **B,
+									      T **C){
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<N; j++ ){
+				C[i][j] = spfuncadd(A[i][j], B[i][j], BITS);
+			}
+		}
+	}
 	template<class T1, class T2, class T3, int M, int N>
 	void MAT_ADD(T1 A[M][N],
 									      T2 B[M][N],
@@ -381,6 +579,16 @@ public:
 		for ( int i=0; i<M; i++ ){
 			for ( int j=0; j<N; j++ ){
 				C[i][j] = spfuncsub(A[i][j], B[i][j]);
+			}
+		}
+	}
+	template<class T, int M, int N, T spfuncsub(T, T, int), int BITS>
+	void MAT_SUB(T A[M][N],
+									      T B[M][N],
+									      T C[M][N]){
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<N; j++ ){
+				C[i][j] = spfuncsub(A[i][j], B[i][j], BITS);
 			}
 		}
 	}
@@ -410,6 +618,52 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N, T spfunc(double),
+			T spfuncmul(T, T), T spfuncadd(T, T)>
+	void MAT_VEC_MUL(T **A,
+										  T *B,
+										  T *C){
+		for ( int i=0; i<M; i++ ){
+			T tmp = spfunc(0);
+			C[i] = spfunc(0);
+			for ( int j=0; j<N; j++ ){
+				tmp = spfuncmul(A[i][j], B[j]);
+				C[i] = spfuncadd(C[i], tmp);
+			}
+		}
+	}
+	template<class T, class T1, int M, int N, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int),
+			int BITS>
+	void MAT_VEC_MUL(T A[M][N],
+										  T B[N],
+										  T C[M]){
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for ( int i=0; i<M; i++ ){
+			T tmp = zero;
+			C[i] = zero;
+			for ( int j=0; j<N; j++ ){
+				tmp = spfuncmul(A[i][j], B[j], BITS);
+				C[i] = spfuncadd(C[i], tmp, BITS);
+			}
+		}
+	}
+	template<class T, class T1, int M, int N, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int),
+			int BITS>
+	void MAT_VEC_MUL(T **A,
+										  T *B,
+										  T *C){
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for ( int i=0; i<M; i++ ){
+			T tmp = zero;
+			C[i] = zero;
+			for ( int j=0; j<N; j++ ){
+				tmp = spfuncmul(A[i][j], B[j], BITS);
+				C[i] = spfuncadd(C[i], tmp, BITS);
+			}
+		}
+	}
 	template<class T1, class T2, class T3, int M, int N>
 	void MAT_VEC_MUL(T1 A[M][N],
 										  T2 B[N],
@@ -432,6 +686,22 @@ public:
 			for ( int j=0; j<M; j++ ){
 				tmp = spfuncmul(A[j], B[j][i]);
 				C[i] = spfuncadd(C[i], tmp);
+			}
+		}
+	}
+	template<class T, int M, int N, T spfunc(double),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int),
+			int BITS>
+	void VEC_MAT_MUL(T A[M],
+										  T B[M][N],
+										  T C[N]){
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for ( int i=0; i<N; i++ ){
+			T tmp = zero;
+			C[i] = zero;
+			for ( int j=0; j<M; j++ ){
+				tmp = spfuncmul(A[j], B[j][i], BITS);
+				C[i] = spfuncadd(C[i], tmp, BITS);
 			}
 		}
 	}
@@ -484,6 +754,56 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N, int P, T spfunc(double),
+			T spfuncmul(T, T), T spfuncadd(T, T)>
+	void MAT_MUL(T **A,
+												    T **B,
+													T **C){
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<P; j++ ){
+				T tmp = spfunc(0);
+				C[i][j] = spfunc(0);
+				for ( int k=0; k<N; k++ ){
+					tmp = spfuncmul(A[i][k], B[k][j]);
+					C[i][j] = spfuncadd(C[i][j], tmp);
+				}
+			}
+		}
+	}
+	template<class T, class T1, int M, int N, int P, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int), int BITS>
+	void MAT_MUL(T A[M][N],
+												    T B[N][P],
+													T C[M][P]){
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<P; j++ ){
+				T tmp = zero;
+				C[i][j] = zero;
+				for ( int k=0; k<N; k++ ){
+					tmp = spfuncmul(A[i][k], B[k][j], BITS);
+					C[i][j] = spfuncadd(C[i][j], tmp, BITS);
+				}
+			}
+		}
+	}
+	template<class T, class T1, int M, int N, int P, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int), int BITS>
+	void MAT_MUL(T **A,
+												    T **B,
+													T **C){
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<P; j++ ){
+				T tmp = zero;
+				C[i][j] = zero;
+				for ( int k=0; k<N; k++ ){
+					tmp = spfuncmul(A[i][k], B[k][j], BITS);
+					C[i][j] = spfuncadd(C[i][j], tmp, BITS);
+				}
+			}
+		}
+	}
 	template<class T1, class T2, class T3, int M, int N, int P>
 	void MAT_MUL(T1 A[M][N],
 												    T2 B[N][P],
@@ -512,6 +832,24 @@ public:
 				for ( int k=0; k<M; k++ ){
 					tmp = spfuncmul(A[i][k], B[k][j]);
 					C[i][j] = spfuncadd(C[i][j], tmp);
+				}
+			}
+		}
+	}
+	template<class T, int M, T spfunc(double, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int),
+			int BITS>
+	void SQUARE_MAT_MUL(T A[M][M],
+												    T B[M][M],
+													T C[M][M]){
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for ( int i=0; i<M; i++ ){
+			for ( int j=0; j<M; j++ ){
+				T tmp = zero;
+				C[i][j] = zero;
+				for ( int k=0; k<M; k++ ){
+					tmp = spfuncmul(A[i][k], B[k][j], BITS);
+					C[i][j] = spfuncadd(C[i][j], tmp, BITS);
 				}
 			}
 		}
@@ -675,7 +1013,8 @@ public:
 	// QR Decomposition
 	template<class T, int M, int N, T spfunc(double),
 			T spfuncmul(T,T), T spfuncadd(T,T),
-			T spfuncsub(T,T), T spfuncsqrt(T)>
+			T spfuncsub(T,T), T spfuncsqrt(T),
+			T spfuncdiv(T,T)>
 	void QRD_GS(T Mat[M][N],
 			T MatQ[M][N],
 			T MatR[N][N]){
@@ -721,9 +1060,60 @@ public:
 			}
 		}
 	}
+	template<class T, class T1, int M, int N, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T,T, int), T spfuncadd(T,T, int),
+			T spfuncsub(T,T, int), T spfuncsqrt(T, int),
+			T spfuncdiv(T,T, int), int BITS>
+	void QRD_GS(T Mat[M][N],
+			T MatQ[M][N],
+			T MatR[N][N]){
+		// Initialisation
+		int i = 0,j = 0,k = 0;
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for(i=0;i<N;i++){
+			for(j=0;j<M;j++){
+				MatQ[j][i] = Mat[j][i];
+			}
+			for(j=0;j<N;j++){
+				MatR[i][j] = zero;
+			}
+		}
+
+		// Phase 1: get the norm
+		float norm[N];
+		for(i=0;i<N;i++){
+			norm[i] = 0;
+			for(j=0;j<M;j++){
+				T mul = spfuncmul(Mat[j][i], Mat[j][i], BITS);
+				norm[i] = spfuncadd(norm[i], mul, BITS);
+			}
+		}
+
+		// Phase 2: get the Q&R
+		for(i=0;i<N;i++){
+			// derive R
+			MatR[i][i] = spfuncsqrt(norm[i], BITS);
+			for(k=0;k<M;k++){
+				MatQ[k][i]=spfuncdiv(MatQ[k][i], MatR[i][i], BITS);
+			}
+			for(j=i+1;j<M;j++){
+				for(k=0;k<M;k++){
+					// update R
+					MatR[i][j] = spfuncadd(MatR[i][j], spfuncmul(MatQ[k][i], MatQ[k][j], BITS), BITS);
+				}
+				for(k=0;k<M;k++){
+					// update Q
+					MatQ[k][j] = spfuncsub(MatQ[k][j], spfuncmul(MatQ[k][i], MatR[i][j], BITS), BITS);
+				}
+				// update norm
+				norm[j] = spfuncsub(norm[j], spfuncmul(MatR[i][j], MatR[i][j], BITS), BITS);
+			}
+		}
+	}
 	template<class T, int M, int N, T spfunc(double),
 			T spfuncmul(T,T), T spfuncadd(T,T),
-			T spfuncsub(T,T), T spfuncsqrt(T)>
+			T spfuncsub(T,T), T spfuncdiv(T,T),
+			T spfuncsqrt(T)>
 	void QRD_MGS(T Mat[M][N],
 				 T MatQ[M][N],
 				 T MatR[N][N]){
@@ -764,6 +1154,58 @@ public:
 				for(k=0;k<M;k++){
 					// update Q
 					MatQ[k][j] = spfuncsub(MatQ[k][j], spfuncmul(MatQ[k][i], MatR[i][j]));
+				}
+			// update norm: no update for QR_MGS
+				// norm[j] = norm[j] - MatR[i][j] * MatR[i][j];
+			}
+		}
+
+	}
+	template<class T, class T1, int M, int N, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T,T, int), T spfuncadd(T,T, int),
+			T spfuncsub(T,T, int), T spfuncdiv(T,T, int),
+			T spfuncsqrt(T, int), int BITS>
+	void QRD_MGS(T Mat[M][N],
+				 T MatQ[M][N],
+				 T MatR[N][N]){
+		// Initialisation
+		int i = 0,j = 0,k = 0;
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		for(i=0;i<N;i++){
+			for(j=0;j<M;j++){
+				MatQ[j][i] = Mat[j][i];
+			}
+			for(j=0;j<N;j++){
+				MatR[i][j] = zero;
+			}
+		}
+
+		// Phase 1: get the norm
+		float norm[N];
+		for(i=0;i<N;i++){
+			norm[i] = 0;
+			for(j=0;j<M;j++){
+				T mul = spfuncmul(Mat[j][i], Mat[j][i], BITS);
+				norm[i] = spfuncadd(norm[i], mul, BITS);
+			}
+		}
+
+		// Phase 2: get the Q&R
+		for(i=0;i<N;i++){
+			// derive R
+			MatR[i][i] = spfuncsqrt(norm[i], BITS);
+			for(k=0;k<M;k++){
+				MatQ[k][i] = spfuncdiv(MatQ[k][i],MatR[i][i], BITS);
+			}
+			for(j=i+1;j<M;j++){
+				float tmp;
+				for(k=0;k<M;k++){
+					// update R
+					MatR[i][j] = spfuncadd(MatR[i][j], spfuncmul(MatQ[k][i], MatQ[k][j], BITS), BITS);
+				}
+				for(k=0;k<M;k++){
+					// update Q
+					MatQ[k][j] = spfuncsub(MatQ[k][j], spfuncmul(MatQ[k][i], MatR[i][j], BITS), BITS);
 				}
 			// update norm: no update for QR_MGS
 				// norm[j] = norm[j] - MatR[i][j] * MatR[i][j];
@@ -844,6 +1286,251 @@ public:
 		}
 
 	}
+	template<class T, int M, int N, T spfunc(double),
+			T spfuncmul(T,T), T spfuncadd(T,T),
+			T spfuncsub(T,T), T spfuncsqrt(T),
+			T spfuncdiv(T,T), bool spfunceq(T, T)>
+	void QRD_HH(T **Mat,
+			    T **MatQ,
+			    T **MatR){
+		int i,j,k;
+		//R=A;
+		for(j=0;j<M;j++){
+			for(i=0;i<N;i++){
+				MatR[j][i] = Mat[j][i];
+				//Q=eye(m);
+				if(i==j)
+					MatQ[j][i] = spfunc(1);
+				else
+					MatQ[j][i] = spfunc(0);
+			}
+		}
+
+		T g, s;
+		T *x, *v, *w, *u;
+		x = (T*) malloc(sizeof(T)*M);
+		v = (T*) malloc(sizeof(T)*M);
+		w = (T*) malloc(sizeof(T)*M);
+		u = (T*) malloc(sizeof(T)*N);
+		T **tmp1, **tmp2;
+		tmp1 = (T**) malloc(sizeof(T*)*M);
+		tmp2 = (T**) malloc(sizeof(T*)*M);
+		for(int i=0;i<N;i++){
+			tmp1[i] = (T*) malloc(sizeof(T)*N);
+			tmp2[i] = (T*) malloc(sizeof(T)*N);
+		}
+		for(k=0;k<M-1;k++){
+			// x=zeros(m,1);
+			for(j=0;j<M;j++){
+				x[j] = spfunc(0);
+			}
+			ZEROS_VEC<T, M, spfunc>(x);
+			//x(k:m,1)=R(k:m,k);
+			for(j=k;j<M;j++){
+				x[j] = MatR[j][k];
+			}
+			//g=norm(x);
+			VEC_NORM<T,M,spfunc,spfuncmul,spfuncadd,spfuncsqrt>(x, g);
+			// v=x;
+			VEC_EQ<T, M>(x, v);
+			// v(k)=x(k)+g;
+			v[k] = spfuncadd(x[k], g);
+			//s=norm(v);
+			VEC_NORM<T, M,spfunc,spfuncmul,spfuncadd,spfuncsqrt>(v, s);
+			if(!spfunceq(s, spfunc(0))){
+				// w=v/s;
+				VEC_DIV<T, M, spfuncdiv>(v, s, w);
+				// u=2*R'*w;
+				for(i=0;i<N;i++){
+					u[i] = spfunc(0);
+					for(j=0;j<M;j++){
+						u[i] = spfuncadd(u[i], spfuncmul(spfuncmul(spfunc(2), MatR[j][i]), w[j]));
+					}
+				}
+				// R=R-w*u'; %Product HR
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						MatR[j][i] = spfuncsub(MatR[j][i], spfuncmul(w[j], u[i]));
+					}
+				}
+				// Q=Q-2*Q*w*w'; %Product QR
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						tmp1[j][i] = spfuncmul(w[j], w[i]);
+					}
+				}
+				MAT_MUL<T, M, N, N, spfunc, spfuncmul, spfuncadd>(MatQ, tmp1, tmp2);
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						MatQ[j][i] = spfuncsub(MatQ[j][i], spfuncmul(spfunc(2), tmp2[j][i]));
+					}
+				}
+			}
+		}
+
+	}
+	template<class T, class T1, int M, int N, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T,T, int), T spfuncadd(T,T, int),
+			T spfuncsub(T,T, int), T spfuncsqrt(T, int),
+			T spfuncdiv(T,T, int), bool spfunceq(T, T), int BITS>
+	void QRD_HH(T Mat[M][N],
+			    T MatQ[M][N],
+			    T MatR[N][N]){
+		int i,j,k;
+		//R=A;
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		T one = spfunc1(spfunc(1, BITS), BITS);
+		T two = spfunc1(spfunc(2, BITS), BITS);
+		for(j=0;j<M;j++){
+			for(i=0;i<N;i++){
+				MatR[j][i] = Mat[j][i];
+				//Q=eye(m);
+				if(i==j)
+					MatQ[j][i] = one;
+				else
+					MatQ[j][i] = zero;
+			}
+		}
+
+		T g, s;
+		T x[M], v[M], w[M], u[N];
+		T tmp1[M][N], tmp2[M][N];
+		for(k=0;k<M-1;k++){
+			// x=zeros(m,1);
+			for(j=0;j<M;j++){
+				x[j] = zero;
+			}
+			ZEROS_VEC<T, T1, M, spfunc, spfunc1, BITS>(x);
+			//x(k:m,1)=R(k:m,k);
+			for(j=k;j<M;j++){
+				x[j] = MatR[j][k];
+			}
+			//g=norm(x);
+			VEC_NORM<T,T1,M,spfunc,spfunc1,spfuncmul,spfuncadd,spfuncsqrt,BITS>(x, g);
+			// v=x;
+			VEC_EQ<T, M>(x, v);
+			// v(k)=x(k)+g;
+			v[k] = spfuncadd(x[k], g, BITS);
+			//s=norm(v);
+			VEC_NORM<T,T1,M,spfunc,spfunc1,spfuncmul,spfuncadd,spfuncsqrt,BITS>(v, s);
+			if(!spfunceq(s, zero)){
+				// w=v/s;
+				VEC_DIV<T, M, spfuncdiv, BITS>(v, s, w);
+				// u=2*R'*w;
+				for(i=0;i<N;i++){
+					u[i] = zero;
+					for(j=0;j<M;j++){
+						u[i] = spfuncadd(u[i], spfuncmul(spfuncmul(two, MatR[j][i], BITS), w[j], BITS), BITS);
+					}
+				}
+				// R=R-w*u'; %Product HR
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						MatR[j][i] = spfuncsub(MatR[j][i], spfuncmul(w[j], u[i], BITS), BITS);
+					}
+				}
+				// Q=Q-2*Q*w*w'; %Product QR
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						tmp1[j][i] = spfuncmul(w[j], w[i], BITS);
+					}
+				}
+				MAT_MUL<T, T1, M, N, N, spfunc, spfunc1, spfuncmul, spfuncadd, BITS>(MatQ, tmp1, tmp2);
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						MatQ[j][i] = spfuncsub(MatQ[j][i], spfuncmul(two, tmp2[j][i], BITS), BITS);
+					}
+				}
+			}
+		}
+
+	}
+	template<class T, class T1, int M, int N, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T,T, int), T spfuncadd(T,T, int),
+			T spfuncsub(T,T, int), T spfuncsqrt(T, int),
+			T spfuncdiv(T,T, int), bool spfunceq(T, T), int BITS>
+	void QRD_HH(T **Mat,
+			    T **MatQ,
+			    T **MatR){
+		int i,j,k;
+		//R=A;
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		T one = spfunc1(spfunc(1, BITS), BITS);
+		T two = spfunc1(spfunc(2, BITS), BITS);
+		for(j=0;j<M;j++){
+			for(i=0;i<N;i++){
+				MatR[j][i] = Mat[j][i];
+				//Q=eye(m);
+				if(i==j)
+					MatQ[j][i] = one;
+				else
+					MatQ[j][i] = zero;
+			}
+		}
+
+		T g, s;
+		T *x, *v, *w, *u;
+		x = (T*) malloc(sizeof(T)*M);
+		v = (T*) malloc(sizeof(T)*M);
+		w = (T*) malloc(sizeof(T)*M);
+		u = (T*) malloc(sizeof(T)*N);
+		T **tmp1, **tmp2;
+		tmp1 = (T**) malloc(sizeof(T*)*M);
+		tmp2 = (T**) malloc(sizeof(T*)*M);
+		for(int i=0;i<N;i++){
+			tmp1[i] = (T*) malloc(sizeof(T)*N);
+			tmp2[i] = (T*) malloc(sizeof(T)*N);
+		}
+		for(k=0;k<M-1;k++){
+			// x=zeros(m,1);
+			for(j=0;j<M;j++){
+				x[j] = zero;
+			}
+			ZEROS_VEC<T, T1, M, spfunc, spfunc1, BITS>(x);
+			//x(k:m,1)=R(k:m,k);
+			for(j=k;j<M;j++){
+				x[j] = MatR[j][k];
+			}
+			//g=norm(x);
+			VEC_NORM<T,T1,M,spfunc,spfunc1,spfuncmul,spfuncadd,spfuncsqrt,BITS>(x, g);
+			// v=x;
+			VEC_EQ<T, M>(x, v);
+			// v(k)=x(k)+g;
+			v[k] = spfuncadd(x[k], g, BITS);
+			//s=norm(v);
+			VEC_NORM<T,T1,M,spfunc,spfunc1,spfuncmul,spfuncadd,spfuncsqrt,BITS>(v, s);
+			if(!spfunceq(s, zero)){
+				// w=v/s;
+				VEC_DIV<T, M, spfuncdiv, BITS>(v, s, w);
+				// u=2*R'*w;
+				for(i=0;i<N;i++){
+					u[i] = zero;
+					for(j=0;j<M;j++){
+						u[i] = spfuncadd(u[i], spfuncmul(spfuncmul(two, MatR[j][i], BITS), w[j], BITS), BITS);
+					}
+				}
+				// R=R-w*u'; %Product HR
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						MatR[j][i] = spfuncsub(MatR[j][i], spfuncmul(w[j], u[i], BITS), BITS);
+					}
+				}
+				// Q=Q-2*Q*w*w'; %Product QR
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						tmp1[j][i] = spfuncmul(w[j], w[i], BITS);
+					}
+				}
+				MAT_MUL<T, T1, M, N, N, spfunc, spfunc1, spfuncmul, spfuncadd, BITS>(MatQ, tmp1, tmp2);
+				for(j=0;j<M;j++){
+					for(i=0;i<N;i++){
+						MatQ[j][i] = spfuncsub(MatQ[j][i], spfuncmul(two, tmp2[j][i], BITS), BITS);
+					}
+				}
+			}
+		}
+
+	}
 
 	template<class T, int M, T spfunc(double),
 			T spfuncmul(T, T), T spfuncadd(T, T),
@@ -865,8 +1552,86 @@ public:
 			}
 		}
 	}
+	template<class T, int M, T spfunc(double),
+			T spfuncmul(T, T), T spfuncadd(T, T),
+			T spfuncsub(T, T), T spfuncdiv(T, T)>
+	void UPTRIANGULARMATINV(T **R,T **Ri){
+		int i=0,j=0,k=0;
+		// R inversion
+		for(i=0;i<M;i++){
+			for(j=0;j<M;j++){
+				Ri[i][j]=spfunc(0);
+			}
+		}
+		for(i=0;i<M;i++){
+			Ri[i][i]=spfuncdiv(spfunc(1),R[i][i]);
+			for(j=i+1;j<M;j++){
+				for(k=0;k<=j-1;k++){
+					Ri[i][j] = spfuncsub(Ri[i][j], spfuncdiv(spfuncmul(Ri[i][k], R[k][j]), R[j][j]));
+				}
+			}
+		}
+	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int),
+			T spfuncsub(T, T, int), T spfuncdiv(T, T, int), int BITS>
+	void UPTRIANGULARMATINV(T R[M][M],T Ri[M][M]){
+
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		T one = spfunc1(spfunc(1, BITS), BITS);
+
+		int i=0,j=0,k=0;
+		// R inversion
+		for(i=0;i<M;i++){
+			for(j=0;j<M;j++){
+				Ri[i][j]=zero;
+			}
+		}
+		for(i=0;i<M;i++){
+			Ri[i][i]=spfuncdiv(one,R[i][i], BITS);
+			for(j=i+1;j<M;j++){
+				for(k=0;k<=j-1;k++){
+					Ri[i][j] = spfuncsub(Ri[i][j], spfuncdiv(spfuncmul(Ri[i][k], R[k][j], BITS), R[j][j], BITS), BITS);
+				}
+			}
+		}
+	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T, T, int), T spfuncadd(T, T, int),
+			T spfuncsub(T, T, int), T spfuncdiv(T, T, int), int BITS>
+	void UPTRIANGULARMATINV(T **R,T **Ri){
+
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		T one = spfunc1(spfunc(1, BITS), BITS);
+
+		int i=0,j=0,k=0;
+		// R inversion
+		for(i=0;i<M;i++){
+			for(j=0;j<M;j++){
+				Ri[i][j]=zero;
+			}
+		}
+		for(i=0;i<M;i++){
+			Ri[i][i]=spfuncdiv(one,R[i][i], BITS);
+			for(j=i+1;j<M;j++){
+				for(k=0;k<=j-1;k++){
+					Ri[i][j] = spfuncsub(Ri[i][j], spfuncdiv(spfuncmul(Ri[i][k], R[k][j], BITS), R[j][j], BITS), BITS);
+				}
+			}
+		}
+	}
 	template<class T, int M>
 	void ORTHOGONALMATINV(T Q[M][M],T Qi[M][M]){
+		int i=0,j=0;
+		// Q inversion
+		for(i=0;i<M;i++){
+			for(j=0;j<M;j++){
+				Qi[i][j] = Q[j][i];
+			}
+		}
+	}
+	template<class T, int M>
+	void ORTHOGONALMATINV(T **Q,T **Qi){
 		int i=0,j=0;
 		// Q inversion
 		for(i=0;i<M;i++){
@@ -886,6 +1651,62 @@ public:
 		UPTRIANGULARMATINV<T, M, spfunc, spfuncmul, spfuncadd, spfuncsub, spfuncdiv>(R, Ri);
 		ORTHOGONALMATINV<T, M>(Q, Qi);
 		MAT_MUL<T, M, M, M, spfunc, spfuncmul, spfuncadd>(Ri, Qi, B);
+	}
+	template<class T, int M, T spfunc(double),
+			T spfuncmul(T,T), T spfuncadd(T,T),
+			T spfuncsub(T,T), T spfuncsqrt(T),
+			T spfuncdiv(T,T), bool spfunceq(T,T)>
+	void MAT_QRINV(T **A, T **B){
+		T **Q, **R;
+		T **Qi, **Ri;
+		Q = (T**) malloc(sizeof(T*)*M);
+		R = (T**) malloc(sizeof(T*)*M);
+		Qi = (T**) malloc(sizeof(T*)*M);
+		Ri = (T**) malloc(sizeof(T*)*M);
+		for(int i=0;i<M;i++){
+			Q[i] = (T*) malloc(sizeof(T)*M);
+			R[i] = (T*) malloc(sizeof(T)*M);
+			Qi[i] = (T*) malloc(sizeof(T)*M);
+			Ri[i] = (T*) malloc(sizeof(T)*M);
+		}
+		QRD_HH<T, M, M, spfunc, spfuncmul, spfuncadd, spfuncsub, spfuncsqrt, spfuncdiv, spfunceq>(A, Q, R);
+		UPTRIANGULARMATINV<T, M, spfunc, spfuncmul, spfuncadd, spfuncsub, spfuncdiv>(R, Ri);
+		ORTHOGONALMATINV<T, M>(Q, Qi);
+		MAT_MUL<T, M, M, M, spfunc, spfuncmul, spfuncadd>(Ri, Qi, B);
+	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T,T, int), T spfuncadd(T,T, int),
+			T spfuncsub(T,T, int), T spfuncsqrt(T, int),
+			T spfuncdiv(T,T, int), bool spfunceq(T,T), int BITS>
+	void MAT_QRINV(T A[M][M], T B[M][M]){
+		T Q[M][M], R[M][M];
+		T Qi[M][M], Ri[M][M];
+		QRD_HH<T, T1, M, M, spfunc, spfunc1, spfuncmul, spfuncadd, spfuncsub, spfuncsqrt, spfuncdiv, spfunceq, BITS>(A, Q, R);
+		UPTRIANGULARMATINV<T, T1, M, spfunc, spfunc1, spfuncmul, spfuncadd, spfuncsub, spfuncdiv, BITS>(R, Ri);
+		ORTHOGONALMATINV<T, M>(Q, Qi);
+		MAT_MUL<T, T1, M, M, M, spfunc, spfunc1, spfuncmul, spfuncadd, BITS>(Ri, Qi, B);
+	}
+	template<class T, class T1, int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncmul(T,T, int), T spfuncadd(T,T, int),
+			T spfuncsub(T,T, int), T spfuncsqrt(T, int),
+			T spfuncdiv(T,T, int), bool spfunceq(T,T), int BITS>
+	void MAT_QRINV(T **A, T **B){
+		T **Q, **R;
+		T **Qi, **Ri;
+		Q = (T**) malloc(sizeof(T*)*M);
+		R = (T**) malloc(sizeof(T*)*M);
+		Qi = (T**) malloc(sizeof(T*)*M);
+		Ri = (T**) malloc(sizeof(T*)*M);
+		for(int i=0;i<M;i++){
+			Q[i] = (T*) malloc(sizeof(T)*M);
+			R[i] = (T*) malloc(sizeof(T)*M);
+			Qi[i] = (T*) malloc(sizeof(T)*M);
+			Ri[i] = (T*) malloc(sizeof(T)*M);
+		}
+		QRD_HH<T, T1, M, M, spfunc, spfunc1, spfuncmul, spfuncadd, spfuncsub, spfuncsqrt, spfuncdiv, spfunceq, BITS>(A, Q, R);
+		UPTRIANGULARMATINV<T, T1, M, spfunc, spfunc1, spfuncmul, spfuncadd, spfuncsub, spfuncdiv, BITS>(R, Ri);
+		ORTHOGONALMATINV<T, M>(Q, Qi);
+		MAT_MUL<T, T1, M, M, M, spfunc, spfunc1, spfuncmul, spfuncadd, BITS>(Ri, Qi, B);
 	}
 
 
@@ -938,6 +1759,150 @@ public:
 			}
 		}
 	}
+	template<class T, unsigned int M, T spfunc(double),
+			 T spfuncadd(T, T), T spfuncsub(T, T),
+			 T spfuncmul(T, T), T spfuncdiv(T, T),
+			 T spfuncsqrt(T), bool spfunclt(T, T)>
+	void LU_CHOLBANACHROUT(T **Mat, T **MatL, T **MatU){
+
+		// copy the matrix
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatL[i][j] = spfunc(0);
+			}
+		}
+
+		// decomposition in-place
+		for(unsigned int j=0;j<M;j++){
+			// compute the diagonal element
+			T LL = Mat[j][j];
+			for(unsigned int k=0;k<j;k++){
+				T tmp = spfuncmul(MatL[j][k],MatL[j][k]);
+				LL = spfuncsub(LL, tmp);
+				if(spfunclt(LL,spfunc(0))){
+					exit(-1);
+				}
+			}
+			MatL[j][j] = spfuncsqrt(LL);
+
+			// compute the non-diagonal element
+			T inv = spfuncdiv(spfunc(1), MatL[j][j]);
+			for(unsigned int i=j+1;i<M;i++){
+				LL = Mat[i][j];
+//				std::cout << LL;
+				for(unsigned int k=0;k<j;k++){
+					T tmp = spfuncmul(MatL[i][k], MatL[j][k]);
+					LL = spfuncsub(LL, tmp);
+				}
+				MatL[i][j] = spfuncmul(LL, inv);
+			}
+		}
+
+		// transpose L to get U
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatU[i][j] = MatL[j][i];
+			}
+		}
+	}
+	template<class T, class T1, unsigned int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			 T spfuncadd(T, T, int), T spfuncsub(T, T, int),
+			 T spfuncmul(T, T, int), T spfuncdiv(T, T, int),
+			 T spfuncsqrt(T, int), bool spfunclt(T, T), int BITS>
+	void LU_CHOLBANACHROUT(T Mat[M][M], T MatL[M][M], T MatU[M][M]){
+
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		T one = spfunc1(spfunc(1, BITS), BITS);
+
+		// copy the matrix
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatL[i][j] = zero;
+			}
+		}
+
+		// decomposition in-place
+		for(unsigned int j=0;j<M;j++){
+			// compute the diagonal element
+			T LL = Mat[j][j];
+			for(unsigned int k=0;k<j;k++){
+				T tmp = spfuncmul(MatL[j][k],MatL[j][k], BITS);
+				LL = spfuncsub(LL, tmp, BITS);
+				if(spfunclt(LL,zero)){
+					exit(-1);
+				}
+			}
+			MatL[j][j] = spfuncsqrt(LL, BITS);
+
+			// compute the non-diagonal element
+			T inv = spfuncdiv(one, MatL[j][j], BITS);
+			for(unsigned int i=j+1;i<M;i++){
+				LL = Mat[i][j];
+//				std::cout << LL;
+				for(unsigned int k=0;k<j;k++){
+					T tmp = spfuncmul(MatL[i][k], MatL[j][k], BITS);
+					LL = spfuncsub(LL, tmp, BITS);
+				}
+				MatL[i][j] = spfuncmul(LL, inv, BITS);
+			}
+		}
+
+		// transpose L to get U
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatU[i][j] = MatL[j][i];
+			}
+		}
+	}
+	template<class T, class T1, unsigned int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			 T spfuncadd(T, T, int), T spfuncsub(T, T, int),
+			 T spfuncmul(T, T, int), T spfuncdiv(T, T, int),
+			 T spfuncsqrt(T, int), bool spfunclt(T, T), int BITS>
+	void LU_CHOLBANACHROUT(T **Mat, T **MatL, T **MatU){
+
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		T one = spfunc1(spfunc(1, BITS), BITS);
+
+		// copy the matrix
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatL[i][j] = zero;
+			}
+		}
+
+		// decomposition in-place
+		for(unsigned int j=0;j<M;j++){
+			// compute the diagonal element
+			T LL = Mat[j][j];
+			for(unsigned int k=0;k<j;k++){
+				T tmp = spfuncmul(MatL[j][k],MatL[j][k], BITS);
+				LL = spfuncsub(LL, tmp, BITS);
+				if(spfunclt(LL,zero)){
+					exit(-1);
+				}
+			}
+			MatL[j][j] = spfuncsqrt(LL, BITS);
+
+			// compute the non-diagonal element
+			T inv = spfuncdiv(one, MatL[j][j], BITS);
+			for(unsigned int i=j+1;i<M;i++){
+				LL = Mat[i][j];
+//				std::cout << LL;
+				for(unsigned int k=0;k<j;k++){
+					T tmp = spfuncmul(MatL[i][k], MatL[j][k], BITS);
+					LL = spfuncsub(LL, tmp, BITS);
+				}
+				MatL[i][j] = spfuncmul(LL, inv, BITS);
+			}
+		}
+
+		// transpose L to get U
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatU[i][j] = MatL[j][i];
+			}
+		}
+	}
 
 
 	// Doolittle algorithm LU decomposition
@@ -973,6 +1938,44 @@ public:
 					tmp = spfuncsub(tmp, tmp1);
 				}
 				MatL[k][i] = spfuncdiv(tmp, MatU[i][i]);
+			}
+		}
+	}
+	template<class T, class T1, unsigned int M, T1 spfunc(double, int), T spfunc1(T1, int),
+			T spfuncsub(T, T, int), T spfuncmul(T, T, int), T spfuncdiv(T, T, int), int BITS>
+	void LU_DOOLITTLE(T Mat[M][M], T MatL[M][M], T MatU[M][M]){
+
+		T zero = spfunc1(spfunc(0, BITS), BITS);
+		T one = spfunc1(spfunc(1, BITS), BITS);
+
+		// clean the matrix
+		for(unsigned int i=0;i<M;i++){
+			for(unsigned int j=0;j<M;j++){
+				MatL[i][j] = zero;
+				MatU[i][j] = zero;
+			}
+		}
+
+		// decomposition
+		for(unsigned int i=0;i<M;i++){
+			// upper triangular
+			for(unsigned int k=0;k<M;k++){
+				T tmp = Mat[i][k];
+				for(unsigned int j=0;j<i;j++){
+					T tmp1 = spfuncmul(MatL[i][j],MatU[j][k], BITS);
+					tmp = spfuncsub(tmp, tmp1, BITS);
+				}
+				MatU[i][k] = tmp;
+			}
+			// lower triangular
+			MatL[i][i] = one;
+			for(unsigned int k=i+1;k<M;k++){
+				T tmp = Mat[k][i];
+				for(unsigned int j=0;j<i;j++){
+					T tmp1 = spfuncmul(MatL[k][j],MatU[j][i], BITS);
+					tmp = spfuncsub(tmp, tmp1, BITS);
+				}
+				MatL[k][i] = spfuncdiv(tmp, MatU[i][i], BITS);
 			}
 		}
 	}
@@ -1207,6 +2210,14 @@ public:
 			for(int j=0;j<N;j++)
 				MatB[i][j] = spfuncmul(MatA[i][j], MatA[i][j]);
 	}
+	template<class T, int M, int N,
+			 T spfuncmul(T, T, int), int BITS>
+	void MAT_DOTSQUARE(T MatA[M][N],
+				 T MatB[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatB[i][j] = spfuncmul(MatA[i][j], MatA[i][j], BITS);
+	}
 
 	// Matrix dot multiplication
 	template<class T, int M, int N,
@@ -1217,6 +2228,15 @@ public:
 		for(int i=0;i<M;i++)
 			for(int j=0;j<N;j++)
 				MatC[i][j] = spfuncmul(MatA[i][j], MatB[i][j]);
+	}
+	template<class T, int M, int N,
+			 T spfuncmul(T, T, int), int BITS>
+	void MAT_DOTMUL(T MatA[M][N],
+				    T MatB[M][N],
+					T MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = spfuncmul(MatA[i][j], MatB[i][j], BITS);
 	}
 
 	// Matrix dot division
@@ -1242,6 +2262,18 @@ public:
 			}
 		}
 	}
+	template<class T, int M, int N,
+	 	 	 T spfuncdiv(T, T, int), int BITS>
+	void MAT_COMPLEX_DOTDIV_REAL(Complex<T> MatA[M][N],
+							 	 T MatB[M][N],
+								 Complex<T> MatC[M][N]){
+		for(int i=0;i<M;i++){
+			for(int j=0;j<N;j++){
+				MatC[i][j].real = spfuncdiv(MatA[i][j].real, MatB[i][j], BITS);
+				MatC[i][j].imag = spfuncdiv(MatA[i][j].imag, MatB[i][j], BITS);
+			}
+		}
+	}
 	template<class T, int M, int N, int P, int Q>
 	void MAT_COMPLEX_DOTDIV_REAL(Complex<T> MatA[M][N],
 							 	 T MatB[P][Q],
@@ -1263,6 +2295,14 @@ public:
 			for(int j=0;j<N;j++)
 				MatB[i][j] = spfuncdiv(1, MatA[i][j]);
 	}
+	template<class T, int M, int N,
+ 	 	 	 T spfuncdiv(T, T, int), int BITS>
+	void MAT_DOTINV(T MatA[M][N],
+				    T MatB[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatB[i][j] = spfuncdiv(1, MatA[i][j], BITS);
+	}
 
 	// Matrix dot multiply scalar
 	template<class T, int M, int N,
@@ -1273,6 +2313,15 @@ public:
 		for(int i=0;i<M;i++)
 			for(int j=0;j<N;j++)
 				MatC[i][j] = spfuncadd(MatA[i][j], B);
+	}
+	template<class T, int M, int N,
+	 	 	 T spfuncadd(T, T, int), int BITS>
+	void MAT_SCALAR_DOTADD(T MatA[M][N],
+						   T B,
+						   T MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = spfuncadd(MatA[i][j], B, BITS);
 	}
 	template<class T, int M, int N,
  	 	 	 T spfuncadd(T, T)>
@@ -1311,6 +2360,15 @@ public:
 				MatC[i][j] = spfuncsub(MatA[i][j], B);
 	}
 	template<class T, int M, int N,
+	 	 	 T spfuncsub(T, T, int), int BITS>
+	void MAT_SCALAR_DOTSUB(T MatA[M][N],
+						   T B,
+						   T MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = spfuncsub(MatA[i][j], B, BITS);
+	}
+	template<class T, int M, int N,
  	 	 	 T spfuncsub(T, T)>
 	void MAT_SCALAR_DOTSUB(T B,
 						   T MatA[M][N],
@@ -1347,6 +2405,33 @@ public:
 				MatC[i][j] = spfuncmul(MatA[i][j], B);
 	}
 	template<class T, int M, int N,
+ 	 	 	 T spfuncmul(T, T)>
+	void MAT_SCALAR_DOTMUL(T **MatA,
+						   T B,
+						   T **MatC){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = spfuncmul(MatA[i][j], B);
+	}
+	template<class T, int M, int N,
+ 	 	 	 T spfuncmul(T, T, int), int BITS>
+	void MAT_SCALAR_DOTMUL(T MatA[M][N],
+						   T B,
+						   T MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = spfuncmul(MatA[i][j], B, BITS);
+	}
+	template<class T, int M, int N,
+ 	 	 	 T spfuncmul(T, T, int), int BITS>
+	void MAT_SCALAR_DOTMUL(T **MatA,
+						   T B,
+						   T **MatC){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = spfuncmul(MatA[i][j], B, BITS);
+	}
+	template<class T, int M, int N,
 	 	 	 T spfuncmul(T, T)>
 	void MAT_SCALAR_DOTMUL(T B,
 						   T MatA[M][N],
@@ -1381,6 +2466,15 @@ public:
 		for(int i=0;i<M;i++)
 			for(int j=0;j<N;j++)
 				MatC[i][j] = spfuncdiv(MatA[i][j], B);
+	}
+	template<class T, int M, int N,
+ 	 	 	 T spfuncdiv(T, T, int), int BITS>
+	void MAT_SCALAR_DOTDIV(T MatA[M][N],
+						   T B,
+						   T MatC[M][N]){
+		for(int i=0;i<M;i++)
+			for(int j=0;j<N;j++)
+				MatC[i][j] = spfuncdiv(MatA[i][j], B, BITS);
 	}
 	template<class T, int M, int N,
 	 	 	 T spfuncdiv(T, T)>
@@ -1456,6 +2550,19 @@ public:
 			VEC_EQ<T>(VecB, VecTmp);
 		}
 	}
+	template<class T, int M,
+			T spfuncsub(T, T, int), int BITS>
+	void VEC_DIFF(T VecA[M],
+				  T VecB[M],
+				  int order){
+		T VecTmp[M];
+		VEC_EQ<T>(VecA, VecTmp);
+		for(int i=0;i<order;i++){
+			for(int j=0;j<M-i-1;j++)
+				VecB[i] = spfuncsub(VecTmp[i+1], VecTmp[i], BITS);
+			VEC_EQ<T>(VecB, VecTmp);
+		}
+	}
 
 	// Vector absolute value
 	template<class T, int M, T spfunc(double),
@@ -1475,6 +2582,14 @@ public:
 		for(int i=0;i<M;i++)
 			MatC[i] = spfuncdiv(MatA[i], MatB[i]);
 	}
+	template<class T, int M,
+			 T spfuncdiv(T, T, int), int BITS>
+	void VEC_DOTDIV(T MatA[M],
+				    T MatB[M],
+					T MatC[M]){
+		for(int i=0;i<M;i++)
+			MatC[i] = spfuncdiv(MatA[i], MatB[i], BITS);
+	}
 
 	// Vector dot division scalar
 	template<class EigenT, class T, int M,
@@ -1484,6 +2599,14 @@ public:
 						   T MatC[M]){
 		for(int i=0;i<M;i++)
 			MatC[i] = spfuncdiv(MatA[i], B);
+	}
+	template<class EigenT, class T, int M,
+	 	 	 T spfuncdiv(T, T, int), int BITS>
+	void VEC_SCALAR_DOTDIV(T MatA[M],
+						   T B,
+						   T MatC[M]){
+		for(int i=0;i<M;i++)
+			MatC[i] = spfuncdiv(MatA[i], B, BITS);
 	}
 	template<class EigenT, class T, int M,
 	 	 	 T spfuncdiv(T, T)>

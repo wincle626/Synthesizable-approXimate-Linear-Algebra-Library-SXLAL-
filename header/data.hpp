@@ -8,9 +8,20 @@
 #ifndef SRC_DATA_HPP_
 #define SRC_DATA_HPP_
 
+//#define EIGEN_DOUBLE_PRECISION // eigen double precision switch
+//#define EIGEN_FLOAT_PRECISION // eigen float precision switch
+//#define EIGEN_INTEGER_PRECISION // eigen integer precision switch
+
+//#define GENERAL_DOUBLE_PRECISION // general double precision switch
+//#define GENERAL_FLOAT_PRECISION // general float precision switch
+//#define COMSTOM_FLOAT_PRECISION // general float precision switch
+//#define GENERAL_INTEGER_PRECISION // general integer precision switch
+//#define XILINX_FIXED_PRECISION // fixed point precision swithc
+#define SOFT_POSIT_PRECISION 0// SoftPosit precision 0:posit32; 1:posit16; 2:posit8; 3:positx
+
 // Data structure
-#define ROW 4 // matrix row number
-#define COL 4 // matrix column number
+#define ROW 64 // matrix row number
+#define COL 64 // matrix column number
 #define DIAG (COL<ROW ? COL : ROW) // diagonal matrix size
 #define DIAG_VALUE 50 // diagonal matrix value scale
 #define DIAG_RATIO 0.5 // diagonal matrix sparse ratio
@@ -22,6 +33,8 @@
 #define COL1 220 // left multiply matrix column number
 #define ROW2 COL1 // right multiply matrix row number
 #define COL2 240 // right multiply matrix column number
+
+#define TOTALBITS 28
 
 // Data type
 #define FLOAT_SIZE RAND_MAX // floating point fraction scale

@@ -15,4 +15,8 @@ void PROXIMAL_GRADIENT_DECENT_SPOSIT16(posit16_t Amatrix_c[DIAG][DIAG],
 									  posit16_t bvector_c[DIAG],
 									  posit16_t L_c);
 
+void PROXIMAL_GRADIENT_DECENT_SPOSIT16(posit16_t **Amatrix_c,
+										posit16_t *bvector_c,
+										posit16_t L_c);
+
 #endif /* SRC_PGD_SOFTPOSIT16_HPP_ */

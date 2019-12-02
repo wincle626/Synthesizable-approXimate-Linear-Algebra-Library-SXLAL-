@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -O3   CMakeFiles/xfxpt_sqrt.dir/examples/c/xsqrt/xfxpt_sqrt.cpp.o  -o xfxpt_sqrt -lm 

@@ -15,4 +15,8 @@ void PROXIMAL_GRADIENT_DECENT_SPOSIT8(posit8_t Amatrix_c[DIAG][DIAG],
 									  posit8_t bvector_c[DIAG],
 									  posit8_t L_c);
 
+void PROXIMAL_GRADIENT_DECENT_SPOSIT8(posit8_t **Amatrix_c,
+										posit8_t *bvector_c,
+										posit8_t L_c);
+
 #endif /* SRC_PGD_SOFTPOSIT8_HPP_ */

@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -Wextra -O3   CMakeFiles/mm.dir/examples/c/mm/mm.cpp.o  -o mm -lm 

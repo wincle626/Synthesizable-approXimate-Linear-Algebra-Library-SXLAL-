@@ -8,11 +8,11 @@
 #ifndef SRC_XFXPT_HPP_
 #define SRC_XFXPT_HPP_
 
-#include "ap_int.h"
-#include "ap_fixed.h"
+#include "../Xilinx/ap_fixed.h"
+#include "../Xilinx/ap_int.h"
 
 #define INPUT_BIT_WIDTH 40
-#define INPUT_INTE_WIDTH 24
+#define INPUT_INTE_WIDTH 20
 #define INPUT_FRAC_WIDTH 32
 #define OUTPUT_BIT_WIDTH 7
 #define OUTPUT_INTE_WIDTH 3

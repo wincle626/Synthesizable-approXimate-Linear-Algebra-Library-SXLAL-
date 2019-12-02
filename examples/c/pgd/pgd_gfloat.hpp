@@ -15,5 +15,8 @@ void PROXIMAL_GRADIENT_DECENT_GFLOAT(float Amatrix_c[DIAG][DIAG],
 									 float bvector_c[DIAG],
 									 float L_c);
 
+void PROXIMAL_GRADIENT_DECENT_GFLOAT(float **Amatrix_c,
+									float *bvector_c,
+									float L_c);
 
 #endif /* SRC_PGD_GFLOAT_HPP_ */
