@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="kernel.cpp" path="/static/UDRC/PublicationData/XprecisionAlgebra/program/hls/admmlasso_fxpt/kernel.cpp"/>
-    <originFiles name="kernel.hpp" path="/static/UDRC/PublicationData/XprecisionAlgebra/program/hls/admmlasso_fxpt/kernel.hpp"/>
-  </source>
-  <testbench/>
-</autopilotfilemapping:AutoPilotFileMapping>
