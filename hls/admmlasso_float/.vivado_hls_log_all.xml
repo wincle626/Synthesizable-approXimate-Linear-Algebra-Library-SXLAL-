@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTMG 210-274] Memory 'kernel_invL_0' is read-only, switch it to a ROM." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:29.478+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'lambdadivrho' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.426+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'lambdadivrho' is power-on initialization." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.372+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'oneminusalpha' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.361+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'oneminusalpha' is power-on initialization." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.348+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global scalar 'alpha' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.335+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'alpha' is power-on initialization." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.323+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_15' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.309+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_14' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.297+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_13' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.284+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_12' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.272+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_11' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.257+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_10' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.242+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_9' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.229+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_8' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.218+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_7' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.204+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_6' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.190+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_5' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.178+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_4' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.163+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_3' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.161+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_2' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.150+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_1' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.139+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invU_0' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.126+0000" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Global array 'invL_15' will not be exposed as RTL port." projectName="admmlasso_float" solutionName="solution1" date="2019-11-28T21:18:28.115+0000" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

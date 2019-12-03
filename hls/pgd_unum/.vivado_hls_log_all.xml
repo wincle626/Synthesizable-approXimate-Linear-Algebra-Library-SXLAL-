@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTMG 210-274] Memory 'kernel_tmp_mul_vec3_v' is read-only, switch it to a ROM." projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:24.333+0000" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'VEC_ADD.1' to 'VEC_ADD_1'." projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:15.668+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'MAT_VEC_MUL&lt;posit32_t, 1024, 1024, &amp;(convertDoubleToP32), &amp;(p32_mul), &amp;(p32_add)>' to 'MAT_VEC_MUL' (pgd_unum/p32_add.cpp:59:10)" projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:15.639+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'VEC_ADD&lt;posit32_t, 1024, &amp;(p32_add)>.1' to 'VEC_ADD.1' (pgd_unum/kernel.hpp:69:21)" projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:14.974+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'VEC_ADD&lt;posit32_t, 1024, &amp;(p32_add)>.2' to 'VEC_ADD' (pgd_unum/p32_add.cpp:59:10)" projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:14.967+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'VEC_EQ&lt;posit32_t, 1024>' to 'VEC_EQ' (pgd_unum/kernel.hpp:117:21)" projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:14.961+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'VEC_SCALAR_MAX&lt;posit32_t, 1024, &amp;(p32_lt)>' to 'VEC_SCALAR_MAX' (pgd_unum/kernel.hpp:53:21)" projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:14.952+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'VEC_SCALAR_MIN&lt;posit32_t, 1024, &amp;(p32_lt)>' to 'VEC_SCALAR_MIN' (pgd_unum/kernel.hpp:53:21)" projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:14.945+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'VEC_SCALAR_MUL&lt;posit32_t, 1024, &amp;(p32_mul)>' to 'VEC_SCALAR_MUL' (pgd_unum/kernel.hpp:38:21)" projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:14.939+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'VEC_SUB&lt;posit32_t, 1024, &amp;(p32_sub)>' to 'VEC_SUB' (pgd_unum/p32_sub.cpp:23:10)" projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:14.928+0000" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-805] Duplicating function 'VEC_ADD&lt;posit32_t, 1024, &amp;(p32_add)>' (pgd_unum/kernel.hpp:68:21) to resolve interface conflict according to call graph." projectName="pgd_unum" solutionName="solution1" date="2019-12-03T11:23:14.554+0000" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
