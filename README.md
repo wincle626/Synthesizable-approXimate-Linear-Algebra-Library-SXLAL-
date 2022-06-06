@@ -19,8 +19,8 @@ Notice that: currently the fixed-point arithmetics are all based on the Xilinx V
 Different precision of gradient process is evaluated on x86 platform with Intel i7 6820HK with 8Gb DDR4 memory. (W: the total bit width, I: the integer bit width, M: the mantissa bit witdh)
 ### 1. Data size 64
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/float/ProximalGradientDecent.png" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/double/ProximalGradientDecent.png" width="350">
+  float<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/float/ProximalGradientDecent.png" width="350">
+  double<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/double/ProximalGradientDecent.png" width="350">
 </p>
 
 float: Number of iterations = 40529, Time Usage = 252.721 ms
@@ -29,8 +29,8 @@ double: Number of iterations = 40683, Time Usage = 574.483 ms
 
 ### 2. Data size 128
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/float/ProximalGradientDecent.png" "float" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/double/ProximalGradientDecent.png" "double" width="350">
+  float<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/float/ProximalGradientDecent.png" "float" width="350">
+  double<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/double/ProximalGradientDecent.png" "double" width="350">
 </p>
 
 float: Number of iterations = 47934, Time Usage = 833.31 ms
@@ -39,8 +39,8 @@ double: Number of iterations = 48191, Time Usage = 1487.99 ms
 
 ### 3. Data size 256
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/256x256/float/ProximalGradientDecent.png" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/256x256/double/ProximalGradientDecent.png" width="350">
+  float<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/256x256/float/ProximalGradientDecent.png" width="350">
+  double<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/256x256/double/ProximalGradientDecent.png" width="350">
 </p>
 
 float: Number of iterations = 224087, Time Usage = 11561.9 ms
@@ -49,8 +49,8 @@ double: Number of iterations = 224665, Time Usage = 21787.5 ms
 
 ### 4. Data size 512
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/512x512/float/ProximalGradientDecent.png" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/512x512/double/ProximalGradientDecent.png" width="350">
+  float<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/512x512/float/ProximalGradientDecent.png" width="350">
+  double<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/512x512/double/ProximalGradientDecent.png" width="350">
 </p>
 
 float: Number of iterations = 403136, Time Usage = 66061.3 ms
@@ -59,8 +59,8 @@ double: Number of iterations = 402571, Time Usage = 122316 ms
 
 ### 5. Data size 1024
 <p align="center">
-  float<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/1024x1024/float/ProximalGradientDecent.png" width="350">
-  double<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/1024x1024/double/ProximalGradientDecent.png" width="350">
+  float<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/1024x1024/float/ProximalGradientDecent.png" width="350">
+  double<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/1024x1024/double/ProximalGradientDecent.png" width="350">
 </p>
 
 float: Number of iterations = 297133, Time Usage = 313763 ms
@@ -72,10 +72,10 @@ double: Number of iterations = 261360, Time Usage = 395742 ms
 ### 1. Data size 64
 
 <p align="center">
-  W10, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/xfpt_w10_m5/ProximalGradientDecent_gfloat.png" width="350">
-  W12, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/xfpt_w12_m5/ProximalGradientDecent_gfloat.png" width="350">
-  W16, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/xfpt_w16_m5/ProximalGradientDecent_gfloat.png" width="350">
-  W24, M9<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/xfpt_w24_m9/ProximalGradientDecent_gfloat.png" width="350">
+  W10, M5<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/xfpt_w10_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W12, M5<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/xfpt_w12_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W16, M5<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/xfpt_w16_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W24, M9<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/xfpt_w24_m9/ProximalGradientDecent_gfloat.png" width="350">
 </p>
 
 W10, M5: Number of iterations = 99998, Time Usage = 11750 ms
@@ -89,10 +89,10 @@ W24, M9: Number of iterations = 40570, Time Usage = 4546.88 ms
 ### 2. Data size 128
 
 <p align="center">
-  W10, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/xfpt_w10_m5/ProximalGradientDecent_gfloat.png" width="350">
-  W12, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/xfpt_w12_m5/ProximalGradientDecent_gfloat.png" width="350">
-  W16, M5<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/xfpt_w16_m5/ProximalGradientDecent_gfloat.png" width="350">
-  W24, M9<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/xfpt_w24_m9/ProximalGradientDecent_gfloat.png" width="350">
+  W10, M5<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/xfpt_w10_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W12, M5<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/xfpt_w12_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W16, M5<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/xfpt_w16_m5/ProximalGradientDecent_gfloat.png" width="350">
+  W24, M9<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/xfpt_w24_m9/ProximalGradientDecent_gfloat.png" width="350">
 </p>
 
 W10, M5: Number of iterations = 99998, Time Usage = 41703.1 ms
@@ -108,9 +108,9 @@ W24, M9: Number of iterations = 47960, Time Usage = 19796.9 ms
 ### 1. Data size 64
 
 <p align="center">
-  W28, I10<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/fxpt_w28_i10/ProximalGradientDecent.png" width="350">
-  W32, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/fxpt_w32_i12/ProximalGradientDecent.png" width="350">
-  W48, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/64x64/fxpt_w48_i12/ProximalGradientDecent.png" width="350">
+  W28, I10<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/fxpt_w28_i10/ProximalGradientDecent.png" width="350">
+  W32, I12<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/fxpt_w32_i12/ProximalGradientDecent.png" width="350">
+  W48, I12<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/64x64/fxpt_w48_i12/ProximalGradientDecent.png" width="350">
 </p>
 
 W28, I10: Number of iterations = 1617, Time Usage = 597.451 ms
@@ -122,9 +122,9 @@ W48, I12: Number of iterations = 41602, Time Usage = 70051.8 ms
 ### 2. Data size 128
 
 <p align="center">
-  W28, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/fxpt_w28_i12/ProximalGradientDecent.png" width="350">
-  W32, I12<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/fxpt_w32_i12/ProximalGradientDecent.png" width="350">
-  W48, I16<img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/x86_x64/PGD/128x128/fxpt_w48_i16/ProximalGradientDecent.png" width="350">
+  W28, I12<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/fxpt_w28_i12/ProximalGradientDecent.png" width="350">
+  W32, I12<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/fxpt_w32_i12/ProximalGradientDecent.png" width="350">
+  W48, I16<img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/x86_x64/PGD/128x128/fxpt_w48_i16/ProximalGradientDecent.png" width="350">
 </p>
 
 W28, I12: Number of iterations = 2635, Time Usage = 332.926 ms
@@ -137,12 +137,12 @@ W48, I16: Number of iterations = 36661, Time Usage = 17046.1 ms
 
 As shown, the iteration numbers using float and double precision across different dimention size are very similar from 64 to 256. When reaching the dimension 1024, there is a siginificant difference of iteration number between float and double precision data type. 
 <p align="center">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Converge_Iter_Compare_fvd.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Converge_Iter_Compare_fvd.png" width="350">
 </p>
 
 As shown, the executing time of double precision is alway larger than the float precision even when less iteration happens at dimension 1024. 
 <p align="center">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Converge_Time_Compare_fvd.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Converge_Time_Compare_fvd.png" width="350">
 </p>
 
 ## Various precision under the same data size
@@ -156,20 +156,20 @@ The executing time comparison between fixed point and floating point is not fair
 By comparing the optimized solution between C++ and CVX code, it is clear that both float and double precision maitains the better optimized solution to the problem with only 0.0007 normalized error compared to CVX solution, while the fixed point precision has much wrose normalized error up to 0.25 compared to CVX solution. By using the fixed point precision, minimun value of cost function is much larger than the float and double precision due to the fact that it has not reash as optimal as float and double precision did when doing the gradient descend. 
 
 <p align="center">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Converge_Iter_Compare_64x64.png" width="350">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Converge_Time_Compare_64x64.png" width="350">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Opt_Err_Compare_64x64.png" width="350">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Opt_Solu_Compare_64x64.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Converge_Iter_Compare_64x64.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Converge_Time_Compare_64x64.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Opt_Err_Compare_64x64.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Opt_Solu_Compare_64x64.png" width="350">
 </p>
 
 ### 2. Data size 128
 
 Similar situation happens for the dimension 128. 
 <p align="center">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Converge_Iter_Compare_128x128.png" width="350">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Converge_Time_Compare_128x128.png" width="350">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Opt_Err_Compare_128x128.png" width="350">
-  <img src="https://github.com/wincle626/Xprecision_Linear_Algebra_Library/blob/master/data/figs/Opt_Solu_Compare_128x128.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Converge_Iter_Compare_128x128.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Converge_Time_Compare_128x128.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Opt_Err_Compare_128x128.png" width="350">
+  <img src="https://github.com/wincle626/SXLAL/blob/master/CMakeLib/data/figs/Opt_Solu_Compare_128x128.png" width="350">
 </p>
 
 ## Alternative Directive Method of Multiplier (ADMM)
