@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="kernel.hpp" path="/static/UDRC/PublicationData/XprecisionAlgebra/program/hls/pgd_double/kernel.hpp"/>
-    <originFiles name="kernel.cpp" path="/static/UDRC/PublicationData/XprecisionAlgebra/program/hls/pgd_double/kernel.cpp"/>
-  </source>
-  <testbench/>
-</autopilotfilemapping:AutoPilotFileMapping>
