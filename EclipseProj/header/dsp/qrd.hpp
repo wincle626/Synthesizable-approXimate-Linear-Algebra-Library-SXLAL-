@@ -260,5 +260,48 @@ void QRD_HH(T **Mat,
 }
 
 
+// Given Rotation QR Decomposition
+template<class T, int M, int N>
+void QRD_GR(T Mat[M][N],
+			T MatQ[M][M],
+			T MatR[M][N]){
+	int i, j, k, l;
+	for(j=0;j<N;j++){
+		for(i=M-1;i>0;i--){
+			T c, s;
+			GR(MatR[i-1][j], MatR[i][j], c, s);
+			T tmp1[2][N];
+			for(k=0;k<N;k++){
+				T tmp1[0][k] = c*MatR[i-1][k]+s*MatR[i][k];
+				T tmp2[1][k] = c*MatR[i-1][k]-s*MatR[i][k];
+			}
+			T tmp2[M][2];
+			for(k=0;k<M;k++){
+				T tmp1[k][0] = MatQ[k][i-1]*c+MatQ[k][i]*s;
+				T tmp2[k][1] = MatQ[k][i-1]*c-MatQ[k][i]*s;
+			}
+			for(k=0;k<N;k++){
+				MatR[i-1][k] = tmp1[0][k];
+				MatR[i][k] = tmp1[1][k];
+			}
+			for(k=0;k<M;k++){
+				MatQ[k][i-1] = tmp2[k][0];
+				MatQ[k][i] = tmp2[k][1];
+			}
+		}
+	}
+}
+template<class T>
+void GR(T a, T b, T &c, T&s){
+	if(b==0){
+		c = 1;
+		s = 0;
+	}else{
+		T r = (T) (b>=a||-b<-a)?(a/b):(b/a);
+		c = 1/std::sqrt(1+r*r);
+		s = s*r;
+	}
+}
+
 
 #endif /* HEADER_DSP_QRD_HPP_ */

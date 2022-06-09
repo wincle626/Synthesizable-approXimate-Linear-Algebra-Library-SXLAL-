@@ -27,7 +27,7 @@ T bitreverse(T num, unsigned int bitsnum)
 // Iterative FFT function to compute the DFT
 // of given coefficient vector
 template<class T, int LEN>
-void fft_radix2_iterative_c_1d(Complex<T> x[LEN],
+void FFT_radix2_iterative_c_1d(Complex<T> x[LEN],
 						Complex<T> y[LEN],
 						int log2n){
 	int n = LEN;
@@ -78,7 +78,7 @@ void fft_radix2_iterative_c_1d(Complex<T> x[LEN],
 }
 
 template<class T, int LEN>
-void ifft_radix2_iterative_c_1d(Complex<T> x[LEN],
+void iFFT_radix2_iterative_c_1d(Complex<T> x[LEN],
 					  Complex<T> y[LEN],
 					  int log2n)
 {
@@ -87,7 +87,7 @@ void ifft_radix2_iterative_c_1d(Complex<T> x[LEN],
 		complex_conj<T>(x[i],x[i]);
 
 	// forward fft
-	fft_radix2_iterative_c_1d<T, LEN>( x, y, log2n );
+	FFT_radix2_iterative_c_1d<T, LEN>( x, y, log2n );
 
 	// conjugate the complex numbers again
 	for(int i=0;i<LEN;i++)
@@ -102,7 +102,7 @@ void ifft_radix2_iterative_c_1d(Complex<T> x[LEN],
 // Iterative FFT function to compute the DFT
 // of given coefficient vector
 template<class T, int M, int N>
-void fft_radix2_iterative_c_2d(Complex<double> x[M][N],
+void FFT_radix2_iterative_c_2d(Complex<double> x[M][N],
 					 Complex<double> y[M][N],
 					 int log2n){
 	// clone input
@@ -122,7 +122,7 @@ void fft_radix2_iterative_c_2d(Complex<double> x[M][N],
 		for(int j=0;j<N;j++){
 			vec1[j] = y[i][j];
 		}
-		fft_radix2_iterative_c_1d<T, N>(vec1,vec_fft1,log2n);
+		FFT_radix2_iterative_c_1d<T, N>(vec1,vec_fft1,log2n);
 		for(int j=0;j<N;j++){
 			y[i][j] = vec_fft1[j];
 		}
@@ -132,7 +132,7 @@ void fft_radix2_iterative_c_2d(Complex<double> x[M][N],
 		for(int j=0;j<M;j++){
 			vec2[j] = y[j][i];
 		}
-		fft_radix2_iterative_c_1d<T, M>(vec2,vec_fft2,log2n);
+		FFT_radix2_iterative_c_1d<T, M>(vec2,vec_fft2,log2n);
 		for(int j=0;j<M;j++){
 			y[j][i] = vec_fft2[j];
 		}
@@ -140,7 +140,7 @@ void fft_radix2_iterative_c_2d(Complex<double> x[M][N],
 }
 
 template<class T, int M, int N>
-void ifft_radix2_iterative_c_2d(Complex<double> x[M][N],
+void iFFT_radix2_iterative_c_2d(Complex<double> x[M][N],
 					  Complex<double> y[M][N],
 					  int log2n){
 	// conjugate the complex numbers
@@ -149,7 +149,7 @@ void ifft_radix2_iterative_c_2d(Complex<double> x[M][N],
 			complex_conj<T>(x[i][j],x[i][j]);
 
 	// forward fft
-	fft_radix2_iterative_c_2d<T, M, N>( x, y, log2n );
+	FFT_radix2_iterative_c_2d<T, M, N>( x, y, log2n );
 
 	// conjugate the complex numbers again
 	for(int i=0;i<M;i++)
@@ -166,7 +166,7 @@ void ifft_radix2_iterative_c_2d(Complex<double> x[M][N],
 }
 
 template<class T, int LEN, int LEN2P, int LOG2N>
-void fft_bluestein_iterative_c_1d(Complex<T> x[LEN],
+void FFT_bluestein_iterative_c_1d(Complex<T> x[LEN],
 								  Complex<T> y[LEN]){
 
 	T cos_table[LEN];
@@ -181,7 +181,7 @@ void fft_bluestein_iterative_c_1d(Complex<T> x[LEN],
 
 	Complex<T> a[LEN2P], b[LEN2P];
 	Complex<T> ao[LEN2P], aoo[LEN2P], bo[LEN2P];
-	for(size_t i=0;i<LEN2P;i++){
+	for(int i=0;i<LEN2P;i++){
 		a[i].real = 0;
 		a[i].imag = 0;
 		b[i].real = 0;
@@ -189,7 +189,7 @@ void fft_bluestein_iterative_c_1d(Complex<T> x[LEN],
 	}
 
 	// Trignometric tables
-	for (size_t i = 0; i < LEN; i++) {
+	for (int i = 0; i < LEN; i++) {
 		unsigned long long temp = (unsigned long long)i * i;
 		temp %= (unsigned long long)LEN * 2;
 		float angle =  M_PI * temp / LEN;
@@ -199,31 +199,31 @@ void fft_bluestein_iterative_c_1d(Complex<T> x[LEN],
 	}
 
 	// Temporary vectors and preprocessing
-	for (size_t i = 0; i < LEN; i++) {
+	for (int i = 0; i < LEN; i++) {
 		a[i].real =  x[i].real * cos_table[i] + x[i].imag * sin_table[i];
 		a[i].imag = -x[i].real * sin_table[i] + x[i].imag * cos_table[i];
 	}
 	b[0].real = cos_table[0];
 	b[0].imag = sin_table[0];
-	for (size_t i = 1; i < LEN; i++) {
+	for (int i = 1; i < LEN; i++) {
 		b[i].real = cos_table[i];
 		b[i].imag = sin_table[i];
 		b[LEN2P - i].real = cos_table[i];
 		b[LEN2P - i].imag = sin_table[i];
 	}
 
-	fft_radix2_iterative_c_1d<T, LEN2P>(a, ao, LOG2N);
-	fft_radix2_iterative_c_1d<T, LEN2P>(b, bo, LOG2N);
+	FFT_radix2_iterative_c_1d<T, LEN2P>(a, ao, LOG2N);
+	FFT_radix2_iterative_c_1d<T, LEN2P>(b, bo, LOG2N);
 
-	for (size_t i = 0; i < LEN2P; i++) {
+	for (int i = 0; i < LEN2P; i++) {
 		T temp = ao[i].real * bo[i].real - ao[i].imag * bo[i].imag;
 		ao[i].imag = ao[i].imag * bo[i].real + ao[i].real * bo[i].imag;
 		ao[i].real = temp;
 	}
-	ifft_radix2_iterative_c_1d<T, LEN2P>(ao, aoo, LOG2N);
+	iFFT_radix2_iterative_c_1d<T, LEN2P>(ao, aoo, LOG2N);
 
 	// Postprocessing
-	for (size_t i = 0; i < LEN; i++) {
+	for (int i = 0; i < LEN; i++) {
 		y[i].real =  aoo[i].real * cos_table[i] + aoo[i].imag * sin_table[i];
 		y[i].imag = -aoo[i].real * sin_table[i] + aoo[i].imag * cos_table[i];
 	}
@@ -231,7 +231,7 @@ void fft_bluestein_iterative_c_1d(Complex<T> x[LEN],
 }
 
 template<class T, int LEN, int LEN2P, int LOG2N>
-void ifft_bluestein_iterative_c_1d(Complex<T> x[LEN],
+void iFFT_bluestein_iterative_c_1d(Complex<T> x[LEN],
 						Complex<T> y[LEN]){
 
 	// conjugate the complex numbers
@@ -239,7 +239,7 @@ void ifft_bluestein_iterative_c_1d(Complex<T> x[LEN],
 		complex_conj(x[i],x[i]);
 
 	// forward fft
-	fft_bluestein_iterative_c_1d<T, LEN, LEN2P, LOG2N>( x, y );
+	FFT_bluestein_iterative_c_1d<T, LEN, LEN2P, LOG2N>( x, y );
 
 	// conjugate the complex numbers again
 	for(int i=0;i<LEN;i++)
@@ -254,7 +254,7 @@ void ifft_bluestein_iterative_c_1d(Complex<T> x[LEN],
 // Iterative FFT function to compute the DFT
 // of given coefficient vector
 template<class T, int M, int N, int M2P, int N2P, int L2NR, int L2NC>
-void fft_bluestein_iterative_c_2d(Complex<T> x[M][N],
+void FFT_bluestein_iterative_c_2d(Complex<T> x[M][N],
 					 Complex<T> y[M][N]){
 	// clone input
 	for(int i=0;i<M;i++){
@@ -273,7 +273,7 @@ void fft_bluestein_iterative_c_2d(Complex<T> x[M][N],
 		for(int j=0;j<N;j++){
 			vec1[j] = y[i][j];
 		}
-		fft_bluestein_iterative_c_1d<T, N, N2P, L2NC>(vec1,vec_fft1);
+		FFT_bluestein_iterative_c_1d<T, N, N2P, L2NC>(vec1,vec_fft1);
 		for(int j=0;j<N;j++){
 			y[i][j] = vec_fft1[j];
 		}
@@ -283,7 +283,7 @@ void fft_bluestein_iterative_c_2d(Complex<T> x[M][N],
 		for(int j=0;j<M;j++){
 			vec2[j] = y[j][i];
 		}
-		fft_bluestein_iterative_c_1d<T, M, M2P, L2NR>(vec2,vec_fft2);
+		FFT_bluestein_iterative_c_1d<T, M, M2P, L2NR>(vec2,vec_fft2);
 		for(int j=0;j<M;j++){
 			y[j][i] = vec_fft2[j];
 		}
@@ -291,7 +291,7 @@ void fft_bluestein_iterative_c_2d(Complex<T> x[M][N],
 }
 
 template<class T, int M, int N, int M2P, int N2P, int L2NR, int L2NC>
-void ifft_bluestein_iterative_c_2d(Complex<T> x[M][N],
+void iFFT_bluestein_iterative_c_2d(Complex<T> x[M][N],
 					  Complex<T> y[M][N]){
 	// conjugate the complex numbers
 	for(int i=0;i<M;i++)
@@ -299,7 +299,7 @@ void ifft_bluestein_iterative_c_2d(Complex<T> x[M][N],
 			complex_conj<T>(x[i][j],x[i][j]);
 
 	// forward fft
-	fft_bluestein_iterative_c_2d<T, M, N, M2P, N2P, L2NR, L2NC>( x, y );
+	FFT_bluestein_iterative_c_2d<T, M, N, M2P, N2P, L2NR, L2NC>( x, y );
 
 	// conjugate the complex numbers again
 	for(int i=0;i<M;i++)
