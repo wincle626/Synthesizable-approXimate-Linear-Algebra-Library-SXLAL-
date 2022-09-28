@@ -21,5 +21,6 @@ SOFTWARE.
 PS: There are seperate licenses for FloatX, Xilinx, and SoftPosit header files. 
 
 If you are using it for your publication, please reference to our paper:
-[Efficient Reconfigurable Mixed Precision ℓ1 Solver for Compressive Depth Reconstruction.]
+Wu, Y., Wallace, A.M., Mota, J.F. et al. Efficient Reconfigurable Mixed Precision 
+ℓ1 Solver for Compressive Depth Reconstruction. J Sign Process Syst 94, 1083–1099 (2022). 
 https://doi.org/10.1007/s11265-022-01766-3
