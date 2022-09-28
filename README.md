@@ -138,7 +138,7 @@ W32, I12: Number of iterations = 3228, Time Usage = 877.335 ms
 
 W48, I16: Number of iterations = 36661, Time Usage = 17046.1 ms
 
-## Various precision agains data size
+## Various precision against data size
 
 As shown, the iteration numbers using float and double precision across different dimention size are very similar from 64 to 256. When reaching the dimension 1024, there is a siginificant difference of iteration number between float and double precision data type. 
 <p align="center">
