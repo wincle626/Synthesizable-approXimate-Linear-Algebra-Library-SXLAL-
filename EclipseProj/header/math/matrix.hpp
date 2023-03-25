@@ -157,7 +157,7 @@ template<class T, unsigned int M, unsigned int N>
 void MAT_TRANS(T Mat[M][N], T MatT[N][M]){
 	for(unsigned int i=0;i<M;i++){
 		for(unsigned int j=0;j<N;j++){
-			MatT[i][j] = Mat[j][i];
+			MatT[j][i] = Mat[i][j];
 		}
 	}
 }
@@ -165,7 +165,7 @@ template<class T, unsigned int M, unsigned int N>
 void MAT_TRANS(T **Mat, T **MatT){
 	for(unsigned int i=0;i<M;i++){
 		for(unsigned int j=0;j<N;j++){
-			MatT[i][j] = Mat[j][i];
+			MatT[j][i] = Mat[i][j];
 		}
 	}
 }
