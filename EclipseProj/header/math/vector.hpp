@@ -105,6 +105,14 @@ void VEC_SUB_R( T1 V1[M], T2 V2[M], T3 V3[M] ){
 	}
 }
 
+template<class T, int M>
+void VEC_DOT_PROD(T V1[M], T V2[M], T &dotprod){
+    dotprod = (T) 0;
+    for(int i=0;i<M;i++){
+        dotprod += V1[i] * V2[i];
+    }
+}
+
 // Vector division
 template<class T, int M>
 void VEC_DIV_R( T V1[M], T V2[M], T V3[M] ){
@@ -211,6 +219,14 @@ void VEC_SCALAR_DIV_R( T1 V1[M], T2 S, T3 V3[M] ){
 	}
 }
 
+template<class T, int M>
+void VEC_ABS2_R(T V1[M], int k, int m, T &S){
+	S = 0;
+	for( int i=k; i<m; i++ ){
+		S += V1[i] * V1[i];
+	}
+}
+
 // Vector l-p norm
 template<class T, int M>
 void VEC_L1NORM_R( T V1[M], T &S ){
@@ -299,7 +315,7 @@ void VEC_SCALAR_MAX( T1 V1[M], T2 S, T3 V3[M] ){
 
 // Vector minimum value
 template<class T, int M>
-void VEC_MIN( T V1[M], T &S,){
+void VEC_MIN( T V1[M], T &S){
 	S = V1[0];
 	for( int i=1; i<M; i++ ){
 		S = V1[i] < S ? V1[i] : S;
@@ -308,7 +324,7 @@ void VEC_MIN( T V1[M], T &S,){
 
 // Vector maximum value
 template<class T, int M>
-void VEC_MAX( T V1[M], T &S,){
+void VEC_MAX( T V1[M], T &S){
 	S = V1[0];
 	for( int i=1; i<M; i++ ){
 		S = V1[i] > S ? V1[i] : S;

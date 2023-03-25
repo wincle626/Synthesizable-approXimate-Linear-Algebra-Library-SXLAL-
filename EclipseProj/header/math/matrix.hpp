@@ -322,4 +322,53 @@ void SQUARE_MAT_MUL_STRASSEN(int m,
 		}
 	}
 }
+
+
+template<class T, int M, int N>
+void ROW_OF_MATRIX(T AM[M][N], int index,
+                   T V[N]){
+    for(int i=0;i<N;i++){
+        V[i] = AM[index][i];
+    }
+}
+
+template<class T, int M, int N>
+void COL_OF_MATRIX(T AM[M][N], int index,
+                   T V[M]){
+    for(int i=0;i<M;i++){
+        V[i] = AM[i][index];
+    }
+}
+
+template<class T, int M, int N>
+void ROW_INTO_MATRIX(T V[M], T A[M][N], int index){
+    for(int i=0;i<N;i++){
+        A[index][i] = V[i];
+    }
+}
+
+template<class T, int M, int N>
+void COL_INTO_MATRIX(T V[M], T A[M][N], int index){
+    for(int i=0;i<M;i++){
+        A[i][index] = V[i];
+    }
+}
+
+template<class T, int M, int N>
+void SCALAR_INTO_MATRIX(T S, T A[M][N], int col, int row){
+    A[col][row] = S;
+}
+
+template<class T, int M, int N>
+void EYE_MATRIX(T eye[M][N], int n){
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if(i==j)
+                eye[i][j] = (T) 1;
+            else
+                eye[i][j] = (T) 0;
+        }
+    }
+}
+
 #endif /* HEADER_MATH_MATRIX_HPP_ */
