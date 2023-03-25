@@ -28,6 +28,24 @@ void MAT_EQ(T1 A[M][N],
 	}
 }
 
+template<class T, int K, int L, int M, int N>
+void MAT_EQ_S2L(T A[K][L], T B[M][N]){
+    for(int i=0;i<K;i++){
+        for(int j=0;j<L;j++){
+            B[i][j] = A[i][j];
+        }
+    }
+}
+
+template<class T, int K, int L, int M, int N>
+void MAT_EQ_L2S(T A[K][L], T B[M][N]){
+    for(int i=0;i<M;i++){
+        for(int j=0;j<N;j++){
+            B[i][j] = A[i][j];
+        }
+    }
+}
+
 // The basic matrix addition with complexity of O(NN)
 template<class T, int M, int N>
 void MAT_ADD(T A[M][N],
