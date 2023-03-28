@@ -18,20 +18,20 @@ void svd_jacobi(T AM[M][N], T UM[M][M],
     T x[M], y[M], tmp1[M], tmp2[M], AMtmp[M][N];
     T a, b, c, e, e_sign, e_abs, t, cs, sn;
 
-    EYE_MATRIX<double, N, N>(VM, N);
-    EYE_MATRIX<double, M, N>(SM, N);
-    MAT_EQ<double, M, N>(AM, AMtmp);
+    EYE_MATRIX<T, N, N>(VM, N);
+    EYE_MATRIX<T, M, N>(SM, N);
+    MAT_EQ<T, M, N>(AM, AMtmp);
     for(int iter=0;iter<30;iter++){
         for(int i=0;i<N-1;i++){
             for(int j=i+1;j<N;j++){
                 // Mumnwise
-                COL_OF_MATRIX<double, M, N>(AMtmp, i, x);
-//                pirntvector<double, M>(x);
-                COL_OF_MATRIX<double, M, N>(AMtmp, j, y);
-//                pirntvector<double, M>(y);
-                VEC_DOT_PROD<double, M>(x, x, a);
-                VEC_DOT_PROD<double, M>(y, y, b);
-                VEC_DOT_PROD<double, M>(x, y, c);
+                COL_OF_MATRIX<T, M, N>(AMtmp, i, x);
+//                pirntvector<T, M>(x);
+                COL_OF_MATRIX<T, M, N>(AMtmp, j, y);
+//                pirntvector<T, M>(y);
+                VEC_DOT_PROD<T, M>(x, x, a);
+                VEC_DOT_PROD<T, M>(y, y, b);
+                VEC_DOT_PROD<T, M>(x, y, c);
                 // Jacobi rotation
                 e = (b - a) / (2 * c);
                 e_sign = e > 0 ? 1 : -1;
@@ -40,67 +40,67 @@ void svd_jacobi(T AM[M][N], T UM[M][M],
                 cs = 1 / sqrt(1 + t * t);
                 sn = cs * t;
                 // Update G
-                VEC_SCALAR_MUL<double, M>(x, cs, tmp1);
-//                pirntvector<double, M>(tmp1);
-                VEC_SCALAR_MUL<double, M>(y, sn, tmp2);
-//                pirntvector<double, M>(tmp2);
-                VEC_SUB_R<double, M>(tmp1, tmp2, tmp1);
-//                pirntvector<double, M>(tmp1);
-                COL_INTO_MATRIX<double, M, N>(tmp1, AMtmp, i);
-//            	pirntmatrix<double, ROW, COL>(AMtmp);
-                VEC_SCALAR_MUL<double, M>(x, sn, tmp1);
-//                pirntvector<double, M>(tmp1);
-                VEC_SCALAR_MUL<double, M>(y, cs, tmp2);
-//                pirntvector<double, M>(tmp2);
-                VEC_ADD_R<double, M>(tmp1, tmp2, tmp1);
-//                pirntvector<double, M>(tmp1);
-                COL_INTO_MATRIX<double, M, N>(tmp1, AMtmp, j);
-//            	pirntmatrix<double, ROW, COL>(AMtmp);
+                VEC_SCALAR_MUL<T, M>(x, cs, tmp1);
+//                pirntvector<T, M>(tmp1);
+                VEC_SCALAR_MUL<T, M>(y, sn, tmp2);
+//                pirntvector<T, M>(tmp2);
+                VEC_SUB_R<T, M>(tmp1, tmp2, tmp1);
+//                pirntvector<T, M>(tmp1);
+                COL_INTO_MATRIX<T, M, N>(tmp1, AMtmp, i);
+//            	pirntmatrix<T, ROW, COL>(AMtmp);
+                VEC_SCALAR_MUL<T, M>(x, sn, tmp1);
+//                pirntvector<T, M>(tmp1);
+                VEC_SCALAR_MUL<T, M>(y, cs, tmp2);
+//                pirntvector<T, M>(tmp2);
+                VEC_ADD_R<T, M>(tmp1, tmp2, tmp1);
+//                pirntvector<T, M>(tmp1);
+                COL_INTO_MATRIX<T, M, N>(tmp1, AMtmp, j);
+//            	pirntmatrix<T, ROW, COL>(AMtmp);
                 // Update V
-                COL_OF_MATRIX<double, M, N>(VM, i, x);
-//                pirntvector<double, N>(x);
-                COL_OF_MATRIX<double, M, N>(VM, j, y);
-//                pirntvector<double, N>(y);
-                VEC_SCALAR_MUL<double, N>(x, cs, tmp1);
-//                pirntvector<double, N>(tmp1);
-                VEC_SCALAR_MUL<double, N>(y, sn, tmp2);
-//                pirntvector<double, N>(tmp2);
-                VEC_SUB_R<double, N>(tmp1, tmp2, tmp1);
-//                pirntvector<double, N>(tmp1);
-                COL_INTO_MATRIX<double, N, N>(tmp1, VM, i);
-//            	pirntmatrix<double, N, N>(VM);
-                VEC_SCALAR_MUL<double, N>(x, sn, tmp1);
-//                pirntvector<double, N>(tmp1);
-                VEC_SCALAR_MUL<double, N>(y, cs, tmp2);
-//                pirntvector<double, N>(tmp2);
-                VEC_ADD_R<double, N>(tmp1, tmp2, tmp1);
-//                pirntvector<double, N>(tmp1);
-                COL_INTO_MATRIX<double, N, N>(tmp1, VM, j);
-//            	pirntmatrix<double, N, N>(VM);
+                COL_OF_MATRIX<T, M, N>(VM, i, x);
+//                pirntvector<T, N>(x);
+                COL_OF_MATRIX<T, M, N>(VM, j, y);
+//                pirntvector<T, N>(y);
+                VEC_SCALAR_MUL<T, N>(x, cs, tmp1);
+//                pirntvector<T, N>(tmp1);
+                VEC_SCALAR_MUL<T, N>(y, sn, tmp2);
+//                pirntvector<T, N>(tmp2);
+                VEC_SUB_R<T, N>(tmp1, tmp2, tmp1);
+//                pirntvector<T, N>(tmp1);
+                COL_INTO_MATRIX<T, N, N>(tmp1, VM, i);
+//            	pirntmatrix<T, N, N>(VM);
+                VEC_SCALAR_MUL<T, N>(x, sn, tmp1);
+//                pirntvector<T, N>(tmp1);
+                VEC_SCALAR_MUL<T, N>(y, cs, tmp2);
+//                pirntvector<T, N>(tmp2);
+                VEC_ADD_R<T, N>(tmp1, tmp2, tmp1);
+//                pirntvector<T, N>(tmp1);
+                COL_INTO_MATRIX<T, N, N>(tmp1, VM, j);
+//            	pirntmatrix<T, N, N>(VM);
 //            	printf("Press Any Key to Continue\n");
 //            	getchar();
             }
         }
     }
-//    printmatrix<double, M, N>(AMtmp);
-//    printmatrix<double, N, N>(VM);
-    MAT_EQ_S2L<double, M, N, M, M>(AMtmp, UM);
-//    printmatrix<double, M, M>(UM);
+//    printmatrix<T, M, N>(AMtmp);
+//    printmatrix<T, N, N>(VM);
+    MAT_EQ_S2L<T, M, N, M, M>(AMtmp, UM);
+//    printmatrix<T, M, M>(UM);
     for(int i=0;i<N;i++){
-        double norm = 0.0;
-        COL_OF_MATRIX<double, M, N>(AMtmp, i, tmp1);
-//		pirntvector<double, M>(tmp1);
-        VEC_L2NORM_R<double, M>(tmp1, norm);
-        SCALAR_INTO_MATRIX<double, M, N>(norm, SM, i, i);
-//		pirntmatrix<double, M, N>(SM);
+        T norm = 0.0;
+        COL_OF_MATRIX<T, M, N>(AMtmp, i, tmp1);
+//		pirntvector<T, M>(tmp1);
+        VEC_L2NORM_R<T, M>(tmp1, norm);
+        SCALAR_INTO_MATRIX<T, M, N>(norm, SM, i, i);
+//		pirntmatrix<T, M, N>(SM);
         SMdiag[i] = norm;
-        VEC_SCALAR_DIV_R<double, M>(tmp1, norm, tmp2);
-//		pirntvector<double, M>(tmp2);
-        COL_INTO_MATRIX<double, M, M>(tmp2, UM, i);
-//    	pirntmatrix<double, M, M>(UM);
+        VEC_SCALAR_DIV_R<T, M>(tmp1, norm, tmp2);
+//		pirntvector<T, M>(tmp2);
+        COL_INTO_MATRIX<T, M, M>(tmp2, UM, i);
+//    	pirntmatrix<T, M, M>(UM);
     }
-//	pirntmatrix<double, M, M>(UM);
-//	pirntmatrix<double, M, N>(SM);
+//	pirntmatrix<T, M, M>(UM);
+//	pirntmatrix<T, M, N>(SM);
 }
 
 
