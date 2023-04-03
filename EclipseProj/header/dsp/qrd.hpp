@@ -199,8 +199,8 @@ void QRD_MGS1(T Mat[M][N],
 // Householder QR Decomposition
 template<class T, int M, int N>
 void QRD_HH(T Mat[M][N],
-		T MatQ[M][M],
-		T MatR[M][N]){
+			T MatQ[M][M],
+			T MatR[M][N]){
 	int i,j,k;
 	T MatH[M][M];
 	//R=A;
@@ -237,7 +237,12 @@ void QRD_HH(T Mat[M][N],
 		VEC_EQ_R<T, M>(x, v);
 //        v(1) = v(1) + sign(x(1)) * norm(x);
 		VEC_L2NORM_R<T, M>(x, g);
-		T signx1 = (T)(x[k]>(T)0?(T)1:(T)-1);
+//		g = (T) 0;
+//		for(i=k;i<M;i++){
+//			g += x[i]*x[i];
+//		}
+//		g = (T)std::sqrt((double)g);
+		T signx1 = (T)(x[k]>0?(T)1:(T)-1);
 		v[k] = v[k] + signx1*g;
 //        v = v ./ v(1);
 		VEC_SCALAR_DIV_R<T, M>(v, v[k], v);
@@ -248,14 +253,16 @@ void QRD_HH(T Mat[M][N],
 		s=-2/s;
 		for(i=k;i<M;i++){
 			for(j=k;j<M;j++){
+				T tmp = s * v[i] * v[j];
 				if(i==j){
-					MatH[i][j] = 1 + s * v[i] * v[j];
+					MatH[i][j] = 1 + tmp;
 				}else{
-					MatH[i][j] = s * v[i] * v[j];
+					MatH[i][j] = tmp;
 				}
 			}
 		}
 //		printmatrix<T, M, M>(MatH);
+//		printmatrix<T, M, N>(MatR);
 		T tmp1[M][N], tmp2[M][M], MatHT[M][M];
 		MAT_MUL<T, M, M, N>(MatH, MatR, tmp1);
 		MAT_TRANS<T, M, M>(MatH, MatHT);
