@@ -199,8 +199,8 @@ void QRD_MGS1(T Mat[M][N],
 // Householder QR Decomposition
 template<class T, int M, int N>
 void QRD_HH(T Mat[M][N],
-			T MatQ[M][M],
-			T MatR[M][N]){
+		T MatQ[M][M],
+		T MatR[M][N]){
 	int i,j,k;
 	T MatH[M][M];
 	//R=A;
@@ -228,6 +228,7 @@ void QRD_HH(T Mat[M][N],
 	for(k=0;k<N;k++){
 //        x = R(k:m,k);
 		ZEROS_VEC_R<T, M>(x);
+		ZEROS_VEC_R<T, M>(v);
 		for(j=k;j<M;j++){
 			x[j] = MatR[j][k];
 		}
@@ -236,8 +237,8 @@ void QRD_HH(T Mat[M][N],
 		VEC_EQ_R<T, M>(x, v);
 //        v(1) = v(1) + sign(x(1)) * norm(x);
 		VEC_L2NORM_R<T, M>(x, g);
-		T signx1 = (T)(x[k]>0?1:-1);
-		v[k] = x[k] + signx1*g;
+		T signx1 = (T)(x[k]>(T)0?(T)1:(T)-1);
+		v[k] = v[k] + signx1*g;
 //        v = v ./ v(1);
 		VEC_SCALAR_DIV_R<T, M>(v, v[k], v);
 //		printvector<T, M>(v);
