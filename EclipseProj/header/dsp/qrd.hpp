@@ -226,6 +226,7 @@ void QRD_HH(T Mat[M][N],
 	T g, s;
 	T x[M], v[M];
 	for(k=0;k<N;k++){
+		if(k==M) continue;
 //        x = R(k:m,k);
 		ZEROS_VEC_R<T, M>(x);
 		ZEROS_VEC_R<T, M>(v);
