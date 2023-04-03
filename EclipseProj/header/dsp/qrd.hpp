@@ -236,7 +236,7 @@ void QRD_HH(T Mat[M][N],
 		VEC_EQ_R<T, M>(x, v);
 //        v(1) = v(1) + sign(x(1)) * norm(x);
 		VEC_L2NORM_R<T, M>(x, g);
-		T signx1 = (T)(x[k]>0?1:0);
+		T signx1 = (T)(x[k]>0?1:-1);
 		v[k] = x[k] + signx1*g;
 //        v = v ./ v(1);
 		VEC_SCALAR_DIV_R<T, M>(v, v[k], v);
