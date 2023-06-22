@@ -1,5 +1,5 @@
 # Synthesizable approXimate Linear Algebra Library ( SXLAL )
-This is a C++ template libray for various precision linear algebra. It is aiming to research on the approximate computing for optimization algorithms with linear algebra arithmetics in the software layer. The code is synthesizable using High Lever Synthesis (HLS) tool targeting on the hardware design on FPGA. 
+This is a C++ template libray for various precision linear algebra. It is aiming to research on the approximate computing for optimization algorithms with linear algebra arithmetics in the software layer. The code is synthesizable using High Lever Synthesis (HLS) tool targeting on the hardware design on FPGA. It's also extending to more Machine Learning applications. 
 
 ## Key Publications
 [Efficient Reconfigurable Mixed Precision ℓ1 Solver for Compressive Depth Reconstruction. Journal of Signal Processing Systems 94, 1083–1099 (2022).](https://doi.org/10.1007/s11265-022-01766-3)
