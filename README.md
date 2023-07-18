@@ -9,7 +9,7 @@ This is a C++ template libray for various precision linear algebra. It is aiming
 ## Dependent Libraries
 sudo apt install python python-numpy python-matplotlib libboost-all-dev libeigen3-dev fftw-dev -y
 
-Notice that: currently the fixed-point arithmetics are all based on the Xilinx Vivado HLS fixed-point template. You MUST have a Xilinx license first. Then copy the "include" folder to the "header" folder and renamed as "xilinx". Otherwise, you cannot pass the compilation with fixed point support.    
+Notice that: currently the fixed-point arithmetics are all based on the Xilinx Vivado HLS fixed-point template. **You MUST have a Xilinx license first**. Then copy the "include" folder to the "header" folder and renamed as "xilinx". Otherwise, you cannot pass the compilation with fixed point support.
 
 ## Usage
 ### 1. Go to the build folder: cd build
