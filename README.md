@@ -221,9 +221,9 @@ Similar situation happens for the dimension 128.
 
 ## External Links
 
-### 1. [Xilinx HLS user guild.](https://www.xilinx.com/support/documentation/sw_manuals/xilinx2017_4/ug902-vivado-high-level-synthesis.pdf)
+### 1. [Xilinx HLS user guild.](https://github.com/wincle626/Synthesizable-approXimate-Linear-Algebra-Library-SXLAL-/blob/master/References/ug902-vivado-high-level-synthesis.pdf)
 
-### 2. [Xilinx fixed point white paper.](https://www.xilinx.com/support/documentation/white_papers/wp491-floating-to-fixed-point.pdf)
+### 2. [Xilinx fixed point white paper.](https://github.com/wincle626/Synthesizable-approXimate-Linear-Algebra-Library-SXLAL-/blob/master/References/wp491-floating-to-fixed-point.pdf)
 
 ### 3. [CVX: Matlab Software for Disciplined Convex Programming.](http://cvxr.com/cvx/)
 
