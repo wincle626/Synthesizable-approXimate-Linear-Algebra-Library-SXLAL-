@@ -3,7 +3,7 @@ This is a C++ template libray for various precision linear algebra. It is aiming
 
 ## Key Publications
 
-**If you found this repo useful, please help to cite the above two papers for your reference !**
+**If you found this repo useful, please help to cite these two papers for your reference !**
 
 [Efficient Reconfigurable Mixed Precision ℓ1 Solver for Compressive Depth Reconstruction. Journal of Signal Processing Systems 94, 1083–1099 (2022).](https://doi.org/10.1007/s11265-022-01766-3)
 
