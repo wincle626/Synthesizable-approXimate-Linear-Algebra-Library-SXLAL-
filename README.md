@@ -6,6 +6,8 @@ This is a C++ template libray for various precision linear algebra. It is aiming
 
 [Energy Efficient Approximate 3D Image Reconstruction. IEEE Transactions on Emerging Topics in Computing (2022)](https://doi.ieeecomputersociety.org/10.1109/TETC.2021.3116471)
 
+If you found this repo useful, please help to cite the above two papers for your reference !
+
 ## Dependent Libraries
 sudo apt install python python-numpy python-matplotlib libboost-all-dev libeigen3-dev fftw-dev -y
 
